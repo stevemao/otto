@@ -1,4 +1,7 @@
-[![Release][release-image]][release-link] [![Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Dev Dependencies][dev-dependencies-image]][dev-dependencies-url]
+[![Release][release-image]][release-url] [![Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Dev Dependencies][dev-dependencies-image]][dev-dependencies-url]
+
+<br>
+<br>
 
 <p align="center">
 <img src="media/logo.png" alt="Otto, your next interface theme for Sublime Text 3">
