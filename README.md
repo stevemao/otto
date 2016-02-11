@@ -1,9 +1,9 @@
-<p>
-<a href='https://pledgie.com/campaigns/31119'><img alt='Click here to lend your support to: Otto Donations and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/31119.png?skin_name=chrome' border='0' ></a>
+<p align="center">
+<img src="media/logo.png" alt="Otto, your next interface theme for Sublime Text 3">
 </p>
 
 <p align="center">
-<img src="media/logo.png" alt="Otto, your next interface theme for Sublime Text 3">
+<a href='https://pledgie.com/campaigns/31119'><img alt='Click here to lend your support to: Otto Donations and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/31119.png?skin_name=chrome' border='0' ></a>
 </p>
 
 An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, both, a light and dark variation with accompanying just a little bit updated [Base16](https://github.com/chriskempson/base16) Yesterday color schemes. 
