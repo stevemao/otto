@@ -19,9 +19,6 @@
     "url": "https://github.com/oivva/otto/issues"
   },
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
     "conventional-changelog": "^1.0.1",
     "conventional-github-releaser": "^1.0.0",
