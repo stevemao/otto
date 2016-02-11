@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "5"
+  - "4"
+  - "0.12"
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install libnotify-bin
+before_script:
+  - npm install -g gulp
+script: gulp
