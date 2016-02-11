@@ -1,3 +1,5 @@
+[![Release][release-image]][release-link] [![Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Dev Dependencies][dev-dependencies-image]][dev-dependencies-url]
+
 <p align="center">
 <img src="media/logo.png" alt="Otto, your next interface theme for Sublime Text 3">
 </p>
@@ -45,3 +47,17 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme": "Otto Light Blue.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/light/Otto Base16 Yesterday Light Blue.tmTheme"
 ```
+
+
+
+[release-image]: https://img.shields.io/github/release/oivva/otto.svg?style=flat-square
+[release-url]: https://github.com/oivva/otto/releases
+
+[downloads-image]: https://img.shields.io/packagecontrol/dt/Theme%20-%20Otto.svg?style=flat-square
+[downloads-url]: https://packagecontrol.io/packages/Theme%20-%20Otto
+
+[travis-image]: https://img.shields.io/travis/oivva/otto.svg?style=flat-square
+[travis-url]: https://travis-ci.org/oivva/otto
+
+[dev-dependencies-image]: https://img.shields.io/david/dev/oivva/otto.svg?style=flat-square
+[dev-dependencies-url]: https://david-dm.org/oivva/otto#info=devDependencies
