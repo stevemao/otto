@@ -90,10 +90,6 @@ gulp.task('commit-changes', function () {
     .pipe($.git.commit('chore: bump version number'));
 });
 
-gulp.task('push-changes', function (cb) {
-  $.git.push('origin', 'master', cb);
-});
-
 gulp.task('create-new-tag', function (cb) {
   var version = getPackageJsonVersion();
 
@@ -119,7 +115,6 @@ gulp.task('pre-release', function(cb) {
     'bump',
     'changelog',
     'commit-changes',
-    'push-changes',
     function (error) {
       if (error) {
         console.log(error.message);
