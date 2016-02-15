@@ -12,7 +12,7 @@
   //=include "dark/statusbar.json"
   //=include "dark/sidebar.json"
   //=include "dark/overlays.json"
-  //=include "light/autocomplete.json"
+  //=include "dark/autocomplete.json"
   //=include "common/folding.json"
   //=include "common/minimap.json"
   //=include "common/tooltips.json"

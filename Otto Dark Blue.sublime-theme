@@ -1343,7 +1343,7 @@
   {
     "class": "auto_complete",
     "row_padding": [5, 5],
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1.0
   },
   
@@ -1352,7 +1352,7 @@
   
   {
     "class": "auto_complete_label",
-    "fg": [95, 95, 95],
+    "fg": [155, 155, 155],
     "selected_fg": [255, 255, 255],
     "selected_match_fg": [255, 255, 255]
   },
