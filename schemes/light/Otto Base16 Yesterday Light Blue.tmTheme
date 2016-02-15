@@ -43,7 +43,7 @@
           <key>selectionForeground</key>
           <string>#ffffff</string>
           <key>lineHighlight</key>
-          <string>#ffffff</string>
+          <string>#fbfbfb</string>
           <key>gutterForeground</key>
           <string>#943b3c</string>
         </dict>
