@@ -9,7 +9,7 @@
   //=include "dark/scrollbars.json"
   //=include "dark/window.json"
   //=include "dark/grid.json"
-  //=include "light/minimap.json"
+  //=include "dark/minimap.json"
   //=include "light/tooltips.json"
   //=include "light/widgets.json"
   //=include "light/statusbar.json"
