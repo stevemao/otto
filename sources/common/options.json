@@ -1,0 +1,173 @@
+// > 13 Options
+// ===========================================================================
+// Override options
+// ===========================================================================
+
+// >> 13.1 Tabs Options
+// ===========================================================================
+
+// Tabset Options
+// ---------------------------------------------------------------------------
+
+//
+// Sizes
+//
+
+// Auto Width
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_auto_width"],
+  "tab_width": 0
+},
+
+// Small
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_small"],
+  "tab_height": 34
+},
+
+// Large
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_large"],
+  "tab_height": 54
+},
+
+//
+// Scrolling
+//
+
+// Enable Tab Switch via Mouse Wheel
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_mouse_wheel_switches_tabs"],
+  "mouse_wheel_switch": true
+},
+
+// Tab Options
+// ---------------------------------------------------------------------------
+
+//
+// Bold Labels
+//
+
+{
+  "class": "tab_label",
+  "settings": ["theme_otto_tab_label_bold"],
+  "font.bold": true
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+  "settings": ["theme_otto_tab_selected_label_bold"],
+  "font.bold": true
+},
+
+// >> 13.2 Tooltips Options
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_tab_selected_filled"],
+  "layer1.opacity": 0.15
+},
+
+// >> 13.3 Widgets Options
+// ===========================================================================
+
+// Hide Find & Replace Panel Close Button
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_close_button",
+  "settings": ["theme_otto_find_and_replace_close_hide"],
+  "content_margin": 0
+},
+
+// Small Find & Replace
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [8, 8]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [8, 8]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 6]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [24, 8]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "min_size": [88, 0]
+},
+
+// >> 13.4 Status Bar Options
+// ===========================================================================
+
+// Small
+// ---------------------------------------------------------------------------
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_status_bar_small"],
+  "content_margin": [5, 1, 5, 1]
+},
+
+// Large
+// ---------------------------------------------------------------------------
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_status_bar_large"],
+  "content_margin": [5, 7, 5, 7]
+},
+
+// >> 13.5 Sidebar Options
+// ===========================================================================
+
+// Sidebar Sizes
+// ---------------------------------------------------------------------------
+
+{
+  "class": "sidebar_tree",
+  "settings": ["theme_otto_sidebar_small"],
+  "row_padding": [16, 5, 16, 4]
+},
+
+{
+  "class": "sidebar_tree",
+  "settings": ["theme_otto_sidebar_large"],
+  "row_padding": [16, 9, 16, 8]
+},
+
+// Sidebar Hide File Icons
+// ---------------------------------------------------------------------------
+
+{
+  "class": "icon_file_type",
+  "settings": ["theme_otto_sidebar_hide_file_icons"],
+  "content_margin": [0, 0]
+},
