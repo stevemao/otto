@@ -1,18 +1,18 @@
-// OTTO DARK BLUE
+// OTTO LIGHT
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Your next interface theme for Sublime Text 3
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [
-  //=include "dark/tabs.json"
-  //=include "dark/scrollbars.json"
-  //=include "dark/window.json"
-  //=include "dark/grid.json"
-  //=include "dark/widgets.json"
-  //=include "dark/statusbar.json"
-  //=include "dark/sidebar.json"
-  //=include "dark/overlays.json"
-  //=include "dark/autocomplete.json"
+  //=include "light/tabs.json"
+  //=include "light/scrollbars.json"
+  //=include "light/window.json"
+  //=include "light/grid.json"
+  //=include "light/widgets.json"
+  //=include "light/statusbar.json"
+  //=include "light/sidebar.json"
+  //=include "light/overlays.json"
+  //=include "light/autocomplete.json"
   //=include "common/folding.json"
   //=include "common/minimap.json"
   //=include "common/tooltips.json"
