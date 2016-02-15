@@ -163,51 +163,6 @@
   "row_padding": [16, 9, 16, 8]
 },
 
-// Sidebar Folder Arrows
-// ---------------------------------------------------------------------------
-
-{
-  "class": "icon_folder",
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow.png",
-  "layer0.opacity": 0.5
-},
-
-{
-  "class": "icon_folder",
-  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow_expanded.png"
-},
-
-{
-  "class": "icon_folder_dup",
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow.png",
-  "layer0.opacity": 0.5
-},
-
-{
-  "class": "icon_folder_dup",
-  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow_expanded.png"
-},
-
-{
-  "class": "icon_folder",
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "attributes": ["hover"],
-  "layer0.opacity": 0.75
-},
-
-{
-  "class": "icon_folder_dup",
-  "settings": ["theme_otto_sidebar_folder_arrow"],
-  "attributes": ["hover"],
-  "layer0.opacity": 0.75
-},
-
 // Sidebar Hide File Icons
 // ---------------------------------------------------------------------------
 

@@ -5,17 +5,17 @@
 
 [
   //=include "light/tabs.json"
-  //=include "light/folding.json"
   //=include "light/scrollbars.json"
   //=include "light/window.json"
   //=include "light/grid.json"
-  //=include "light/minimap.json"
-  //=include "light/tooltips.json"
   //=include "light/widgets.json"
   //=include "light/statusbar.json"
   //=include "light/sidebar.json"
   //=include "light/overlays.json"
   //=include "light/autocomplete.json"
-  //=include "light/options.json"
+  //=include "common/folding.json"
+  //=include "common/minimap.json"
+  //=include "common/tooltips.json"
+  //=include "common/options.json"
   //=include "accent/blue.json"
 ]
