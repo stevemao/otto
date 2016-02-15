@@ -427,7 +427,7 @@
   
   {
     "class": "scroll_corner_control",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [1, 1]
   },
@@ -441,7 +441,7 @@
   
   {
     "class": "scroll_bar_control",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 6],
     "blur": false
@@ -469,7 +469,7 @@
   {
     "class": "scroll_bar_control",
     "attributes": ["horizontal"],
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [6, 0],
     "blur": false
@@ -516,7 +516,7 @@
   {
     "class": "scroll_bar_control",
     "settings": ["overlay_scroll_bars"],
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.inner_margin": [0, 5],
     "blur": false
   },
@@ -544,7 +544,7 @@
     "class": "scroll_bar_control",
     "settings": ["overlay_scroll_bars"],
     "attributes": ["horizontal"],
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.inner_margin": [5, 0],
     "blur": false
   },

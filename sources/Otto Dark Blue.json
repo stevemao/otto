@@ -6,7 +6,7 @@
 [
   //=include "dark/tabs.json"
   //=include "dark/folding.json"
-  //=include "light/scrollbars.json"
+  //=include "dark/scrollbars.json"
   //=include "light/window.json"
   //=include "light/grid.json"
   //=include "light/minimap.json"
