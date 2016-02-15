@@ -8,7 +8,7 @@
   //=include "dark/scrollbars.json"
   //=include "dark/window.json"
   //=include "dark/grid.json"
-  //=include "light/widgets.json"
+  //=include "dark/widgets.json"
   //=include "light/statusbar.json"
   //=include "light/sidebar.json"
   //=include "light/overlays.json"

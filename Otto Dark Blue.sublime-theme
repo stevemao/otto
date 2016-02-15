@@ -553,7 +553,7 @@
   
   {
     "class": "panel_control",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.inner_margin": [2, 2],
     "layer0.opacity": 1.0,
     "content_margin": [-2, 2, -2, 2]
@@ -564,7 +564,7 @@
   
   {
     "class": "label_control",
-    "color": [95, 95, 95],
+    "color": [155, 155, 155],
     "font.bold" : true,
     "font.size" : 11
   },
@@ -584,7 +584,7 @@
     "content_margin": [12, 15],
     "min_size": [70, 0],
   
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_widget.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_widget.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 10],
   
@@ -620,7 +620,7 @@
   
   {
     "class": "icon_button_control",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1,
     "content_margin": [12, 15]
   },
@@ -630,7 +630,7 @@
   
   {
     "class": "panel_close_button",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_close_black.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close_white.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -650,7 +650,7 @@
   
   {
     "class": "icon_regex",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_regex.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_regex.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -667,7 +667,7 @@
   
   {
     "class": "icon_case",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_case.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_case.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -684,7 +684,7 @@
   
   {
     "class": "icon_whole_word",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_word.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_word.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -701,7 +701,7 @@
   
   {
     "class": "icon_wrap",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_wrap.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_wrap.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -718,7 +718,7 @@
   
   {
     "class": "icon_context",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_context.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_context.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -735,7 +735,7 @@
   
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_buffer.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_buffer.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -752,7 +752,7 @@
   
   {
     "class": "icon_reverse",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_reverse.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_reverse.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -769,7 +769,7 @@
   
   {
     "class": "icon_in_selection",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_selection.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_selection.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -786,7 +786,7 @@
   
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_preserve.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_preserve.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -803,7 +803,7 @@
   
   {
     "class": "icon_highlight",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_highlight.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_highlight.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -826,7 +826,7 @@
   
   {
     "class": "text_line_control",
-    "layer0.texture": "Theme - Otto/assets/light/fields/field.png",
+    "layer0.texture": "Theme - Otto/assets/dark/fields/field.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [20, 5, 20, 5],
     "tint_index": 1,
@@ -850,7 +850,7 @@
   {
     "class": "text_line_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.texture": "Theme - Otto/assets/light/fields/field_overlay.png",
+    "layer0.texture": "Theme - Otto/assets/dark/fields/field_overlay.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [24, 0, 24, 3],
     "layer0.draw_center": true,
@@ -867,7 +867,7 @@
   {
     "class": "dropdown_button_control",
     "content_margin": [8, 8],
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_dropdown.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dropdown.png",
     "layer0.opacity": 0.5,
     "layer0.inner_margin": [0, 0]
   },
