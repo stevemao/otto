@@ -11,7 +11,7 @@
   //=include "dark/widgets.json"
   //=include "dark/statusbar.json"
   //=include "dark/sidebar.json"
-  //=include "light/overlays.json"
+  //=include "dark/overlays.json"
   //=include "light/autocomplete.json"
   //=include "common/folding.json"
   //=include "common/minimap.json"
