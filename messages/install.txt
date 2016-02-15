@@ -12,39 +12,15 @@ Activation
 // Light
 //
 
-// Blue Accent
-
-"theme": "Otto Light Blue.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/light/Otto Base16 Yesterday Light Blue.tmTheme",
-
-// Green Accent
-
-"theme": "Otto Light Green.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/light/Otto Base16 Yesterday Light Green.tmTheme",
-
-// Orange Accent
-
-"theme": "Otto Light Orange.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/light/Otto Base16 Yesterday Light Orange.tmTheme",
+"theme": "Otto Light.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Light.tmTheme",
 
 //
 // Dark
 //
 
-// Blue Accent
-
-"theme": "Otto Dark Blue.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/dark/Otto Base16 Yesterday Dark Blue.tmTheme",
-
-// Green Accent
-
-"theme": "Otto Dark Green.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/dark/Otto Base16 Yesterday Dark Green.tmTheme",
-
-// Orange Accent
-
-"theme": "Otto Dark Orange.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/dark/Otto Base16 Yesterday Dark Orange.tmTheme",
+"theme": "Otto Dark.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Dark.tmTheme",
 
 
 Tabs Options

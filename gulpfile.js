@@ -45,8 +45,7 @@ gulp.task('clean', function() {
 
 gulp.task('changelog', function () {
   return conventionalChangelog({
-    preset: 'angular',
-    releaseCount: 0
+    preset: 'angular'
   })
   .pipe(fs.createWriteStream('CHANGELOG.md'));
 });
@@ -93,7 +92,7 @@ gulp.task('commit-changes', function () {
 gulp.task('create-new-tag', function (cb) {
   var version = getPackageJsonVersion();
 
-  $.git.tag(version, 'version: ' + version, function (error) {
+  $.git.tag('v' + version, 'version: ' + version, function (error) {
     if (error) {
       return cb(error);
     }
