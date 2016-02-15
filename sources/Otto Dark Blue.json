@@ -9,7 +9,7 @@
   //=include "dark/window.json"
   //=include "dark/grid.json"
   //=include "dark/widgets.json"
-  //=include "light/statusbar.json"
+  //=include "dark/statusbar.json"
   //=include "light/sidebar.json"
   //=include "light/overlays.json"
   //=include "light/autocomplete.json"
