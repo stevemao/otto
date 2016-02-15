@@ -21,14 +21,14 @@ An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, bot
 
 ## Installation
 
-<!-- ### Package Control
+ ### Package Control
 
-The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net), where [Otto](#) is listed as `Theme - Otto`.
+The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net), where [Otto](https://packagecontrol.io/packages/Theme%20-%20Otto) is listed as `Theme - Otto`.
 
 1. Open *Command Palette* using menu item `Tools -> Command Palette...` (OS X: <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>P</kbd> | Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)
 2. Choose `Package Control: Install Package`
 3. Find `Theme - Otto` and hit <kbd>Enter</kbd>
--->
+
 
 ### Manual
 
@@ -49,21 +49,13 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ### Otto Light
 
 ```json
-"theme": "Otto Light Blue.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/light/Otto Base16 Yesterday Light Blue.tmTheme"
+"theme": "Otto Light.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Light.tmTheme",
 ```
 
+### Otto Dark
 
-<!-- 
-[release-image]: https://img.shields.io/github/release/oivva/otto.svg?style=flat-square
-[release-url]: https://github.com/oivva/otto/releases
-
-[downloads-image]: https://img.shields.io/packagecontrol/dt/Theme%20-%20Otto.svg?style=flat-square
-[downloads-url]: https://packagecontrol.io/packages/Theme%20-%20Otto
-
-[travis-image]: https://img.shields.io/travis/oivva/otto.svg?style=flat-square
-[travis-url]: https://travis-ci.org/oivva/otto
-
-[dev-dependencies-image]: https://img.shields.io/david/dev/oivva/otto.svg?style=flat-square
-[dev-dependencies-url]: https://david-dm.org/oivva/otto#info=devDependencies
- -->
+```json
+"theme": "Otto Dark.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Dark.tmTheme"
+```
