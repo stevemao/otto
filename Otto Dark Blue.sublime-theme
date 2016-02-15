@@ -581,7 +581,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [238, 238, 238]
+    "border_color": [35, 36, 38]
   },
   
   // > 6 Minimap

@@ -8,7 +8,7 @@
   //=include "dark/folding.json"
   //=include "dark/scrollbars.json"
   //=include "dark/window.json"
-  //=include "light/grid.json"
+  //=include "dark/grid.json"
   //=include "light/minimap.json"
   //=include "light/tooltips.json"
   //=include "light/widgets.json"
