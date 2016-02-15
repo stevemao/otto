@@ -21,7 +21,7 @@ An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, bot
 
 ## Installation
 
- ### Package Control
+### Package Control
 
 The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net), where [Otto](https://packagecontrol.io/packages/Theme%20-%20Otto) is listed as `Theme - Otto`.
 
