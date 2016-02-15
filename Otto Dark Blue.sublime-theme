@@ -943,7 +943,7 @@
   
   {
     "class": "sidebar_container",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.draw_center": false,
     "layer0.inner_margin": [0, 0, 1, 0],
     "layer0.opacity": 1,
@@ -962,7 +962,7 @@
     "indent": 8,
     "indent_offset": 0,
     "indent_top_level": true,
-    "layer0.tint": [247, 247, 247],
+    "layer0.tint": [20, 21, 23],
     "layer0.opacity": 1.0
   },
   
@@ -975,7 +975,7 @@
   
   {
     "class": "tree_row",
-    "layer0.tint": [238, 238, 238],
+    "layer0.tint": [35, 36, 38],
     "layer0.inner_margin": [16, 8, 0, 0],
     "layer0.opacity": 0,
     "layer1.inner_margin": [16, 8, 0, 0],
@@ -1011,7 +1011,7 @@
   
   {
     "class": "sidebar_heading",
-    "color": [95, 95, 95],
+    "color": [155, 155, 155],
     "font.size": 12,
     "font.bold": true
   },
@@ -1025,7 +1025,7 @@
   
   {
     "class": "sidebar_label",
-    "color": [95, 95, 95]
+    "color": [155, 155, 155]
   },
   
   {
@@ -1057,9 +1057,9 @@
   
   {
     "class": "close_button",
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_close_black.png",
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close_white.png",
     "layer0.opacity": 0.5,
-    "layer1.texture": "Theme - Otto/assets/light/buttons/button_dirty_black.png",
+    "layer1.texture": "Theme - Otto/assets/dark/buttons/button_dirty_white.png",
     "layer1.opacity": 0,
     "content_margin": [8, 8]
   },
@@ -1152,7 +1152,7 @@
   {
     "class": "icon_folder",
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow.png",
+    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow.png",
     "layer0.opacity": 0.5
   },
   
@@ -1160,13 +1160,13 @@
     "class": "icon_folder",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow_expanded.png"
+    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow_expanded.png"
   },
   
   {
     "class": "icon_folder_dup",
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow.png",
+    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow.png",
     "layer0.opacity": 0.5
   },
   
@@ -1174,7 +1174,7 @@
     "class": "icon_folder_dup",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/light/sidebar/folder_arrow_expanded.png"
+    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow_expanded.png"
   },
   
   {
