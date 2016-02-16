@@ -1657,16 +1657,6 @@
   },
   
   //
-  // Overlined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_overlined"],
-    "layer3.texture": "Theme - Otto/assets/accent/blue/tabs/tab_selected_overlined.png"
-  },
-  
-  //
   // Prelined
   //
   
