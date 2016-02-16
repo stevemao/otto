@@ -1,11 +1,13 @@
-<a name="0.2.1"></a>
-## 0.2.1 (2016-02-15)
+<a name="0.2.2"></a>
+## 0.2.2 (2016-02-16)
 
 
 ### Bug Fixes
 
 * change line highlight color ([645aa9f](https://github.com/oivva/otto/commit/645aa9f))
 * improve the light color scheme ([86649c4](https://github.com/oivva/otto/commit/86649c4))
+* make the dark theme easy on the eyes ([51c42e1](https://github.com/oivva/otto/commit/51c42e1))
+* remove overlined tab styles ([a6985b7](https://github.com/oivva/otto/commit/a6985b7))
 
 ### Features
 
