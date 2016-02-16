@@ -13,7 +13,7 @@
   <a href="https://david-dm.org/oivva/otto#info=devDependencies"><img src="https://img.shields.io/david/dev/oivva/otto.svg?style=flat-square" alt="Dev Dependencies"></a>
 </p>
 
-> **This is pre-release version of the theme. All the options available to customize in `messages/install.txt`.**
+> **This is pre-release version of the theme. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
 > **Final release and docs will be available soon 🙏**
 
 An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, both, a light and dark variation with accompanying just a little bit updated [Base16](https://github.com/chriskempson/base16) Yesterday color schemes. 
