@@ -24,11 +24,11 @@
           <key>invisibles</key>
           <string>#969896</string>
           <key>lineHighlight</key>
-          <string>#2e2f31</string>
+          <string>#353638</string>
           <key>selection</key>
-          <string>#2e2f31</string>
+          <string>#353638</string>
           <key>selectionBorder</key>
-          <string>#2e2f31</string>
+          <string>#353638</string>
         </dict>
       </dict>
       <dict>

@@ -12,7 +12,7 @@
 {
   "class": "tabset_control",
 
-  "layer0.tint": [20, 21, 23],
+  "layer0.tint": [35, 36, 38],
   "layer0.inner_margin": [10, 0],
   "layer0.opacity": 1.0,
 
@@ -120,7 +120,7 @@
   "layer0.inner_margin": [24, 4],
   "layer0.opacity": 1.0,
 
-  "layer1.tint": [35, 36, 38],
+  "layer1.tint": [42, 43, 45],
   "layer1.inner_margin": [24, 4],
   "layer1.opacity": 0,
 

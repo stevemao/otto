@@ -27,7 +27,6 @@ Tabs Options
 ====================================================================================================
 
 "theme_otto_tab_selected_underlined": true,
-"theme_otto_tab_selected_overlined": true,
 "theme_otto_tab_selected_prelined": true,
 "theme_otto_tab_selected_filled": true,
 
