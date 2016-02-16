@@ -8,7 +8,7 @@
 
 {
   "class": "panel_control",
-  "layer0.tint": [35, 36, 38],
+  "layer0.tint": [42, 43, 45],
   "layer0.inner_margin": [2, 2],
   "layer0.opacity": 1.0,
   "content_margin": [-2, 2, -2, 2]
@@ -75,7 +75,7 @@
 
 {
   "class": "icon_button_control",
-  "layer0.tint": [35, 36, 38],
+  "layer0.tint": [42, 43, 45],
   "layer0.opacity": 1,
   "content_margin": [12, 15]
 },
