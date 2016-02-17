@@ -13,14 +13,14 @@ Activation
 //
 
 "theme": "Otto Light.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Light.tmTheme",
+"color_scheme": "Packages/Theme - Otto/schemes/Base16 Yesterday Light.tmTheme",
 
 //
 // Dark
 //
 
 "theme": "Otto Dark.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Dark.tmTheme",
+"color_scheme": "Packages/Theme - Otto/schemes/Base16 Tomorrow Dark.tmTheme",
 
 
 Tabs Options

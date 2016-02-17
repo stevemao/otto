@@ -16,7 +16,7 @@
 > **This is pre-release version of the theme. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
 > **Final release and docs will be available soon 🙏**
 
-An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, both, a light and dark variation with accompanying just a little bit updated [Base16](https://github.com/chriskempson/base16) Yesterday color schemes. 
+An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, both, a light and dark variation with accompanying just a little bit updated [Base16](https://github.com/chriskempson/base16) color schemes. 
 
 *If you have some problems, first search for a similar issue, and then report with [new one](https://github.com/oivva/otto/issues).*
 
@@ -65,12 +65,12 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ```json
 "theme": "Otto Light.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Light.tmTheme",
+"color_scheme": "Packages/Theme - Otto/schemes/Base16 Yesterday Light.tmTheme",
 ```
 
 ### Otto Dark
 
 ```json
 "theme": "Otto Dark.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Dark.tmTheme"
+"color_scheme": "Packages/Theme - Otto/schemes/Base16 Tomorrow Dark.tmTheme"
 ```
