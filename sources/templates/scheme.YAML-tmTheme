@@ -6,22 +6,18 @@ author: <%= author %>
 
 colorSpaceName: sRGB
 
-gutterSettings:
-  background: '<%= base01 %>'
-  divider: '<%= base01 %>'
-  foreground: '<%= base03 %>'
-  selectionBackground: '<%= base02 %>'
-  selectionForeground: '<%= base04 %>'
 semanticClass: <%= semanticClass %>
 settings:
 - settings:
-    background: '<%= background %>'
-    caret: '<%= caret %>'
-    foreground: '<%= foreground %>'
-    invisibles: '<%= invisibles %>'
-    selection: '<%= selection %>'
-    selectionBorder: '<%= selectionBorder %>'
-    lineHighlight: '<%= lineHighlight %>'
+    background: '<%= base00 %>'
+    caret: '<%= base05 %>'
+    foreground: '<%= base06 %>'
+    invisibles: '<%= base03 %>'
+    selection: '<%= base02 %>'
+    selectionBorder: '<%= base02 %>'
+    selectionForeground: '<%= base04 %>'
+    lineHighlight: '<%= base02 %>55'
+    gutter: '<%= base01 %>'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
