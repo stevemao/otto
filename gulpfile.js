@@ -14,7 +14,6 @@ var gulp = require('gulp');
 var del = require('del');
 var path = require('path');
 var colors = require('colors');
-var exec = require('child_process').exec;
 var runSequence = require('run-sequence');
 var conventionalChangelog = require('conventional-changelog');
 var conventionalGithubReleaser = require('conventional-github-releaser');
@@ -191,24 +190,11 @@ gulp.task('build:themes', ['clean:themes'], function() {
 /* >> Schemes */
 
 gulp.task('build:schemes', ['clean:schemes'], function(cb) {
-  runSequence(
-    'build:tmthemes',
-    'convert:tmthemes',
-    'subl:hide-panel',
-    function (error) {
-      if (error) {
-        console.log('[build:schemes]'.bold.magenta + ' There was an issue building schemes:\n'.bold.red + error.message);
-      } else {
-        console.log('[build:schemes]'.bold.magenta + ' Finished successfully'.bold.green);
-      }
-
-      cb(error);
-    }
-  );
-});
-
-gulp.task('build:tmthemes', function() {
   return gulp.src('./sources/config/*.json')
+    .pipe($.plumber(function(error) {
+      console.log('[build:schemes]'.bold.magenta + ' There was an issue building schemes:\n'.bold.red + error.message);
+      this.emit('end');
+    }))
     .pipe($.foreach(function(stream, file) {
       var jsonFile = file;
       var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
@@ -220,26 +206,20 @@ gulp.task('build:tmthemes', function() {
           schemeFile.basename = jsonBasename;
         }))
         .pipe(gulp.dest('./schemes'));
-    }));
+    }))
+    .on('end', function() {
+      console.log('[build:schemes]'.bold.magenta + ' Finished successfully'.bold.green);
+    });
 });
 
-gulp.task('convert:tmthemes', function() {
+gulp.task('convert:schemes', function() {
   return gulp.src('./schemes/*.YAML-tmTheme')
     .pipe($.plumber(function(error) {
-      console.log('[convert:tmthemes]'.bold.magenta + ' There was an issue converting color schemes:\n'.bold.red + error.message +
-                  'Please, try to install Sublime Text 3, add it to the `PATH`, and then install "AAAPackageDev" via "Package Control"'.bold.blue);
+      console.log('[convert:schemes]'.bold.magenta + ' There was an issue converting color schemes:\n'.bold.red + error.message +
+                  'To fix this error:\nAdd Sublime Text to the `PATH` and then install "AAAPackageDev" via "Package Control.\nOpen Sublime Text before running the task. "'.bold.blue);
       this.emit('end');
     }))
     .pipe($.exec('subl "<%= file.path %>" --b && subl --b --command "convert_file" && subl --b --command "close_file"'));
-});
-
-gulp.task('subl:hide-panel', function() {
-  exec('subl --b --command "hide_panel"', function(error, stdout, stderr) {
-    if (error) {
-      console.log('[subl:hide-panel]'.bold.magenta + ' There was an issue converting color schemes:\n'.bold.red + error.message +
-                  'Please, try to install Sublime Text 3 and add it to the `PATH`'.bold.blue);
-    }
-  });
 });
 
 /* >> Widgets */
