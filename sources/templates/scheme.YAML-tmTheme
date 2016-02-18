@@ -1,0 +1,161 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+---
+name: <%= name %>
+uuid: <%= uuid %>
+author: <%= author %>
+
+colorSpaceName: sRGB
+
+gutterSettings:
+  background: '<%= base01 %>'
+  divider: '<%= base01 %>'
+  foreground: '<%= base03 %>'
+  selectionBackground: '<%= base02 %>'
+  selectionForeground: '<%= base04 %>'
+semanticClass: <%= semanticClass %>
+settings:
+- settings:
+    background: '<%= background %>'
+    caret: '<%= caret %>'
+    foreground: '<%= foreground %>'
+    invisibles: '<%= invisibles %>'
+    selection: '<%= selection %>'
+    selectionBorder: '<%= selectionBorder %>'
+    lineHighlight: '<%= lineHighlight %>'
+
+- name: Comments
+  scope: comment, punctuation.definition.comment
+  settings:
+    foreground: '<%= base03 %>'
+
+- name: Variable
+  scope: variable
+  settings:
+    foreground: '<%= base06 %>'
+
+- name: Keyword, Storage
+  scope: keyword, storage.type, storage.modifier
+  settings:
+    foreground: '<%= base0E %>'
+
+- name: Operator, Misc
+  scope: keyword.operator, constant.other.color, punctuation, meta.tag,
+    punctuation.definition.tag, punctuation.separator.inheritance.php,
+    punctuation.definition.tag.html, punctuation.definition.tag.begin.html,
+    punctuation.definition.tag.end.html, punctuation.section.embedded,
+    keyword.other.template, keyword.other.substitution
+  settings:
+    foreground: '<%= base0C %>'
+
+- name: Tag
+  scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
+  settings:
+    foreground: '<%= base10 %>'
+
+- name: Function, Special Method, Block Level
+  scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method,
+    meta.block-level
+  settings:
+    foreground: '<%= base0D %>'
+
+- name: Other Variable, String Link
+  scope: support.other.variable, string.other.link
+  settings:
+    foreground: '<%= base11 %>'
+
+- name: Number, Constant, Function Argument, Tag Attribute, Embedded
+  scope: constant.numeric, constant.language, support.constant, constant.character,
+    variable.parameter, keyword.other.unit
+  settings:
+    foreground: '<%= base09 %>'
+
+- name: String, Symbols, Inherited Class, Markup Heading
+  scope: string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading,
+    markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+  settings:
+    foreground: '<%= base0B %>'
+    fontStyle: normal
+
+- name: Class, Support
+  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php,
+    meta.use.php, support.other.namespace.php, markup.changed.git_gutter
+  settings:
+    foreground: '<%= base0A %>'
+
+- name: Sub-methods
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: '<%= base08 %>'
+
+- name: Language methods
+  scope: variable.language
+  settings:
+    foreground: '<%= base08 %>'
+    fontStyle: italic
+
+- name: entity.name.method.js
+  scope: entity.name.method.js
+  settings:
+    foreground: '<%= base07 %>'
+
+- name: meta.method.js
+  scope: meta.class-method.js entity.name.function.js, variable.function.constructor
+  settings:
+    foreground: '<%= base07 %>'
+
+- name: Attributes
+  scope: entity.other.attribute-name
+  settings:
+    foreground: '<%= base12 %>'
+
+- name: Inserted
+  scope: markup.inserted
+  settings:
+    foreground: '<%= base0B %>'
+
+- name: Deleted
+  scope: markup.deleted
+  settings:
+    foreground: '<%= base08 %>'
+
+- name: Changed
+  scope: markup.changed
+  settings:
+    foreground: '<%= base12 %>'
+
+- name: Regular Expressions
+  scope: string.regexp
+  settings:
+    foreground: '<%= base0C %>'
+
+- name: Escape Characters
+  scope: constant.character.escape
+  settings:
+    foreground: '<%= base0C %>'
+
+- name: URL
+  scope: '*url*, *link*, *uri*'
+  settings:
+    fontStyle: underline
+
+- name: Search Results Nums
+  scope: constant.numeric.line-number.find-in-files - match
+  settings:
+    foreground: '<%= base0F %>'
+
+- name: Search Results Lines
+  scope: entity.name.filename.find-in-files
+  settings:
+    foreground: '<%= base0B %>'
+
+- name: Decorators
+  scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
+  settings:
+    foreground: '<%= base0D %>'
+    fontStyle: italic
+
+- name: ES7 Bind Operator
+  scope: source.js constant.other.object.key.js string.unquoted.label.js
+  settings:
+    foreground: '<%= base08 %>'
+    fontStyle: italic

@@ -13,6 +13,8 @@
 var gulp = require('gulp');
 var del = require('del');
 var path = require('path');
+var colors = require('colors');
+var exec = require('child_process').exec;
 var runSequence = require('run-sequence');
 var conventionalChangelog = require('conventional-changelog');
 var conventionalGithubReleaser = require('conventional-github-releaser');
@@ -22,20 +24,28 @@ var $ = require('gulp-load-plugins')();
 
 
 /*
- * > Settings
+ * > Data
  */
 
-var logo = './media/icon.png';
+var getJsonData = function(file) {
+  return require(file.path);
+};
 
 
 /*
  * > Clean
  */
 
-gulp.task('clean', function() {
-  $.util.log('Cleaning... ');
+gulp.task('clean:themes', function() {
+  return del(['./*.sublime-theme']);
+});
 
-  return del('./*.sublime-theme');
+gulp.task('clean:schemes', function() {
+  return del(['./schemes/*.tmTheme', './schemes/*.YAML-tmTheme']);
+});
+
+gulp.task('clean:widgets', function() {
+  return del(['./widgets/*.stTheme', './widgets/*.sublime-settings']);
 });
 
 
@@ -116,9 +126,9 @@ gulp.task('pre-release', function(cb) {
     'commit-changes',
     function (error) {
       if (error) {
-        console.log(error.message);
+        console.log('[pre-release]'.bold.magenta + ' There was an issue releasing themes:\n'.bold.red + error.message);
       } else {
-        console.log('Pre-release finished successfully');
+        console.log('[pre-release]'.bold.magenta + ' Finished successfully'.bold.green);
       }
       cb(error);
     }
@@ -131,9 +141,9 @@ gulp.task('release', function(cb) {
     'github-release',
     function (error) {
       if (error) {
-        console.log(error.message);
+        console.log('[release]'.bold.magenta + ' There was an issue releasing themes:\n'.bold.red + error.message);
       } else {
-        console.log('Release finished successfully');
+        console.log('[release]'.bold.magenta + ' Finished successfully'.bold.green);
       }
       cb(error);
     }
@@ -145,19 +155,140 @@ gulp.task('release', function(cb) {
  * > Build
  */
 
-gulp.task('build', ['clean'], function() {
-  $.util.log('Building themes... ');
+gulp.task('build', function(cb) {
+  runSequence(
+    'build:themes',
+    'build:schemes',
+    'build:widgets',
+    function (error) {
+      if (error) {
+        console.log('[build]'.bold.magenta + ' There was an issue building Otto:\n'.bold.red + error.message);
+      } else {
+        console.log('[build]'.bold.magenta + ' Finished successfully'.bold.green);
+      }
 
-  return gulp.src('./sources/*.json')
+      cb(error);
+    }
+  );
+});
+
+/* >> Themes */
+
+gulp.task('build:themes', ['clean:themes'], function() {
+  return gulp.src('./sources/themes/*.json')
+    .pipe($.plumber(function(error) {
+      console.log('[build:themes]'.bold.magenta + ' There was an issue building themes:\n'.bold.red + error.message);
+      this.emit('end');
+    }))
     .pipe($.include())
-    .on('end', function () { $.util.log('Themes generated'); })
     .pipe($.rename({ extname: '.sublime-theme' }))
-    .on('end', function () { $.util.log('Themes renamed'); })
     .pipe(gulp.dest('./'))
-    .pipe($.notify({
-      title: 'Otto',
-      message: 'Build completed',
-      icon: path.join(__dirname, logo)
+    .on('end', function() {
+      console.log('[build:themes]'.bold.magenta + ' Finished successfully'.bold.green);
+    });
+});
+
+/* >> Schemes */
+
+gulp.task('build:schemes', ['clean:schemes'], function(cb) {
+  runSequence(
+    'build:tmthemes',
+    'convert:tmthemes',
+    'subl:hide-panel',
+    function (error) {
+      if (error) {
+        console.log('[build:schemes]'.bold.magenta + ' There was an issue building schemes:\n'.bold.red + error.message);
+      } else {
+        console.log('[build:schemes]'.bold.magenta + ' Finished successfully'.bold.green);
+      }
+
+      cb(error);
+    }
+  );
+});
+
+gulp.task('build:tmthemes', function() {
+  return gulp.src('./sources/config/*.json')
+    .pipe($.foreach(function(stream, file) {
+      var jsonFile = file;
+      var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
+
+      return gulp.src('./sources/templates/scheme.YAML-tmTheme')
+        .pipe($.data(getJsonData(jsonFile)))
+        .pipe($.template())
+        .pipe($.rename(function(schemeFile) {
+          schemeFile.basename = jsonBasename;
+        }))
+        .pipe(gulp.dest('./schemes'));
+    }));
+});
+
+gulp.task('convert:tmthemes', function() {
+  return gulp.src('./schemes/*.YAML-tmTheme')
+    .pipe($.plumber(function(error) {
+      console.log('[convert:tmthemes]'.bold.magenta + ' There was an issue converting color schemes:\n'.bold.red + error.message +
+                  'Please, try to install Sublime Text 3, add it to the `PATH`, and then install "AAAPackageDev" via "Package Control"'.bold.blue);
+      this.emit('end');
+    }))
+    .pipe($.exec('subl "<%= file.path %>" --b && subl --b --command "convert_file" && subl --b --command "close_file"'));
+});
+
+gulp.task('subl:hide-panel', function() {
+  exec('subl --b --command "hide_panel"', function(error, stdout, stderr) {
+    if (error) {
+      console.log('[subl:hide-panel]'.bold.magenta + ' There was an issue converting color schemes:\n'.bold.red + error.message +
+                  'Please, try to install Sublime Text 3 and add it to the `PATH`'.bold.blue);
+    }
+  });
+});
+
+/* >> Widgets */
+
+gulp.task('build:widgets', ['clean:widgets'], function(cb) {
+  runSequence(
+    'build:widget-themes',
+    'build:widget-settings',
+    function (error) {
+      if (error) {
+        console.log('[build:widgets]'.bold.magenta + ' There was an issue building widgets:\n'.bold.red + error.message);
+      } else {
+        console.log('[build:widgets]'.bold.magenta + ' Finished successfully'.bold.green);
+      }
+
+      cb(error);
+    }
+  );
+});
+
+gulp.task('build:widget-themes', function() {
+  return gulp.src('./sources/config/*.json')
+    .pipe($.foreach(function(stream, file) {
+      var jsonFile = file;
+      var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
+
+      return gulp.src('./sources/templates/widget.stTheme')
+        .pipe($.data(getJsonData(jsonFile)))
+        .pipe($.template())
+        .pipe($.rename(function(widgetThemeFile) {
+          widgetThemeFile.basename = 'Widget - ' + jsonBasename;
+        }))
+        .pipe(gulp.dest('./widgets'));
+    }));
+});
+
+gulp.task('build:widget-settings', function() {
+  return gulp.src('./sources/config/*.json')
+    .pipe($.foreach(function(stream, file) {
+      var jsonFile = file;
+      var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
+
+      return gulp.src('./sources/templates/widget.sublime-settings')
+        .pipe($.data(getJsonData(jsonFile)))
+        .pipe($.template())
+        .pipe($.rename(function(widgetSettingsFile) {
+          widgetSettingsFile.basename = 'Widget - ' + jsonBasename;
+        }))
+        .pipe(gulp.dest('./widgets'));
     }));
 });
 
@@ -167,7 +298,10 @@ gulp.task('build', ['clean'], function() {
  */
 
 gulp.task('watch', function() {
-  gulp.watch('./sources/**/*.json', ['build']);
+  gulp.watch('./sources/themes/**/*.json', ['build:themes']);
+  gulp.watch('./sources/templates/scheme.YAML-tmTheme', ['build:schemes']);
+  gulp.watch('./sources/templates/widget.*', ['build:widgets']);
+  gulp.watch('./sources/config/*.json', ['build:schemes', 'build:widgets']);
 });
 
 
