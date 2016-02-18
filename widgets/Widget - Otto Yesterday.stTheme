@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>author</key>
+    <string>Ihor Oleksandrov</string>
+    <key>comment</key>
+    <string>Otto, your next interface theme for Sublime Text 3</string>
+    <key>name</key>
+    <string>Otto Yesterday</string>
+    <key>settings</key>
+    <array>
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#eeeeee</string>
+          <key>caret</key>
+          <string>#969896</string>
+          <key>foreground</key>
+          <string>#4d4d4c</string>
+          <key>gutter</key>
+          <string>#eeeeee</string>
+          <key>invisibles</key>
+          <string>#8e908c</string>
+          <key>lineHighlight</key>
+          <string>#e1e1e155</string>
+          <key>selection</key>
+          <string>#e1e1e1</string>
+          <key>selectionBorder</key>
+          <string>#e1e1e1</string>
+          <key>selectionForeground</key>
+          <string>#555555</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

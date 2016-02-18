@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href='https://pledgie.com/campaigns/31119'><img alt='Click here to lend your support to: Otto Donations and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/31119.png?skin_name=chrome' border='0' ></a>
+  <a href="https://pledgie.com/campaigns/31119"><img alt="Click here to lend your support to: Otto Donations and make a donation at pledgie.com !" src="https://pledgie.com/campaigns/31119.png?skin_name=chrome" border="0" ></a>
 </p>
 
 <p align="center">
@@ -13,10 +13,10 @@
   <a href="https://david-dm.org/oivva/otto#info=devDependencies"><img src="https://img.shields.io/david/dev/oivva/otto.svg?style=flat-square" alt="Dev Dependencies"></a>
 </p>
 
-> **This is pre-release version of the theme. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
+> **This is pre-release version of the themes. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
 > **Final release and docs will be available soon 🙏**
 
-An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, both, a light and dark variation with accompanying just a little bit updated [Base16](https://github.com/chriskempson/base16) Yesterday color schemes. 
+Easy customizable interface and syntax themes for **Sublime Text 3 3083+**. Come in, both, light and dark variations. All color schemes are optimized for JavaScript syntax highlighter (including [babel-sublime](https://github.com/babel/babel-sublime)).
 
 *If you have some problems, first search for a similar issue, and then report with [new one](https://github.com/oivva/otto/issues).*
 
@@ -24,13 +24,13 @@ An easy customizable interface theme for **Sublime Text 3 3083+**. Comes in, bot
 
 ## Themes
 
-### Otto Light
+### Otto Yesterday
 
-![Otto Light](media/otto_light.png)
+![Otto Yesterday](media/otto_yesterday.png)
 
-### Otto Dark
+### Otto Tomorrow
 
-![Otto Dark](media/otto_dark.png)
+![Otto Tomorrow](media/otto_tomorrow.png)
 
 ***
 
@@ -61,16 +61,16 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 **DON'T FORGET TO RESTART SUBLIME TEXT AFTER ACTIVATING THE THEME.**
 
-### Otto Light
+### Otto Yesterday
 
 ```json
-"theme": "Otto Light.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Light.tmTheme",
+"theme": "Otto Yesterday.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Yesterday.tmTheme",
 ```
 
-### Otto Dark
+### Otto Tomorrow
 
 ```json
-"theme": "Otto Dark.sublime-theme",
-"color_scheme": "Packages/Theme - Otto/schemes/Otto Base16 Yesterday Dark.tmTheme"
+"theme": "Otto Tomorrow.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme"
 ```

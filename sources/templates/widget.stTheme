@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>author</key>
+    <string><%= author %></string>
+    <key>comment</key>
+    <string><%= comment %></string>
+    <key>name</key>
+    <string><%= name %></string>
+    <key>settings</key>
+    <array>
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string><%= widgetBackground %></string>
+          <key>caret</key>
+          <string><%= base05 %></string>
+          <key>foreground</key>
+          <string><%= base06 %></string>
+          <key>gutter</key>
+          <string><%= widgetBackground %></string>
+          <key>invisibles</key>
+          <string><%= base03 %></string>
+          <key>lineHighlight</key>
+          <string><%= base02 %>55</string>
+          <key>selection</key>
+          <string><%= base02 %></string>
+          <key>selectionBorder</key>
+          <string><%= base02 %></string>
+          <key>selectionForeground</key>
+          <string><%= base04 %></string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

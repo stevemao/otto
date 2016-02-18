@@ -1,0 +1,21 @@
+// OTTO TOMORROW
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Your next interface theme for Sublime Text 3
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[
+  //=include "tomorrow/tabs.json"
+  //=include "tomorrow/scrollbars.json"
+  //=include "tomorrow/window.json"
+  //=include "tomorrow/grid.json"
+  //=include "tomorrow/widgets.json"
+  //=include "tomorrow/statusbar.json"
+  //=include "tomorrow/sidebar.json"
+  //=include "tomorrow/overlays.json"
+  //=include "tomorrow/autocomplete.json"
+  //=include "common/folding.json"
+  //=include "common/minimap.json"
+  //=include "common/tooltips.json"
+  //=include "common/options.json"
+  //=include "accent/blue.json"
+]

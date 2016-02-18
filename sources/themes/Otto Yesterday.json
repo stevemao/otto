@@ -1,0 +1,21 @@
+// OTTO YESTERDAY
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Your next interface theme for Sublime Text 3
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[
+  //=include "yesterday/tabs.json"
+  //=include "yesterday/scrollbars.json"
+  //=include "yesterday/window.json"
+  //=include "yesterday/grid.json"
+  //=include "yesterday/widgets.json"
+  //=include "yesterday/statusbar.json"
+  //=include "yesterday/sidebar.json"
+  //=include "yesterday/overlays.json"
+  //=include "yesterday/autocomplete.json"
+  //=include "common/folding.json"
+  //=include "common/minimap.json"
+  //=include "common/tooltips.json"
+  //=include "common/options.json"
+  //=include "accent/blue.json"
+]
