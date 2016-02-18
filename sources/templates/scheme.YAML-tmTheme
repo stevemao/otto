@@ -19,6 +19,12 @@ settings:
     lineHighlight: '<%= base02 %>55'
     gutter: '<%= base01 %>'
 
+- name: AceJump
+  scope: ace.jump
+  settings:
+    foreground: '<%= base13 %>'
+    background: '<%= base14 %>'
+
 - name: Comments
   scope: comment, punctuation.definition.comment
   settings:

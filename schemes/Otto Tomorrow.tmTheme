@@ -37,6 +37,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>AceJump</string>
+			<key>scope</key>
+			<string>ace.jump</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#f0c674</string>
+				<key>foreground</key>
+				<string>#1d1f21</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Comments</string>
 			<key>scope</key>
 			<string>comment, punctuation.definition.comment</string>
@@ -320,6 +333,6 @@
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>3cb8042c-6f99-4a31-b08a-867c945e5f6b</string>
+	<string>44e806da-4c4b-499c-b682-419a0b311a99</string>
 </dict>
 </plist>

@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 ---
 name: Otto Tomorrow
-uuid: 3cb8042c-6f99-4a31-b08a-867c945e5f6b
+uuid: 44e806da-4c4b-499c-b682-419a0b311a99
 author: Ihor Oleksandrov
 
 colorSpaceName: sRGB
@@ -18,6 +18,12 @@ settings:
     selectionForeground: '#bfc0c0'
     lineHighlight: '#35363855'
     gutter: '#1d1f21'
+
+- name: AceJump
+  scope: ace.jump
+  settings:
+    foreground: '#1d1f21'
+    background: '#f0c674'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
