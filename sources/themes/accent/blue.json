@@ -56,7 +56,7 @@
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected"]}],
   "settings": ["theme_otto_tab_selected_filled"],
-  "layer0.texture": "Theme - Otto/assets/light/buttons/button_close.png"
+  "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
 },
 
 {
