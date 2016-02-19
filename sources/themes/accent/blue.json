@@ -155,13 +155,6 @@
 
 {
   "class": "minimap_control",
-  "settings": ["always_show_minimap_viewport"],
-  "viewport_color": [36, 151, 227, 75]
-},
-
-{
-  "class": "minimap_control",
-  "settings": ["!always_show_minimap_viewport"],
   "viewport_color": [36, 151, 227, 75]
 },
 
@@ -418,4 +411,4 @@
 {
   "class": "table_row",
   "layer0.tint": [36, 151, 227]
-}
+},
