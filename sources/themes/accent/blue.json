@@ -1,9 +1,9 @@
-// > 14 Accent
+// > 14 Accent Blue
 // ===========================================================================
 // Accent color settings
 // ===========================================================================
 
-// >> 14.1 Tabs Accent
+// >> 14.1 Tabs Accent Blue
 // ===========================================================================
 
 // Tab Accent
@@ -101,7 +101,7 @@
   "layer0.opacity": 1.0
 },
 
-// >> 14.2 Scrollbars Accent
+// >> 14.2 Scrollbars Accent Blue
 // ===========================================================================
 
 // Scrollbar
@@ -150,7 +150,7 @@
   "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_horizontal_overlay.png"
 },
 
-// >> 14.3 Minimap Accent
+// >> 14.3 Minimap Accent Blue
 // ===========================================================================
 
 {
@@ -165,7 +165,7 @@
   "viewport_color": [36, 151, 227, 75]
 },
 
-// >> 14.4 Tooltips Accent
+// >> 14.4 Tooltips Accent Blue
 // ===========================================================================
 
 {
@@ -173,7 +173,7 @@
   "layer0.tint": [36, 151, 227]
 },
 
-// >> 14.5 Widgets Accent
+// >> 14.5 Widgets Accent Blue
 // ===========================================================================
 
 // Buttons
@@ -282,7 +282,7 @@
   "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_highlight_on.png"
 },
 
-// >> 14.6 Sidebar Accent
+// >> 14.6 Sidebar Accent Blue
 // ===========================================================================
 
 // Sidebar Tree Row
@@ -364,7 +364,7 @@
   }
 },
 
-// >> 14.7 Overlays Accent
+// >> 14.7 Overlays Accent Blue
 // ===========================================================================
 
 // Quick Panel Rows
@@ -407,7 +407,7 @@
   "fg": [36, 151, 227, 255]
 },
 
-// >> 14.8 Autocomplete Accent
+// >> 14.8 Autocomplete Accent Blue
 // ===========================================================================
 
 {
