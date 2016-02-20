@@ -1,3 +1,20 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/oivva/otto/compare/v0.3.0...v0.4.0) (2016-02-20)
+
+
+### Bug Fixes
+
+* close button color of the selected filled tab ([63e76df](https://github.com/oivva/otto/commit/63e76df))
+* simplify styling of the minimap ([649d947](https://github.com/oivva/otto/commit/649d947))
+
+### Features
+
+* add green accent color ([2ffa6f1](https://github.com/oivva/otto/commit/2ffa6f1)), closes [#3](https://github.com/oivva/otto/issues/3)
+* add orange accent color ([ce04966](https://github.com/oivva/otto/commit/ce04966)), closes [#4](https://github.com/oivva/otto/issues/4)
+* add purple accent color ([f32fb5e](https://github.com/oivva/otto/commit/f32fb5e)), closes [#8](https://github.com/oivva/otto/issues/8)
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/oivva/otto/compare/v0.2.2...v0.3.0) (2016-02-18)
 
@@ -22,6 +39,11 @@
 
 * make the dark theme easy on the eyes ([51c42e1](https://github.com/oivva/otto/commit/51c42e1))
 * remove overlined tab styles ([a6985b7](https://github.com/oivva/otto/commit/a6985b7))
+
+
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/oivva/otto/compare/v0.2.0...v0.2.1) (2016-02-15)
 
 
 
@@ -61,3 +83,6 @@
 * add a light blue color scheme ([e6879a9](https://github.com/oivva/otto/commit/e6879a9)), closes [#6](https://github.com/oivva/otto/issues/6)
 * add a light blue version of the theme ([6a19ff6](https://github.com/oivva/otto/commit/6a19ff6)), closes [#1](https://github.com/oivva/otto/issues/1)
 * add file type icons ([baaaa94](https://github.com/oivva/otto/commit/baaaa94)), closes [#5](https://github.com/oivva/otto/issues/5)
+
+
+
