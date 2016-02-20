@@ -584,25 +584,9 @@
     "content_margin": [12, 15],
     "min_size": [70, 0],
   
-    "layer0.texture": "Theme - Otto/assets/tomorrow/buttons/button_widget.png",
+    "layer0.tint": [35, 36, 38],
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 10],
-  
-    "layer1.opacity": 0,
-    "layer1.inner_margin": [10, 10]
-  },
-  
-  // Hovered
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "button_control",
-    "attributes": ["hover"],
-    "layer1.opacity": 1
   },
   
   //
@@ -1821,7 +1805,8 @@
   
   {
     "class": "button_control",
-    "layer1.texture": "Theme - Otto/assets/accent/blue/buttons/button_widget_hovered.png"
+    "attributes": ["hover"],
+    "layer0.tint": [36, 151, 227]
   },
   
   //
@@ -2233,7 +2218,8 @@
   {
     "class": "button_control",
     "settings": ["theme_otto_accent_green"],
-    "layer1.texture": "Theme - Otto/assets/accent/green/buttons/button_widget_hovered.png"
+    "attributes": ["hover"],
+    "layer0.tint": [46, 188, 103]
   },
   
   //
@@ -2666,7 +2652,8 @@
   {
     "class": "button_control",
     "settings": ["theme_otto_accent_orange"],
-    "layer1.texture": "Theme - Otto/assets/accent/orange/buttons/button_widget_hovered.png"
+    "attributes": ["hover"],
+    "layer0.tint": [241, 103, 60]
   },
   
   //
@@ -3099,7 +3086,8 @@
   {
     "class": "button_control",
     "settings": ["theme_otto_accent_purple"],
-    "layer1.texture": "Theme - Otto/assets/accent/purple/buttons/button_widget_hovered.png"
+    "attributes": ["hover"],
+    "layer0.tint": [175, 60, 241]
   },
   
   //

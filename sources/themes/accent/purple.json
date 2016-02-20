@@ -175,7 +175,8 @@
 {
   "class": "button_control",
   "settings": ["theme_otto_accent_purple"],
-  "layer1.texture": "Theme - Otto/assets/accent/purple/buttons/button_widget_hovered.png"
+  "attributes": ["hover"],
+  "layer0.tint": [175, 60, 241]
 },
 
 //
