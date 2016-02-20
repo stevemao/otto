@@ -10,7 +10,6 @@
   <a href="https://github.com/oivva/otto/releases"><img src="https://img.shields.io/github/release/oivva/otto.svg?style=flat-square" alt="Release"></a>
   <a href="https://packagecontrol.io/packages/Theme%20-%20Otto"><img src="https://img.shields.io/packagecontrol/dt/Theme%20-%20Otto.svg?style=flat-square" alt="Downloads"></a>
   <a href="https://travis-ci.org/oivva/otto"><img src="https://img.shields.io/travis/oivva/otto.svg?style=flat-square" alt="Build Status"></a>
-  <a href="https://david-dm.org/oivva/otto#info=devDependencies"><img src="https://img.shields.io/david/dev/oivva/otto.svg?style=flat-square" alt="Dev Dependencies"></a>
 </p>
 
 > **This is pre-release version of the themes. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
