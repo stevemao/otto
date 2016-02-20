@@ -61,6 +61,7 @@
 {
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+  "settings": ["theme_otto_accent_orange"],
   "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_selected.png",
   "layer0.opacity": 1.0
 },
@@ -68,6 +69,7 @@
 {
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+  "settings": ["theme_otto_accent_orange"],
   "attributes": ["hover"],
   "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_close_selected.png",
   "layer0.opacity": 1.0
