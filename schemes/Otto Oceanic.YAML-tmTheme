@@ -1,0 +1,163 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+---
+name: Otto Oceanic
+uuid: 3c0c5f22-3f5d-4e0e-9c83-a4ebec9b8b52
+author: Ihor Oleksandrov
+
+colorSpaceName: sRGB
+
+semanticClass: otto.oceanic.dark
+settings:
+- settings:
+    background: '#1b2b34'
+    caret: '#c0c5ce'
+    foreground: '#cdd3de'
+    invisibles: '#65737e'
+    selection: '#4f5b66'
+    selectionBorder: '#4f5b66'
+    selectionForeground: '#a7adba'
+    lineHighlight: '#4f5b6655'
+    gutter: '#1b2b34'
+
+- name: AceJump
+  scope: ace.jump
+  settings:
+    foreground: '#1b2b34'
+    background: '#f0c674'
+
+- name: Comments
+  scope: comment, punctuation.definition.comment
+  settings:
+    foreground: '#65737e'
+
+- name: Variable
+  scope: variable
+  settings:
+    foreground: '#cdd3de'
+
+- name: Keyword, Storage
+  scope: keyword, storage.type, storage.modifier
+  settings:
+    foreground: '#c594c5'
+
+- name: Operator, Misc
+  scope: keyword.operator, constant.other.color, punctuation, meta.tag,
+    punctuation.definition.tag, punctuation.separator.inheritance.php,
+    punctuation.definition.tag.html, punctuation.definition.tag.begin.html,
+    punctuation.definition.tag.end.html, punctuation.section.embedded,
+    keyword.other.template, keyword.other.substitution
+  settings:
+    foreground: '#5fb3b3'
+
+- name: Tag
+  scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
+  settings:
+    foreground: '#eb606b'
+
+- name: Function, Special Method, Block Level
+  scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method,
+    meta.block-level
+  settings:
+    foreground: '#6699cc'
+
+- name: Other Variable, String Link
+  scope: support.other.variable, string.other.link
+  settings:
+    foreground: '#f2777a'
+
+- name: Number, Constant, Function Argument, Tag Attribute, Embedded
+  scope: constant.numeric, constant.language, support.constant, constant.character,
+    variable.parameter, keyword.other.unit
+  settings:
+    foreground: '#f99157'
+
+- name: String, Symbols, Inherited Class, Markup Heading
+  scope: string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading,
+    markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+  settings:
+    foreground: '#99c794'
+    fontStyle: normal
+
+- name: Class, Support
+  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php,
+    meta.use.php, support.other.namespace.php, markup.changed.git_gutter
+  settings:
+    foreground: '#fac863'
+
+- name: Sub-methods
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: '#ec5F67'
+
+- name: Language methods
+  scope: variable.language
+  settings:
+    foreground: '#ec5F67'
+    fontStyle: italic
+
+- name: entity.name.method.js
+  scope: entity.name.method.js
+  settings:
+    foreground: '#d8dee9'
+
+- name: meta.method.js
+  scope: meta.class-method.js entity.name.function.js, variable.function.constructor
+  settings:
+    foreground: '#d8dee9'
+
+- name: Attributes
+  scope: entity.other.attribute-name
+  settings:
+    foreground: '#bb80b3'
+
+- name: Inserted
+  scope: markup.inserted
+  settings:
+    foreground: '#99c794'
+
+- name: Deleted
+  scope: markup.deleted
+  settings:
+    foreground: '#ec5F67'
+
+- name: Changed
+  scope: markup.changed
+  settings:
+    foreground: '#bb80b3'
+
+- name: Regular Expressions
+  scope: string.regexp
+  settings:
+    foreground: '#5fb3b3'
+
+- name: Escape Characters
+  scope: constant.character.escape
+  settings:
+    foreground: '#5fb3b3'
+
+- name: URL
+  scope: '*url*, *link*, *uri*'
+  settings:
+    fontStyle: underline
+
+- name: Search Results Nums
+  scope: constant.numeric.line-number.find-in-files - match
+  settings:
+    foreground: '#ab7967'
+
+- name: Search Results Lines
+  scope: entity.name.filename.find-in-files
+  settings:
+    foreground: '#99c794'
+
+- name: Decorators
+  scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
+  settings:
+    foreground: '#6699cc'
+    fontStyle: italic
+
+- name: ES7 Bind Operator
+  scope: source.js constant.other.object.key.js string.unquoted.label.js
+  settings:
+    foreground: '#ec5F67'
+    fontStyle: italic
