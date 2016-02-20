@@ -54,7 +54,8 @@ gulp.task('clean:widgets', function() {
 
 gulp.task('changelog', function () {
   return conventionalChangelog({
-    preset: 'angular'
+    preset: 'angular',
+    releaseCount: 0
   })
   .pipe(fs.createWriteStream('CHANGELOG.md'));
 });
@@ -118,24 +119,11 @@ gulp.task('create-new-tag', function (cb) {
  * > Release
  */
 
-gulp.task('pre-release', function(cb) {
+gulp.task('release', function(cb) {
   runSequence(
     'bump',
     'changelog',
     'commit-changes',
-    function (error) {
-      if (error) {
-        console.log('[pre-release]'.bold.magenta + ' There was an issue releasing themes:\n'.bold.red + error.message);
-      } else {
-        console.log('[pre-release]'.bold.magenta + ' Finished successfully'.bold.green);
-      }
-      cb(error);
-    }
-  );
-});
-
-gulp.task('release', function(cb) {
-  runSequence(
     'create-new-tag',
     'github-release',
     function (error) {

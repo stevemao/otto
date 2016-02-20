@@ -27,6 +27,15 @@ Activation
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme",
 
 
+Accent Options
+====================================================================================================
+
+"theme_otto_accent_blue": true, // Default
+"theme_otto_accent_green": true,
+"theme_otto_accent_orange": true,
+"theme_otto_accent_purple": true,
+
+
 Tabs Options
 ====================================================================================================
 

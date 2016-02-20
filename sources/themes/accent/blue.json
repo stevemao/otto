@@ -1,9 +1,9 @@
-// > 14 Accent
+// > 14 Accent Blue
 // ===========================================================================
 // Accent color settings
 // ===========================================================================
 
-// >> 14.1 Tabs Accent
+// >> 14.1 Tabs Accent Blue
 // ===========================================================================
 
 // Tab Accent
@@ -56,7 +56,7 @@
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected"]}],
   "settings": ["theme_otto_tab_selected_filled"],
-  "layer0.texture": "Theme - Otto/assets/light/buttons/button_close.png"
+  "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
 },
 
 {
@@ -101,7 +101,7 @@
   "layer0.opacity": 1.0
 },
 
-// >> 14.2 Scrollbars Accent
+// >> 14.2 Scrollbars Accent Blue
 // ===========================================================================
 
 // Scrollbar
@@ -150,22 +150,15 @@
   "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_horizontal_overlay.png"
 },
 
-// >> 14.3 Minimap Accent
+// >> 14.3 Minimap Accent Blue
 // ===========================================================================
 
 {
   "class": "minimap_control",
-  "settings": ["always_show_minimap_viewport"],
   "viewport_color": [36, 151, 227, 75]
 },
 
-{
-  "class": "minimap_control",
-  "settings": ["!always_show_minimap_viewport"],
-  "viewport_color": [36, 151, 227, 75]
-},
-
-// >> 14.4 Tooltips Accent
+// >> 14.4 Tooltips Accent Blue
 // ===========================================================================
 
 {
@@ -173,7 +166,7 @@
   "layer0.tint": [36, 151, 227]
 },
 
-// >> 14.5 Widgets Accent
+// >> 14.5 Widgets Accent Blue
 // ===========================================================================
 
 // Buttons
@@ -282,7 +275,7 @@
   "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_highlight_on.png"
 },
 
-// >> 14.6 Sidebar Accent
+// >> 14.6 Sidebar Accent Blue
 // ===========================================================================
 
 // Sidebar Tree Row
@@ -364,7 +357,7 @@
   }
 },
 
-// >> 14.7 Overlays Accent
+// >> 14.7 Overlays Accent Blue
 // ===========================================================================
 
 // Quick Panel Rows
@@ -407,7 +400,7 @@
   "fg": [36, 151, 227, 255]
 },
 
-// >> 14.8 Autocomplete Accent
+// >> 14.8 Autocomplete Accent Blue
 // ===========================================================================
 
 {
@@ -418,4 +411,4 @@
 {
   "class": "table_row",
   "layer0.tint": [36, 151, 227]
-}
+},
