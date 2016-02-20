@@ -2487,4 +2487,435 @@
     "layer0.tint": [46, 188, 103]
   },
   
+  // > 16 Accent Orange
+  // ===========================================================================
+  // Accent color settings
+  // ===========================================================================
+  
+  // >> 16.1 Tabs Accent Orange
+  // ===========================================================================
+  
+  // Tab Accent
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Underlined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_underlined.png"
+  },
+  
+  //
+  // Prelined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_prelined.png"
+  },
+  
+  //
+  // Filled
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_filled.png"
+  },
+  
+  // Close
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "attributes": ["hover"],
+    "layer0.opacity": 1.0
+  },
+  
+  // Dirty
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_close_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "attributes": ["hover"],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
+    "layer0.opacity": 1.0
+  },
+  
+  
+  // >> 16.2 Scrollbars Accent Orange
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_vertical.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_horizontal.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  // >> 16.3 Minimap Accent Orange
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["theme_otto_accent_orange"],
+    "viewport_color": [241, 103, 60, 75]
+  },
+  
+  // >> 16.4 Tooltips Accent Orange
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+  // >> 16.5 Widgets Accent Orange
+  // ===========================================================================
+  
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Hovered
+  //
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_accent_orange"],
+    "layer1.texture": "Theme - Otto/assets/accent/orange/buttons/button_widget_hovered.png"
+  },
+  
+  //
+  // Icons
+  //
+  
+  // Regex Search Button Selected
+  
+  {
+    "class": "icon_regex",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_regex_on.png"
+  },
+  
+  // Case Sensitive Search Button
+  
+  {
+    "class": "icon_case",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_case_on.png"
+  },
+  
+  // Match Whole Word Search Button
+  
+  {
+    "class": "icon_whole_word",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_word_on.png"
+  },
+  
+  // Search Wrap Button
+  
+  {
+    "class": "icon_wrap",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_wrap_on.png"
+  },
+  
+  // Show Search Context Button
+  
+  {
+    "class": "icon_context",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_context_on.png"
+  },
+  
+  // Use Search Buffer
+  
+  {
+    "class": "icon_use_buffer",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_buffer_on.png"
+  },
+  
+  // Reverse Search Direction Button
+  
+  {
+    "class": "icon_reverse",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_reverse_on.png"
+  },
+  
+  // Search In Selection Button
+  
+  {
+    "class": "icon_in_selection",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_selection_on.png"
+  },
+  
+  // Preserve Case Button
+  
+  {
+    "class": "icon_preserve_case",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_preserve_on.png"
+  },
+  
+  // Highlight Results Button
+  
+  {
+    "class": "icon_highlight",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_highlight_on.png"
+  },
+  
+  // >> 16.6 Sidebar Accent Orange
+  // ===========================================================================
+  
+  // Sidebar Tree Row
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_accent_orange"],
+    "layer1.texture": "Theme - Otto/assets/accent/orange/sidebar/sidebar_row_selected.png"
+  },
+  
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Close
+  //
+  
+  {
+    "class": "close_button",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "attributes": ["dirty"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_close_selected.png",
+    "layer1.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_selected.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Defaults
+  
+  {
+    "class": "icon_folder",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder.png"
+  },
+  
+  // Opened
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_expanded.png"
+  },
+  
+  // Symlink
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_dup.png"
+  },
+  
+  // Symlink Opened
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_dup_expanded.png"
+  },
+  
+  // Loading
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.texture":
+    {
+      "keyframes":
+      [
+        "Theme - Otto/assets/accent/orange/sidebar/spinner3.png",
+        "Theme - Otto/assets/accent/orange/sidebar/spinner2.png",
+        "Theme - Otto/assets/accent/orange/sidebar/spinner1.png",
+        "Theme - Otto/assets/accent/orange/sidebar/spinner.png"
+      ],
+      "loop": true,
+      "frame_time": 0.125
+    }
+  },
+  
+  // >> 16.7 Overlays Accent Orange
+  // ===========================================================================
+  
+  // Quick Panel Rows
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_row",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["selected"],
+    "layer0.tint": [241, 103, 60],
+    "layer1.opacity": 0.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["selected"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "overlay_control"}],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "settings": ["theme_otto_accent_orange"],
+    "fg": [241, 103, 60, 255]
+  },
+  
+  // >> 16.8 Autocomplete Accent Orange
+  // ===========================================================================
+  
+  {
+    "class": "auto_complete_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60]
+  },
+  
+  {
+    "class": "table_row",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
 ]
