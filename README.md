@@ -12,9 +12,6 @@
   <a href="https://travis-ci.org/oivva/otto"><img src="https://img.shields.io/travis/oivva/otto.svg?style=flat-square" alt="Build Status"></a>
 </p>
 
-> **This is pre-release version of the themes. All the options available to customize you can find in [messages/install.txt](messages/install.txt).**
-> **Final release and docs will be available soon 🙏**
-
 Easy customizable interface and syntax themes for **Sublime Text 3 3083+**. Come in, both, light and dark variations. All color schemes are optimized for JavaScript syntax highlighter (including [babel-sublime](https://github.com/babel/babel-sublime)).
 
 *If you have some problems, first search for a similar issue, and then report with [new one](https://github.com/oivva/otto/issues).*
