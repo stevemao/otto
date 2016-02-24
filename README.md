@@ -14,6 +14,8 @@
 
 Easy customizable interface and syntax themes for **Sublime Text 3 3083+**. Come in, both, light and dark variations. All color schemes are optimized for JavaScript syntax highlighter (including [babel-sublime](https://github.com/babel/babel-sublime)).
 
+**NOTE:** Active tab has the same color as an active color scheme to fit it more gracefully.
+
 *If you have some problems, first search for a similar issue, and then report with [new one](https://github.com/oivva/otto/issues).*
 
 Please read the [Known Issues](#known-issues) section before reporting a new one.
