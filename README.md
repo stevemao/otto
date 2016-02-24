@@ -24,11 +24,27 @@ Please read the [Known Issues](#known-issues) section before reporting a new one
 
 ### Otto Yesterday
 
+This theme is best for light color schemes, especially good with **Otto Yesterday** & [**Base16 Tomorrow Light**](http://chriskempson.github.io/base16/#tomorrow).
+
 ![Otto Yesterday](media/otto_yesterday.png)
 
 ### Otto Tomorrow
 
+This theme is best for dark color schemes, especially good with **Otto Tomorrow** & [**Zenburn**](https://github.com/colinta/zenburn).
+
 ![Otto Tomorrow](media/otto_tomorrow.png)
+
+### Otto Oceanic
+
+This theme is best for dark color schemes, especially good with **Otto Oceanic** & [**Solarized Dark**](https://github.com/braver/Solarized).
+
+![Otto Oceanic](media/otto_oceanic.png)
+
+### Otto Monokai
+
+This theme is best for dark color schemes, especially good with different flavors of Monokai: [**Monokai Extended**](https://github.com/jonschlinkert/sublime-monokai-extended) | [**Monokai Neue**](https://github.com/josh-kaplan/sublime-monokai-neue).
+
+![Otto Monokai](media/otto_monokai.png)
 
 ***
 
