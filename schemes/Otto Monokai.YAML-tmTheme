@@ -10,13 +10,13 @@ semanticClass: otto.monokai.dark
 settings:
 - settings:
     background: '#272822'
-    caret: '#41423d'
+    caret: '#686965'
     foreground: '#f8f8f2'
     invisibles: '#75715e'
-    selection: '#32332d'
-    selectionBorder: '#32332d'
-    selectionForeground: '#adadac'
-    lineHighlight: '#32332d55'
+    selection: '#3d3e39'
+    selectionBorder: '#3d3e39'
+    selectionForeground: '#e1e1e1'
+    lineHighlight: '#3d3e3955'
     gutter: '#272822'
 
 - name: AceJump
