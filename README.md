@@ -16,6 +16,8 @@ Easy customizable interface and syntax themes for **Sublime Text 3 3083+**. Come
 
 *If you have some problems, first search for a similar issue, and then report with [new one](https://github.com/oivva/otto/issues).*
 
+Please read the [Known Issues](#known-issues) section before reporting a new one.
+
 ***
 
 ## Themes
@@ -70,3 +72,11 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme": "Otto Tomorrow.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme"
 ```
+
+***
+
+## Known issues
+
+If you can't see the bottom panel (find/replace, rename, move, can't see the box inputs in SidebarEnhancement, etc..). Here the quick fix:
+
+![Drag the top edge](media/drag_top_edge.gif)
