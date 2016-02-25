@@ -217,6 +217,30 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ***
 
+## Contributing
+
+**Note:** I have no plans to add new themes, only the fixes and improvements to the existing ones. In such cases you're free to fork.
+
+This themes use a custom Gulp builder. If you want to edit them you must install it first:
+
+```bash
+$ npm install
+```
+
+then run watcher by:
+
+```
+$ gulp watch
+```
+
+You can now edit the source files under `sources` folder that will be compiled (don't edit compiled files, all sources are inside `sources`).
+
+If you'd like to add some rules and styles to the template of the color schemes, please, do it inside `sources\templates\scheme.YAML-tmTheme`. Run `gulp build:schemes` and then generate `*.tmTheme` files in `schemes` folder with such tool as [PackageDev](https://github.com/SublimeText/PackageDev).
+
+**PRs welcome!😋**
+
+***
+
 ## Known Issues
 
 If you can't see the bottom panel (find/replace, rename, move, can't see the box inputs in SidebarEnhancement, etc..). Here the quick fix:
