@@ -174,6 +174,21 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_find_and_replace_small": true,
 ```
 
+### Statusbar
+
+```json
+// By Default
+// -----------------
+
+"theme_otto_status_bar_medium": true,
+
+// Available
+// -----------------
+
+"theme_otto_status_bar_small": true,
+"theme_otto_status_bar_large": true,
+```
+
 ***
 
 ## Known Issues
