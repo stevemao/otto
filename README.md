@@ -79,30 +79,16 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 **DON'T FORGET TO RESTART SUBLIME TEXT AFTER ACTIVATING THE THEME.**
 
-### Otto Yesterday
-
 ```json
 "theme": "Otto Yesterday.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Yesterday.tmTheme",
-```
 
-### Otto Tomorrow
-
-```json
 "theme": "Otto Tomorrow.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme"
-```
 
-### Otto Oceanic
-
-```json
 "theme": "Otto Oceanic.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Oceanic.tmTheme"
-```
 
-### Otto Monokai
-
-```json
 "theme": "Otto Monokai.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Monokai.tmTheme"
 ```
