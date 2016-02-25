@@ -73,6 +73,8 @@ You can also install the theme manually:
 
 ## Activation
 
+![Activation](https://www.dropbox.com/s/5hq751baq43zafm/activation.gif?dl=1)
+
 Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Preferences -> Settings - User`.
 
 **DON'T FORGET TO RESTART SUBLIME TEXT AFTER ACTIVATING THE THEME.**
@@ -89,6 +91,20 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 "theme": "Otto Tomorrow.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme"
+```
+
+### Otto Oceanic
+
+```json
+"theme": "Otto Oceanic.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Oceanic.tmTheme"
+```
+
+### Otto Monokai
+
+```json
+"theme": "Otto Monokai.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Monokai.tmTheme"
 ```
 
 ***
