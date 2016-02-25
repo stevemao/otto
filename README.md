@@ -127,6 +127,37 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_accent_purple": true,
 ```
 
+### Tabs
+
+![Tabs](https://www.dropbox.com/s/yxbhw167zcwt7od/tabs.gif?dl=1)
+
+```json
+// By Default
+// -----------------
+
+"theme_otto_tab_selected_default": true,
+"theme_otto_tab_medium": true,
+"theme_otto_tab_auto_width": false,
+"theme_otto_tab_label_bold": false,
+"theme_otto_tab_selected_label_bold": false,
+"theme_otto_mouse_wheel_switches_tabs": false,
+
+// Available
+// -----------------
+
+"theme_otto_tab_selected_underlined": true,
+"theme_otto_tab_selected_prelined": true,
+"theme_otto_tab_selected_filled": true,
+
+"theme_otto_tab_small": true,
+"theme_otto_tab_large": true,
+"theme_otto_tab_auto_width": true,
+
+"theme_otto_tab_label_bold": true,
+"theme_otto_tab_selected_label_bold": true,
+"theme_otto_mouse_wheel_switches_tabs": true,
+```
+
 ***
 
 ## Known Issues
