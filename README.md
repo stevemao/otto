@@ -209,6 +209,12 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_sidebar_hide_file_icons": true,
 ```
 
+### Even More
+
+You can customize themes via [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer). E.g. Due to Sublime Text 3 limitations related to the widget styling, you can find that colors of the cursor in the editor and find panel are different. That's why I always add similar changes to the theme manually. Let's say I want to change colors of the caret and selection:
+
+![Additional Customizations](https://www.dropbox.com/s/krcmt242g517xbd/additional_customizations.gif?dl=1)
+
 ***
 
 ## Known Issues
