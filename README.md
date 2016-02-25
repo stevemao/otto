@@ -189,6 +189,26 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_status_bar_large": true,
 ```
 
+### Sidebar
+
+```json
+// By Default
+// -----------------
+
+"theme_otto_sidebar_medium": true,
+"theme_otto_sidebar_folder_arrow": false,
+"theme_otto_sidebar_hide_file_icons": false,
+
+// Available
+// -----------------
+
+"theme_otto_sidebar_small": true,
+"theme_otto_sidebar_large": true,
+
+"theme_otto_sidebar_folder_arrow": true,
+"theme_otto_sidebar_hide_file_icons": true,
+```
+
 ***
 
 ## Known Issues
