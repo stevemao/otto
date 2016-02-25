@@ -178,7 +178,8 @@
 
 {
   "class": "button_control",
-  "layer1.texture": "Theme - Otto/assets/accent/blue/buttons/button_widget_hovered.png"
+  "attributes": ["hover"],
+  "layer0.tint": [36, 151, 227]
 },
 
 //

@@ -62,12 +62,14 @@
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
   "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_selected.png",
+  "settings": ["theme_otto_accent_purple"],
   "layer0.opacity": 1.0
 },
 
 {
   "class": "tab_close_button",
   "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+  "settings": ["theme_otto_accent_purple"],
   "attributes": ["hover"],
   "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_close_selected.png",
   "layer0.opacity": 1.0
@@ -173,7 +175,8 @@
 {
   "class": "button_control",
   "settings": ["theme_otto_accent_purple"],
-  "layer1.texture": "Theme - Otto/assets/accent/purple/buttons/button_widget_hovered.png"
+  "attributes": ["hover"],
+  "layer0.tint": [175, 60, 241]
 },
 
 //

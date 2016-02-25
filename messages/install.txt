@@ -8,29 +8,42 @@
 Activation
 ====================================================================================================
 
-//
-// Light Themes
-//
-
 // Otto Yesterday
+// -----------------
 
 "theme": "Otto Yesterday.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Yesterday.tmTheme",
 
-//
-// Dark Themes
-//
-
 // Otto Tomorrow
+// -----------------
 
 "theme": "Otto Tomorrow.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme",
 
+// Otto Oceanic
+// -----------------
 
-Accent Options
+"theme": "Otto Oceanic.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Oceanic.tmTheme",
+
+// Otto Monokai
+// -----------------
+
+"theme": "Otto Monokai.sublime-theme",
+"color_scheme": "Packages/Theme - Otto/schemes/Otto Monokai.tmTheme",
+
+
+Accent Colors
 ====================================================================================================
 
-"theme_otto_accent_blue": true, // Default
+// By Default
+// -----------------
+
+"theme_otto_accent_blue": true,
+
+// Available
+// -----------------
+
 "theme_otto_accent_green": true,
 "theme_otto_accent_orange": true,
 "theme_otto_accent_purple": true,
@@ -39,21 +52,43 @@ Accent Options
 Tabs Options
 ====================================================================================================
 
+// By Default
+// -----------------
+
+"theme_otto_tab_selected_default": true,
+"theme_otto_tab_medium": true,
+"theme_otto_tab_auto_width": false,
+"theme_otto_tab_label_bold": false,
+"theme_otto_tab_selected_label_bold": false,
+"theme_otto_mouse_wheel_switches_tabs": false,
+
+// Available
+// -----------------
+
 "theme_otto_tab_selected_underlined": true,
 "theme_otto_tab_selected_prelined": true,
 "theme_otto_tab_selected_filled": true,
 
-"theme_otto_tab_auto_width": true,
 "theme_otto_tab_small": true,
 "theme_otto_tab_large": true,
+"theme_otto_tab_auto_width": true,
 
 "theme_otto_tab_label_bold": true,
-"theme_otto_tab_selected_label_bold",
+"theme_otto_tab_selected_label_bold": true,
 "theme_otto_mouse_wheel_switches_tabs": true,
 
 
 Widget Options
 ====================================================================================================
+
+// By Default
+// -----------------
+
+"theme_otto_find_and_replace_close_hide": false,
+"theme_otto_find_and_replace_small": false,
+
+// Available
+// -----------------
 
 "theme_otto_find_and_replace_close_hide": true,
 "theme_otto_find_and_replace_small": true,
@@ -62,6 +97,14 @@ Widget Options
 Status Bar Options
 ====================================================================================================
 
+// By Default
+// -----------------
+
+"theme_otto_status_bar_medium": true,
+
+// Available
+// -----------------
+
 "theme_otto_status_bar_small": true,
 "theme_otto_status_bar_large": true,
 
@@ -69,12 +112,21 @@ Status Bar Options
 Sidebar Options
 ====================================================================================================
 
+// By Default
+// -----------------
+
+"theme_otto_sidebar_medium": true,
+"theme_otto_sidebar_folder_arrow": false,
+"theme_otto_sidebar_hide_file_icons": false,
+
+// Available
+// -----------------
+
 "theme_otto_sidebar_small": true,
 "theme_otto_sidebar_large": true,
 
 "theme_otto_sidebar_folder_arrow": true,
 "theme_otto_sidebar_hide_file_icons": true,
-
 
 Recommended Settings
 ====================================================================================================
