@@ -1,3 +1,22 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/oivva/otto/compare/v0.4.0...v1.0.0) (2016-02-25)
+
+
+### Bug Fixes
+
+* dirty state icon color ([a4de9f7](https://github.com/oivva/otto/commit/a4de9f7))
+* improve the monokai color scheme to better fit with the theme ([55b3538](https://github.com/oivva/otto/commit/55b3538))
+* simplify styling of the widget buttons ([2eb0f85](https://github.com/oivva/otto/commit/2eb0f85))
+
+### Features
+
+* add monokai color scheme ([813745d](https://github.com/oivva/otto/commit/813745d)), closes [#14](https://github.com/oivva/otto/issues/14)
+* add monokai version of the theme ([92e57cd](https://github.com/oivva/otto/commit/92e57cd)), closes [#12](https://github.com/oivva/otto/issues/12)
+* add oceanic color scheme ([c8fe22e](https://github.com/oivva/otto/commit/c8fe22e)), closes [#15](https://github.com/oivva/otto/issues/15)
+* add oceanic version of the theme ([9dd5a24](https://github.com/oivva/otto/commit/9dd5a24)), closes [#13](https://github.com/oivva/otto/issues/13)
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/oivva/otto/compare/v0.3.0...v0.4.0) (2016-02-20)
 
