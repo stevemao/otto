@@ -58,7 +58,7 @@ Tabs Options
 "theme_otto_tab_large": true,
 
 "theme_otto_tab_label_bold": true,
-"theme_otto_tab_selected_label_bold",
+"theme_otto_tab_selected_label_bold": true,
 "theme_otto_mouse_wheel_switches_tabs": true,
 
 
