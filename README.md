@@ -158,6 +158,22 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_mouse_wheel_switches_tabs": true,
 ```
 
+### Widgets
+
+```json
+// By Default
+// -----------------
+
+"theme_otto_find_and_replace_close_hide": false,
+"theme_otto_find_and_replace_small": false,
+
+// Available
+// -----------------
+
+"theme_otto_find_and_replace_close_hide": true,
+"theme_otto_find_and_replace_small": true,
+```
+
 ***
 
 ## Known Issues
