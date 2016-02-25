@@ -111,7 +111,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ### Accent Colors
 
-[Accents](https://www.dropbox.com/s/trct87pkmithkxu/accents.gif?dl=1)
+![Accents](https://www.dropbox.com/s/trct87pkmithkxu/accents.gif?dl=1)
 
 ```json
 // By Default
