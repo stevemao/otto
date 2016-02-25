@@ -217,6 +217,23 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ***
 
+## References
+
+These themes are heavily inspired by:
+
+* [Predawn](https://github.com/jamiewilson/predawn)
+* [Material Theme](https://github.com/equinusocio/material-theme)
+* [Primer](https://github.com/karelvuong/st-primer)
+* [Piatto](https://github.com/samuelrafo/piatto)
+* [Minimal](https://github.com/AntoineBoulanger/Minimal-Sublime-Text-Theme)
+
+Color schemes are based on:
+
+* [Base16 Color Schemes](https://github.com/chriskempson/base16)
+* [Oceanic Next Color Scheme](https://github.com/voronianski/oceanic-next-color-scheme)
+
+***
+
 ## Contributing
 
 **Note:** I have no plans to add new themes, only the fixes and improvements to the existing ones. In such cases you're free to fork.
