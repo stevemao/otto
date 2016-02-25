@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/logo.png" alt="Otto, your next interface theme for Sublime Text 3">
+  <img src="https://www.dropbox.com/s/ozffceb3cajwo67/logo.png?dl=1" alt="Otto, your next interface theme for Sublime Text 3">
 </p>
 
 <p align="center">
@@ -28,25 +28,25 @@ Please read the [Known Issues](#known-issues) section before reporting a new one
 
 Best for light color schemes, especially good with **Otto Yesterday** & [**Base16 Tomorrow Light**](http://chriskempson.github.io/base16/#tomorrow).
 
-![Otto Yesterday](media/otto_yesterday.png)
+![Otto Yesterday](https://www.dropbox.com/s/n1aln2j9hf9nhxq/otto_yesterday.png?dl=1)
 
 ### Otto Tomorrow
 
 Best for dark color schemes, especially good with **Otto Tomorrow** & [**Zenburn**](https://github.com/colinta/zenburn).
 
-![Otto Tomorrow](media/otto_tomorrow.png)
+![Otto Tomorrow](https://www.dropbox.com/s/0bacsgj60pi6o5d/otto_tomorrow.png?dl=1)
 
 ### Otto Oceanic
 
 Best for dark color schemes, especially good with **Otto Oceanic** & [**Solarized Dark**](https://github.com/braver/Solarized).
 
-![Otto Oceanic](media/otto_oceanic.png)
+![Otto Oceanic](https://www.dropbox.com/s/fzc9eikd1wr3hq1/otto_oceanic.png?dl=1)
 
 ### Otto Monokai
 
 Best for dark color schemes, especially good with [**Monokai Extended**](https://github.com/jonschlinkert/sublime-monokai-extended) & [**Monokai Neue**](https://github.com/josh-kaplan/sublime-monokai-neue).
 
-![Otto Monokai](media/otto_monokai.png)
+![Otto Monokai](https://www.dropbox.com/s/5lhe0atlywh1qml/otto_monokai.png?dl=1)
 
 ***
 
@@ -97,4 +97,4 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 If you can't see the bottom panel (find/replace, rename, move, can't see the box inputs in SidebarEnhancement, etc..). Here the quick fix:
 
-![Drag the top edge](media/drag_top_edge.gif)
+![Drag the top edge](https://www.dropbox.com/s/cv0oy84h58ztgql/drag_top_edge.gif?dl=1)
