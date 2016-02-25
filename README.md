@@ -237,6 +237,16 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ***
 
+## HiDPI Support 👀
+
+These themes include @1x, @2x, @3x image assets. Sublime Text supports HiDPI in **Mac OS** (works like a charm), but have some issues in **Windows** & **Linux**. Here the dirty fix:
+
+* download psd from [Design](#design),
+* use [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) to extract the themes,
+* manually change all @1x assets into needed versions.
+
+***
+
 ## References
 
 These themes are heavily inspired by:
@@ -275,6 +285,12 @@ You can now edit the source files under `sources` folder that will be compiled (
 If you'd like to add some rules and styles to the template of the color schemes, please, do it inside `sources\templates\scheme.YAML-tmTheme`. Run `gulp build:schemes` and then generate `*.tmTheme` files in `schemes` folder with such tool as [PackageDev](https://github.com/SublimeText/PackageDev).
 
 **PRs welcome!😋**
+
+***
+
+## Design
+
+Also, you can download all assets in psd format: [Otto](https://www.dropbox.com/s/acf9c3lnzflakpm/otto.zip?dl=1)
 
 ***
 
