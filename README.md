@@ -217,6 +217,26 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ***
 
+## Recommended Settings
+
+```json
+"always_show_minimap_viewport": true,
+"bold_folder_labels": true,
+"caret_extra_bottom": 1,
+"caret_extra_top": 1,
+"caret_extra_width": 1,
+"caret_style": "blink",
+"fade_fold_buttons": false,
+"indent_guide_options": ["draw_normal", "draw_active"],
+"line_padding_bottom": 1,
+"line_padding_top": 1,
+"overlay_scroll_bars": "enabled",
+"show_encoding": true,
+"show_line_endings": true,
+```
+
+***
+
 ## References
 
 These themes are heavily inspired by:
