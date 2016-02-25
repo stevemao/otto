@@ -81,25 +81,25 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ```json
 // Otto Yesterday
-// --------------
+// -----------------
 
 "theme": "Otto Yesterday.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Yesterday.tmTheme",
 
 // Otto Tomorrow
-// -------------
+// -----------------
 
 "theme": "Otto Tomorrow.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Tomorrow.tmTheme",
 
 // Otto Oceanic
-// -------------
+// -----------------
 
 "theme": "Otto Oceanic.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Oceanic.tmTheme",
 
 // Otto Monokai
-// -------------
+// -----------------
 
 "theme": "Otto Monokai.sublime-theme",
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Monokai.tmTheme",
@@ -107,7 +107,29 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ***
 
-## Known issues
+## Customization
+
+### Accent Colors
+
+[Accents](https://www.dropbox.com/s/trct87pkmithkxu/accents.gif?dl=1)
+
+```json
+// By Default
+// -----------------
+
+"theme_otto_accent_blue": true,
+
+// Available
+// -----------------
+
+"theme_otto_accent_green": true,
+"theme_otto_accent_orange": true,
+"theme_otto_accent_purple": true,
+```
+
+***
+
+## Known Issues
 
 If you can't see the bottom panel (find/replace, rename, move, can't see the box inputs in SidebarEnhancement, etc..). Here the quick fix:
 
