@@ -258,7 +258,7 @@ Color schemes are based on:
 
 **Note:** I have no plans to add new themes, only the fixes and improvements to the existing ones. In such cases you're free to fork.
 
-This themes use a custom Gulp builder. If you want to edit them you must install it first:
+These themes use a custom Gulp builder. If you want to edit them you must install it first:
 
 ```bash
 $ npm install
