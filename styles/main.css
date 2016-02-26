@@ -488,3 +488,30 @@ p {
 
   font-size: 2em;
 }
+
+.link {
+  display: inline-block;
+
+  margin-right: 25px;
+  padding-bottom: 2px;
+
+  -webkit-transition: opacity .4s ease;
+     -moz-transition: opacity .4s ease;
+          transition: opacity .4s ease;
+  text-decoration: none;
+
+  opacity: .8;
+  color: #fff;
+
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.link:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
