@@ -79,7 +79,7 @@ gulp.task('github-release', function(done) {
  * > Bump Version
  */
 
-gulp.task('bump', function() {
+gulp.task('bump', function(cb) {
   runSequence(
     'bump-version',
     'commit-version',
