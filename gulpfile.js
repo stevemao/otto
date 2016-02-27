@@ -52,7 +52,7 @@ gulp.task('clean:widgets', function() {
  * > Generate CHANGELOG
  */
 
-gulp.task('changelog', function () {
+gulp.task('changelog', function() {
   return conventionalChangelog({
     preset: 'angular',
     releaseCount: 0
@@ -79,7 +79,22 @@ gulp.task('github-release', function(done) {
  * > Bump Version
  */
 
-gulp.task('bump', function(){
+gulp.task('bump', function() {
+  runSequence(
+    'bump-version',
+    'commit-version',
+    function (error) {
+      if (error) {
+        console.log('[bump]'.bold.magenta + ' There was an issue bumping version:\n'.bold.red + error.message);
+      } else {
+        console.log('[bump]'.bold.magenta + ' Finished successfully'.bold.green);
+      }
+      cb(error);
+    }
+  );
+});
+
+gulp.task('bump-version', function() {
   return gulp.src('./package.json')
     .pipe($.if((Object.keys(argv).length === 2), $.bump()))
     .pipe($.if(argv.patch, $.bump()))
@@ -93,13 +108,19 @@ gulp.task('bump', function(){
  * > Git
  */
 
-gulp.task('commit-changes', function () {
+gulp.task('commit-version', function() {
   return gulp.src('.')
     .pipe($.git.add())
     .pipe($.git.commit('chore: bump version number'));
 });
 
-gulp.task('create-new-tag', function (cb) {
+gulp.task('commit-changelog', function() {
+  return gulp.src('.')
+    .pipe($.git.add())
+    .pipe($.git.commit('chore: update CHANGELOG.md'));
+});
+
+gulp.task('create-new-tag', function(cb) {
   var version = getPackageJsonVersion();
 
   $.git.tag('v' + version, 'version: ' + version, function (error) {
@@ -109,7 +130,7 @@ gulp.task('create-new-tag', function (cb) {
     $.git.push('origin', 'master', {args: '--tags'}, cb);
   });
 
-  function getPackageJsonVersion () {
+  function getPackageJsonVersion() {
     return JSON.parse(fs.readFileSync('./package.json', 'utf8')).version;
   }
 });
@@ -121,9 +142,8 @@ gulp.task('create-new-tag', function (cb) {
 
 gulp.task('release', function(cb) {
   runSequence(
-    'bump',
     'changelog',
-    'commit-changes',
+    'commit-changelog',
     'create-new-tag',
     'github-release',
     function (error) {
