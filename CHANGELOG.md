@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/oivva/otto/compare/v1.0.0...v1.0.1) (2016-02-27)
+
+
+### Bug Fixes
+
+* syntax highlighting ([074ba02](https://github.com/oivva/otto/commit/074ba02))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/oivva/otto/compare/v0.4.0...v1.0.0) (2016-02-25)
 
