@@ -23,7 +23,7 @@ settings:
   scope: ace.jump
   settings:
     foreground: '#ffffff'
-    background: '#4271ae'
+    background: '#2497e3'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
@@ -82,7 +82,7 @@ settings:
   scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php,
     meta.use.php, support.other.namespace.php, markup.changed.git_gutter
   settings:
-    foreground: '#eab700'
+    foreground: '#c99e00'
 
 - name: Sub-methods
   scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
@@ -108,7 +108,7 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '#bb80b3'
+    foreground: '#8959a8'
 
 - name: Inserted
   scope: markup.inserted
@@ -123,7 +123,7 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#bb80b3'
+    foreground: '#8959a8'
 
 - name: Regular Expressions
   scope: string.regexp

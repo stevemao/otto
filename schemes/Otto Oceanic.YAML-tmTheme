@@ -22,8 +22,8 @@ settings:
 - name: AceJump
   scope: ace.jump
   settings:
-    foreground: '#1b2b34'
-    background: '#f0c674'
+    foreground: '#ffffff'
+    background: '#2497e3'
 
 - name: Comments
   scope: comment, punctuation.definition.comment

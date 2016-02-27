@@ -22,8 +22,8 @@ settings:
 - name: AceJump
   scope: ace.jump
   settings:
-    foreground: '#1d1f21'
-    background: '#f0c674'
+    foreground: '#ffffff'
+    background: '#2497e3'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
@@ -108,7 +108,7 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '#bb80b3'
+    foreground: '#b294bb'
 
 - name: Inserted
   scope: markup.inserted
@@ -123,7 +123,7 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#bb80b3'
+    foreground: '#b294bb'
 
 - name: Regular Expressions
   scope: string.regexp
