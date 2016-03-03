@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/oivva/otto/compare/v1.0.2...v1.0.3) (2016-03-03)
+
+
+### Bug Fixes
+
+* *.html.erb open as HTML(Rails) ([012038c](https://github.com/oivva/otto/commit/012038c)), closes [#17](https://github.com/oivva/otto/issues/17)
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/oivva/otto/compare/v1.0.1...v1.0.2) (2016-03-02)
 
