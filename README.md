@@ -79,7 +79,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 **DON'T FORGET TO RESTART SUBLIME TEXT AFTER ACTIVATING THE THEME.**
 
-```json
+```js
 // Otto Yesterday
 // -----------------
 
@@ -113,7 +113,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ![Accents](https://www.dropbox.com/s/trct87pkmithkxu/accents.gif?dl=1)
 
-```json
+```js
 // By Default
 // -----------------
 
@@ -131,7 +131,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ![Tabs](https://www.dropbox.com/s/yxbhw167zcwt7od/tabs.gif?dl=1)
 
-```json
+```js
 // By Default
 // -----------------
 
@@ -160,7 +160,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ### Widgets
 
-```json
+```js
 // By Default
 // -----------------
 
@@ -176,7 +176,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ### Statusbar
 
-```json
+```js
 // By Default
 // -----------------
 
@@ -191,7 +191,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ### Sidebar
 
-```json
+```js
 // By Default
 // -----------------
 
@@ -219,7 +219,7 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ## Recommended Settings
 
-```json
+```js
 "always_show_minimap_viewport": true,
 "bold_folder_labels": true,
 "caret_extra_bottom": 1,
@@ -276,7 +276,7 @@ $ npm install
 
 then run watcher by:
 
-```
+```bash
 $ gulp watch
 ```
 
