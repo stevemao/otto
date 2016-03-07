@@ -1,0 +1,48 @@
+// Overlays Orange Accent
+// ===========================================================================
+
+// Quick Panel Rows
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_row",
+  "settings": ["theme_otto_accent_orange"],
+  "attributes": ["selected"],
+  "layer0.tint": [241, 103, 60],
+  "layer1.opacity": 0.0
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "settings": ["theme_otto_accent_orange"],
+  "attributes": ["selected"],
+  "layer0.tint": [241, 103, 60]
+},
+
+// Quick Panel Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_orange"],
+  "match_fg": [241, 103, 60, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_orange"],
+  "parents": [{"class": "overlay_control"}],
+  "match_fg": [241, 103, 60, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "settings": ["theme_otto_accent_orange"],
+  "match_fg": [241, 103, 60, 255]
+},
+
+{
+  "class": "quick_panel_score_label",
+  "settings": ["theme_otto_accent_orange"],
+  "fg": [241, 103, 60, 255]
+},

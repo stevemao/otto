@@ -198,7 +198,7 @@ gulp.task('build:themes', ['clean:themes'], function() {
 /* >> Schemes */
 
 gulp.task('build:schemes', ['clean:schemes'], function(cb) {
-  return gulp.src('./sources/config/*.json')
+  return gulp.src('./sources/settings/*.json')
     .pipe($.plumber(function(error) {
       console.log('[build:schemes]'.bold.magenta + ' There was an issue building schemes:\n'.bold.red + error.message);
       this.emit('end');
@@ -249,7 +249,7 @@ gulp.task('build:widgets', ['clean:widgets'], function(cb) {
 });
 
 gulp.task('build:widget-themes', function() {
-  return gulp.src('./sources/config/*.json')
+  return gulp.src('./sources/settings/*.json')
     .pipe($.foreach(function(stream, file) {
       var jsonFile = file;
       var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
@@ -265,7 +265,7 @@ gulp.task('build:widget-themes', function() {
 });
 
 gulp.task('build:widget-settings', function() {
-  return gulp.src('./sources/config/*.json')
+  return gulp.src('./sources/settings/*.json')
     .pipe($.foreach(function(stream, file) {
       var jsonFile = file;
       var jsonBasename = path.basename(jsonFile.path, path.extname(jsonFile.path));
@@ -289,7 +289,7 @@ gulp.task('watch', function() {
   gulp.watch('./sources/themes/**/*.json', ['build:themes']);
   gulp.watch('./sources/templates/scheme.YAML-tmTheme', ['build:schemes']);
   gulp.watch('./sources/templates/widget.*', ['build:widgets']);
-  gulp.watch('./sources/config/*.json', ['build:schemes', 'build:widgets']);
+  gulp.watch('./sources/settings/*.json', ['build:schemes', 'build:widgets']);
 });
 
 

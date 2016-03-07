@@ -1,0 +1,48 @@
+// Scrollbars Blue Accent
+// ===========================================================================
+
+// Scrollbar
+// ---------------------------------------------------------------------------
+
+//
+// Vertical Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical.png"
+},
+
+//
+// Horizontal Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "attributes": ["horizontal"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal.png"
+},
+
+// Scrollbar Overlayed
+// ---------------------------------------------------------------------------
+
+//
+// Vertical Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["overlay_scroll_bars"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical_overlay.png"
+},
+
+//
+// Horizontal Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["overlay_scroll_bars"],
+  "attributes": ["horizontal"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal_overlay.png"
+},

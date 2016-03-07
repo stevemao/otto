@@ -1,0 +1,85 @@
+
+// Overlay Control
+// ===========================================================================
+
+{
+  "class": "overlay_control",
+  "layer0.inner_margin": [24, 34, 24, 34],
+  "layer0.opacity": 1.0,
+  "layer1.texture": "Theme - Otto/assets/global/commons/overlays/quick_panel.png",
+  "layer1.inner_margin": [15, 25, 15, 25],
+  "layer1.opacity": 1.0,
+  "content_margin": [13, 20, 13, 24]
+},
+
+// Quick Panel
+// ===========================================================================
+
+// Quick Panel Defaults
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel",
+  "row_padding": [24, 12],
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "quick_panel_row",
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "quick_panel_row",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "quick_panel",
+  "parents": [{"class": "overlay_control"}],
+  "row_padding": [24, 12],
+  "layer0.opacity": 1.0
+},
+
+// Quick Panel Mini
+// ---------------------------------------------------------------------------
+
+{
+  "class": "mini_quick_panel",
+  "row_padding": [24, 12],
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "layer0.inner_margin": [2, 2, 2, 2],
+  "layer0.opacity": 1.0
+},
+
+// Quick Panel Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_label",
+  "selected_fg": [255, 255, 255, 255],
+  "selected_match_fg": [255, 255, 255, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "parents": [{"class": "overlay_control"}],
+  "selected_fg": [255, 255, 255, 255],
+  "selected_match_fg": [255, 255, 255, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "selected_fg": [255, 255, 255, 255],
+  "selected_match_fg": [255, 255, 255, 255]
+},
+
+{
+  "class": "quick_panel_score_label",
+  "selected_fg": [255, 255, 255, 255]
+},

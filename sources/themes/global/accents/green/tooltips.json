@@ -1,0 +1,8 @@
+// Tooltips Green Accent
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_accent_green"],
+  "layer0.tint": [46, 188, 103]
+},

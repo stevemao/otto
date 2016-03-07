@@ -1,0 +1,14 @@
+// Autocomplete Orange Accent
+// ===========================================================================
+
+{
+  "class": "auto_complete_label",
+  "settings": ["theme_otto_accent_orange"],
+  "match_fg": [241, 103, 60]
+},
+
+{
+  "class": "table_row",
+  "settings": ["theme_otto_accent_orange"],
+  "layer0.tint": [241, 103, 60]
+},

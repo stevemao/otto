@@ -1,0 +1,48 @@
+// Sidebar Light Styles
+// ===========================================================================
+
+// Sidebar Icons
+// ---------------------------------------------------------------------------
+
+//
+// Sidebar Button Close
+//
+
+{
+  "class": "close_button",
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/buttons/button_close.png",
+  "layer1.texture": "Theme - Otto/assets/global/variants/light/buttons/button_dirty.png"
+},
+
+//
+// Sidebar Folders
+//
+
+// Arrows
+
+{
+  "class": "icon_folder",
+  "settings": ["theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/sidebar/folder_arrow.png"
+},
+
+{
+  "class": "icon_folder",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+  "settings": ["theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/sidebar/folder_arrow_expanded.png"
+},
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/sidebar/folder_arrow.png"
+},
+
+{
+  "class": "icon_folder_dup",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+  "settings": ["theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/sidebar/folder_arrow_expanded.png"
+},
+

@@ -1,0 +1,80 @@
+// Controls Dark Styles
+// ===========================================================================
+
+// Buttons
+// ---------------------------------------------------------------------------
+
+//
+// Close
+//
+
+{
+  "class": "panel_close_button",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+},
+
+//
+// Icons
+//
+
+{
+  "class": "icon_regex",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_regex.png"
+},
+
+{
+  "class": "icon_case",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_case.png"
+},
+
+{
+  "class": "icon_whole_word",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_word.png"
+},
+
+{
+  "class": "icon_wrap",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_wrap.png"
+},
+
+{
+  "class": "icon_context",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_context.png"
+},
+
+{
+  "class": "icon_use_buffer",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_buffer.png"
+},
+
+{
+  "class": "icon_reverse",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_reverse.png"
+},
+
+{
+  "class": "icon_in_selection",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_selection.png"
+},
+
+{
+  "class": "icon_preserve_case",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_preserve.png"
+},
+
+{
+  "class": "icon_highlight",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_highlight.png"
+},
+
+// Fields
+// ---------------------------------------------------------------------------
+
+//
+// Dropdown
+//
+
+{
+  "class": "dropdown_button_control",
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dropdown.png"
+},

@@ -1,0 +1,20 @@
+// Status Bar Options
+// ===========================================================================
+
+// Small
+// ---------------------------------------------------------------------------
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_status_bar_small"],
+  "content_margin": [5, 1, 5, 1]
+},
+
+// Large
+// ---------------------------------------------------------------------------
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_status_bar_large"],
+  "content_margin": [5, 7, 5, 7]
+},

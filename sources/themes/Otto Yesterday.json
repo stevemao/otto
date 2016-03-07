@@ -1,24 +1,117 @@
-// OTTO YESTERDAY
+// > OTTO YESTERDAY
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Your next theme for Sublime Text 3
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [
-  //=include "yesterday/tabs.json"
-  //=include "yesterday/scrollbars.json"
-  //=include "yesterday/window.json"
-  //=include "yesterday/grid.json"
-  //=include "yesterday/widgets.json"
-  //=include "yesterday/statusbar.json"
-  //=include "yesterday/sidebar.json"
-  //=include "yesterday/overlays.json"
-  //=include "yesterday/autocomplete.json"
-  //=include "common/folding.json"
-  //=include "common/minimap.json"
-  //=include "common/tooltips.json"
-  //=include "common/options.json"
-  //=include "accent/blue.json"
-  //=include "accent/green.json"
-  //=include "accent/orange.json"
-  //=include "accent/purple.json"
+  //
+  // >> Autocomplete
+  // ===========================================================================
+  // Autocomplete settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/autocomplete.json"
+  //=include "specific/yesterday/autocomplete.json"
+  //=include "global/accents/**/autocomplete.json"
+  //
+  // >> Controls
+  // ===========================================================================
+  // Panel, fields, buttons settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/controls.json"
+  //=include "global/variants/light/controls.json"
+  //=include "specific/yesterday/controls.json"
+  //=include "global/accents/**/controls.json"
+  //=include "global/options/controls.json"
+  //
+  // >> Folding
+  // ===========================================================================
+  // Folding settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/folding.json"
+  //
+  // >> Grid
+  // ===========================================================================
+  // Grid styles
+  // ===========================================================================
+  //
+  //=include "global/commons/grid.json"
+  //=include "specific/yesterday/grid.json"
+  //
+  // >> Minimap
+  // ===========================================================================
+  // Minimap settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/minimap.json"
+  //=include "global/accents/**/minimap.json"
+  //
+  // >> Overlays
+  // ===========================================================================
+  // Overlays settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/overlays.json"
+  //=include "specific/yesterday/overlays.json"
+  //=include "global/accents/**/overlays.json"
+  //
+  // >> Scrollbars
+  // ===========================================================================
+  // Scrollbars settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/scrollbars.json"
+  //=include "specific/yesterday/scrollbars.json"
+  //=include "global/accents/**/scrollbars.json"
+  //
+  // >> Sidebar
+  // ===========================================================================
+  // Sidebar panel settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/sidebar.json"
+  //=include "global/variants/light/sidebar.json"
+  //=include "specific/yesterday/sidebar.json"
+  //=include "global/accents/**/sidebar.json"
+  //=include "global/options/sidebar.json"
+  //
+  // >> Status Bar
+  // ===========================================================================
+  // Status bar settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/statusbar.json"
+  //=include "global/variants/light/statusbar.json"
+  //=include "specific/yesterday/statusbar.json"
+  //=include "global/options/statusbar.json"
+  //
+  // >> Tabs
+  // ===========================================================================
+  // Tabs behavior and settings
+  // ===========================================================================
+  //
+  //=include "global/commons/tabs.json"
+  //=include "global/variants/light/tabs.json"
+  //=include "specific/yesterday/tabs.json"
+  //=include "global/accents/**/tabs.json"
+  //=include "global/options/tabs.json"
+  //
+  // >> Tooltips
+  // ===========================================================================
+  // Tooltip settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/tooltips.json"
+  //=include "global/accents/**/tooltips.json"
+  //=include "global/options/tooltips.json"
+  //
+  // >> Window
+  // ===========================================================================
+  // Styles for empty window
+  // ===========================================================================
+  //
+  //=include "global/commons/window.json"
+  //=include "specific/yesterday/window.json"
 ]

@@ -1,0 +1,65 @@
+// Scrollbars Theme Specific Styles
+// ===========================================================================
+
+// Scrollbar
+// ---------------------------------------------------------------------------
+
+//
+// Scrollbar Corner
+//
+
+{
+  "class": "scroll_corner_control",
+  "layer0.tint": [45, 60, 68]
+},
+
+//
+// Scrollbar Vertical
+//
+
+// Background
+
+{
+  "class": "scroll_bar_control",
+  "layer0.tint": [45, 60, 68]
+},
+
+//
+// Scrollbar Horizontal
+//
+
+// Background
+
+{
+  "class": "scroll_bar_control",
+  "attributes": ["horizontal"],
+  "layer0.tint": [45, 60, 68]
+},
+
+// Scrollbar Overlayed
+// ---------------------------------------------------------------------------
+
+//
+// Scrollbar Vertical Overlayed
+//
+
+// Background
+
+{
+  "class": "scroll_bar_control",
+  "settings": ["overlay_scroll_bars"],
+  "layer0.tint": [45, 60, 68]
+},
+
+//
+// Scrollbar Horizontal Overlayed
+//
+
+// Background
+
+{
+  "class": "scroll_bar_control",
+  "settings": ["overlay_scroll_bars"],
+  "attributes": ["horizontal"],
+  "layer0.tint": [45, 60, 68]
+},

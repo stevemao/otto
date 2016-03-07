@@ -1,0 +1,14 @@
+// Autocomplete Green Accent
+// ===========================================================================
+
+{
+  "class": "auto_complete_label",
+  "settings": ["theme_otto_accent_green"],
+  "match_fg": [46, 188, 103]
+},
+
+{
+  "class": "table_row",
+  "settings": ["theme_otto_accent_green"],
+  "layer0.tint": [46, 188, 103]
+},
