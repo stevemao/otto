@@ -3,7 +3,6 @@
 </p>
 
 <p align="center">
-  <a href="https://pledgie.com/campaigns/31119"><img alt="Click here to lend your support to: Otto Donations and make a donation at pledgie.com !" src="https://pledgie.com/campaigns/31119.png?skin_name=chrome" border="0" ></a>
 </p>
 
 <p align="center">
