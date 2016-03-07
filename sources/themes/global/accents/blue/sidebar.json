@@ -1,0 +1,82 @@
+// Sidebar Blue Accent
+// ===========================================================================
+
+// Sidebar Tree Row
+// ---------------------------------------------------------------------------
+
+{
+  "class": "tree_row",
+  "layer1.texture": "Theme - Otto/assets/global/accents/blue/sidebar/sidebar_row_selected.png"
+},
+
+// Sidebar Icons
+// ---------------------------------------------------------------------------
+
+//
+// Sidebar Close
+//
+
+{
+  "class": "close_button",
+  "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+  "attributes": ["dirty"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_close_selected.png",
+  "layer1.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_selected.png"
+},
+
+//
+// Sidebar Folders
+//
+
+// Defaults
+
+{
+  "class": "icon_folder",
+  "settings": ["!theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder.png"
+},
+
+// Opened
+
+{
+  "class": "icon_folder",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+  "settings": ["!theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_expanded.png"
+},
+
+// Symlink
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["!theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_dup.png"
+},
+
+// Symlink Opened
+
+{
+  "class": "icon_folder_dup",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+  "settings": ["!theme_otto_sidebar_folder_arrow"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_dup_expanded.png"
+},
+
+// Loading
+
+{
+  "class": "icon_folder_loading",
+  "layer0.texture":
+  {
+    "keyframes":
+    [
+      "Theme - Otto/assets/global/accents/blue/sidebar/spinner3.png",
+      "Theme - Otto/assets/global/accents/blue/sidebar/spinner2.png",
+      "Theme - Otto/assets/global/accents/blue/sidebar/spinner1.png",
+      "Theme - Otto/assets/global/accents/blue/sidebar/spinner.png"
+    ],
+    "loop": true,
+    "frame_time": 0.125
+  }
+},
+

@@ -1,0 +1,88 @@
+// Tabs Green Accent
+// ===========================================================================
+
+// Tab
+// ---------------------------------------------------------------------------
+
+//
+// Underlined
+//
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_green"],
+  "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_underlined.png"
+},
+
+//
+// Prelined
+//
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_green"],
+  "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_prelined.png"
+},
+
+//
+// Filled
+//
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+  "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_filled.png"
+},
+
+// Close
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+  "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+},
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+  "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+  "attributes": ["hover"],
+  "layer0.opacity": 1.0
+},
+
+// Dirty
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+  "settings": ["theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_selected.png",
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+  "settings": ["theme_otto_accent_green"],
+  "attributes": ["hover"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_close_selected.png",
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+  "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png",
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "tab_close_button",
+  "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+  "attributes": ["hover"],
+  "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+  "layer0.opacity": 1.0
+},

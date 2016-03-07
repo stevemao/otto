@@ -1,0 +1,52 @@
+// Sidebar Theme Specific Styles
+// ===========================================================================
+
+// Sidebar Container
+// ---------------------------------------------------------------------------
+
+{
+  "class": "sidebar_container",
+  "layer0.tint": [42, 43, 45]
+},
+
+// Sidebar Tree
+// ---------------------------------------------------------------------------
+
+//
+// Sidebar Tree Defaults
+//
+
+{
+  "class": "sidebar_tree",
+  "layer0.tint": [35, 36, 38]
+},
+
+//
+// Sidebar Tree Row
+//
+
+{
+  "class": "tree_row",
+  "layer0.tint": [42, 43, 45]
+},
+
+// Sidebar Labels
+// ---------------------------------------------------------------------------
+
+//
+// Sidebar Heading
+//
+
+{
+  "class": "sidebar_heading",
+  "color": [155, 155, 155]
+},
+
+//
+// Sidebar Entry
+//
+
+{
+  "class": "sidebar_label",
+  "color": [155, 155, 155]
+},

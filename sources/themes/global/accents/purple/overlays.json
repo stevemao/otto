@@ -1,0 +1,49 @@
+// Overlays Purple Accent
+// ===========================================================================
+
+// Quick Panel Rows
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_row",
+  "settings": ["theme_otto_accent_purple"],
+  "attributes": ["selected"],
+  "layer0.tint": [175, 60, 241],
+  "layer1.opacity": 0.0
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "settings": ["theme_otto_accent_purple"],
+  "attributes": ["selected"],
+  "layer0.tint": [175, 60, 241]
+},
+
+// Quick Panel Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_purple"],
+  "match_fg": [175, 60, 241, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_purple"],
+  "parents": [{"class": "overlay_control"}],
+  "match_fg": [175, 60, 241, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "settings": ["theme_otto_accent_purple"],
+  "match_fg": [175, 60, 241, 255]
+},
+
+{
+  "class": "quick_panel_score_label",
+  "settings": ["theme_otto_accent_purple"],
+  "fg": [175, 60, 241, 255]
+},
+

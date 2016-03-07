@@ -1,0 +1,45 @@
+// Controls Theme Specific Styles
+// ===========================================================================
+
+// Panel
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_control",
+  "layer0.tint": [238, 238, 238]
+},
+
+// Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "label_control",
+  "color": [95, 95, 95]
+},
+
+// Buttons
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "layer0.tint": [247, 247, 247]
+},
+
+{
+  "class": "icon_button_control",
+  "layer0.tint": [238, 238, 238]
+},
+
+// Fields
+// ---------------------------------------------------------------------------
+
+{
+  "class": "text_line_control",
+  "layer0.texture": "Theme - Otto/assets/specific/yesterday/fields/field.png"
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.texture": "Theme - Otto/assets/specific/yesterday/fields/field_overlay.png"
+},

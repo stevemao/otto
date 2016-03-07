@@ -1,0 +1,8 @@
+// Tooltips Options
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_tab_selected_filled"],
+  "layer1.opacity": 0.15
+},

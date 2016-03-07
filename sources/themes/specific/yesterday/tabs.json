@@ -1,0 +1,42 @@
+// Tabs Theme Specific Styles
+// ===========================================================================
+
+// Tabset
+// ---------------------------------------------------------------------------
+
+//
+// Tabset Defaults
+//
+
+{
+  "class": "tabset_control",
+  "layer0.tint": [247, 247, 247]
+},
+
+// Tab
+// ---------------------------------------------------------------------------
+
+//
+// Tab Defaults
+//
+
+{
+  "class": "tab_control",
+  "layer0.texture": "Theme - Otto/assets/specific/yesterday/tabs/tab.png",
+  "layer1.tint": [238, 238, 238]
+},
+
+//
+// Tab Labels
+//
+
+{
+  "class": "tab_label",
+  "fg": [95, 95, 95, 255]
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+  "fg": [95, 95, 95, 255]
+},

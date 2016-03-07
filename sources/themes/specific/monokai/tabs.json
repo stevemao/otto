@@ -1,0 +1,42 @@
+// Tabs Theme Specific Styles
+// ===========================================================================
+
+// Tabset
+// ---------------------------------------------------------------------------
+
+//
+// Tabset Defaults
+//
+
+{
+  "class": "tabset_control",
+  "layer0.tint": [46, 47, 41]
+},
+
+// Tab
+// ---------------------------------------------------------------------------
+
+//
+// Tab Defaults
+//
+
+{
+  "class": "tab_control",
+  "layer0.texture": "Theme - Otto/assets/specific/monokai/tabs/tab.png",
+  "layer1.tint": [54, 55, 49]
+},
+
+//
+// Tab Labels
+//
+
+{
+  "class": "tab_label",
+  "fg": [185, 185, 183, 255]
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+  "fg": [185, 185, 183, 255]
+},

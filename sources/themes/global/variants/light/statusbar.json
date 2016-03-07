@@ -1,0 +1,10 @@
+// Status Bar Light Styles
+// ===========================================================================
+
+// Status Bar Panel Switcher
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_button_control",
+  "layer0.texture": "Theme - Otto/assets/global/variants/light/buttons/button_panel_switcher.png"
+},

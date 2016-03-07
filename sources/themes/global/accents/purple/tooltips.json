@@ -1,0 +1,8 @@
+// Tooltips Purple Accent
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_accent_purple"],
+  "layer0.tint": [175, 60, 241]
+},

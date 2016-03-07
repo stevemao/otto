@@ -1,0 +1,50 @@
+// Scrollbars Green Accent
+// ===========================================================================
+
+// Scrollbar
+// ---------------------------------------------------------------------------
+
+//
+// Vertical Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical.png"
+},
+
+//
+// Horizontal Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["theme_otto_accent_green"],
+  "attributes": ["horizontal"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal.png"
+},
+
+// Scrollbar Overlayed
+// ---------------------------------------------------------------------------
+
+//
+// Vertical Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical_overlay.png"
+},
+
+//
+// Horizontal Scrollbar Puck
+//
+
+{
+  "class": "puck_control",
+  "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
+  "attributes": ["horizontal"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal_overlay.png"
+},

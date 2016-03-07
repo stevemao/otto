@@ -1,0 +1,45 @@
+// Controls Theme Specific Styles
+// ===========================================================================
+
+// Panel
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_control",
+  "layer0.tint": [54, 55, 49]
+},
+
+// Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "label_control",
+  "color": [185, 185, 183]
+},
+
+// Buttons
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "layer0.tint": [46, 47, 41]
+},
+
+{
+  "class": "icon_button_control",
+  "layer0.tint": [54, 55, 49]
+},
+
+// Fields
+// ---------------------------------------------------------------------------
+
+{
+  "class": "text_line_control",
+  "layer0.texture": "Theme - Otto/assets/specific/monokai/fields/field.png"
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.texture": "Theme - Otto/assets/specific/monokai/fields/field_overlay.png"
+},

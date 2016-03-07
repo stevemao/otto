@@ -1,0 +1,42 @@
+// Tabs Theme Specific Styles
+// ===========================================================================
+
+// Tabset
+// ---------------------------------------------------------------------------
+
+//
+// Tabset Defaults
+//
+
+{
+  "class": "tabset_control",
+  "layer0.tint": [34, 50, 58]
+},
+
+// Tab
+// ---------------------------------------------------------------------------
+
+//
+// Tab Defaults
+//
+
+{
+  "class": "tab_control",
+  "layer0.texture": "Theme - Otto/assets/specific/oceanic/tabs/tab.png",
+  "layer1.tint": [45, 60, 68]
+},
+
+//
+// Tab Labels
+//
+
+{
+  "class": "tab_label",
+  "fg": [178, 183, 186, 255]
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+  "fg": [178, 183, 186, 255]
+},

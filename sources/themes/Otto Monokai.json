@@ -1,24 +1,117 @@
-// OTTO MONOKAI
+// > OTTO MONOKAI
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Your next theme for Sublime Text 3
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [
-  //=include "monokai/tabs.json"
-  //=include "monokai/scrollbars.json"
-  //=include "monokai/window.json"
-  //=include "monokai/grid.json"
-  //=include "monokai/widgets.json"
-  //=include "monokai/statusbar.json"
-  //=include "monokai/sidebar.json"
-  //=include "monokai/overlays.json"
-  //=include "monokai/autocomplete.json"
-  //=include "common/folding.json"
-  //=include "common/minimap.json"
-  //=include "common/tooltips.json"
-  //=include "common/options.json"
-  //=include "accent/blue.json"
-  //=include "accent/green.json"
-  //=include "accent/orange.json"
-  //=include "accent/purple.json"
+  //
+  // >> Autocomplete
+  // ===========================================================================
+  // Autocomplete settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/autocomplete.json"
+  //=include "specific/monokai/autocomplete.json"
+  //=include "global/accents/**/autocomplete.json"
+  //
+  // >> Controls
+  // ===========================================================================
+  // Panel, fields, buttons settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/controls.json"
+  //=include "global/variants/dark/controls.json"
+  //=include "specific/monokai/controls.json"
+  //=include "global/accents/**/controls.json"
+  //=include "global/options/controls.json"
+  //
+  // >> Folding
+  // ===========================================================================
+  // Folding settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/folding.json"
+  //
+  // >> Grid
+  // ===========================================================================
+  // Grid styles
+  // ===========================================================================
+  //
+  //=include "global/commons/grid.json"
+  //=include "specific/monokai/grid.json"
+  //
+  // >> Minimap
+  // ===========================================================================
+  // Minimap settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/minimap.json"
+  //=include "global/accents/**/minimap.json"
+  //
+  // >> Overlays
+  // ===========================================================================
+  // Overlays settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/overlays.json"
+  //=include "specific/monokai/overlays.json"
+  //=include "global/accents/**/overlays.json"
+  //
+  // >> Scrollbars
+  // ===========================================================================
+  // Scrollbars settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/scrollbars.json"
+  //=include "specific/monokai/scrollbars.json"
+  //=include "global/accents/**/scrollbars.json"
+  //
+  // >> Sidebar
+  // ===========================================================================
+  // Sidebar panel settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/sidebar.json"
+  //=include "global/variants/dark/sidebar.json"
+  //=include "specific/monokai/sidebar.json"
+  //=include "global/accents/**/sidebar.json"
+  //=include "global/options/sidebar.json"
+  //
+  // >> Status Bar
+  // ===========================================================================
+  // Status bar settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/statusbar.json"
+  //=include "global/variants/dark/statusbar.json"
+  //=include "specific/monokai/statusbar.json"
+  //=include "global/options/statusbar.json"
+  //
+  // >> Tabs
+  // ===========================================================================
+  // Tabs behavior and settings
+  // ===========================================================================
+  //
+  //=include "global/commons/tabs.json"
+  //=include "global/variants/dark/tabs.json"
+  //=include "specific/monokai/tabs.json"
+  //=include "global/accents/**/tabs.json"
+  //=include "global/options/tabs.json"
+  //
+  // >> Tooltips
+  // ===========================================================================
+  // Tooltip settings and behavior
+  // ===========================================================================
+  //
+  //=include "global/commons/tooltips.json"
+  //=include "global/accents/**/tooltips.json"
+  //=include "global/options/tooltips.json"
+  //
+  // >> Window
+  // ===========================================================================
+  // Styles for empty window
+  // ===========================================================================
+  //
+  //=include "global/commons/window.json"
+  //=include "specific/monokai/window.json"
 ]

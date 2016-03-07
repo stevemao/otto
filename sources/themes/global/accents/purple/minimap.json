@@ -1,0 +1,8 @@
+// Minimap Purple Accent
+// ===========================================================================
+
+{
+  "class": "minimap_control",
+  "settings": ["theme_otto_accent_purple"],
+  "viewport_color": [175, 60, 241, 75]
+},

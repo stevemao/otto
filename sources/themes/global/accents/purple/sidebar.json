@@ -1,0 +1,84 @@
+// Sidebar Purple Accent
+// ===========================================================================
+
+// Sidebar Tree Row
+// ---------------------------------------------------------------------------
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_accent_purple"],
+  "layer1.texture": "Theme - Otto/assets/global/accents/purple/sidebar/sidebar_row_selected.png"
+},
+
+// Sidebar Icons
+// ---------------------------------------------------------------------------
+
+//
+// Sidebar Close
+//
+
+{
+  "class": "close_button",
+  "settings": ["theme_otto_accent_purple"],
+  "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+  "attributes": ["dirty"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_close_selected.png",
+  "layer1.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_selected.png"
+},
+
+//
+// Sidebar Folders
+//
+
+// Defaults
+
+{
+  "class": "icon_folder",
+  "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder.png"
+},
+
+// Opened
+
+{
+  "class": "icon_folder",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+  "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_expanded.png"
+},
+
+// Symlink
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_dup.png"
+},
+
+// Symlink Opened
+
+{
+  "class": "icon_folder_dup",
+  "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+  "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+  "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_dup_expanded.png"
+},
+
+// Loading
+
+{
+  "class": "icon_folder_loading",
+  "settings": ["theme_otto_accent_purple"],
+  "layer0.texture":
+  {
+    "keyframes":
+    [
+      "Theme - Otto/assets/global/accents/purple/sidebar/spinner3.png",
+      "Theme - Otto/assets/global/accents/purple/sidebar/spinner2.png",
+      "Theme - Otto/assets/global/accents/purple/sidebar/spinner1.png",
+      "Theme - Otto/assets/global/accents/purple/sidebar/spinner.png"
+    ],
+    "loop": true,
+    "frame_time": 0.125
+  }
+},

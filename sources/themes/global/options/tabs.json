@@ -1,0 +1,71 @@
+// Tabs Options
+// ===========================================================================
+
+// Tabset Options
+// ---------------------------------------------------------------------------
+
+//
+// Sizes
+//
+
+// Auto Width
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_auto_width"],
+  "tab_width": 0
+},
+
+// Small
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_small"],
+  "tab_height": 34
+},
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_tab_small"],
+  "content_margin": [14, 4, 10, 4]
+},
+
+// Large
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_tab_large"],
+  "tab_height": 54
+},
+
+//
+// Scrolling
+//
+
+// Enable Tab Switch via Mouse Wheel
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_mouse_wheel_switches_tabs"],
+  "mouse_wheel_switch": true
+},
+
+// Tab Options
+// ---------------------------------------------------------------------------
+
+//
+// Bold Labels
+//
+
+{
+  "class": "tab_label",
+  "settings": ["theme_otto_tab_label_bold"],
+  "font.bold": true
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+  "settings": ["theme_otto_tab_selected_label_bold"],
+  "font.bold": true
+},

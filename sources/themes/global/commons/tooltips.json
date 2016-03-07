@@ -1,0 +1,19 @@
+
+// Tooltips Background
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "layer0.opacity": 1.0,
+  "layer1.tint": [0, 0, 0],
+  "layer1.opacity": 0,
+  "content_margin": [10, 5]
+},
+
+// Tooltips Text
+// ===========================================================================
+
+{
+  "class": "tool_tip_label_control",
+  "color": [255, 255, 255]
+},

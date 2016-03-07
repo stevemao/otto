@@ -1,0 +1,45 @@
+// Controls Options
+// ===========================================================================
+
+// Hide Find & Replace Panel Close Button
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_close_button",
+  "settings": ["theme_otto_find_and_replace_close_hide"],
+  "content_margin": 0
+},
+
+// Small Find & Replace
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 11]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 10]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 6]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [24, 8]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "min_size": [88, 0]
+},

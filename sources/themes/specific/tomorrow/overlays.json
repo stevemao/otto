@@ -1,0 +1,73 @@
+// Overlays Theme Specific Styles
+// ===========================================================================
+
+// Overlay Control
+// ---------------------------------------------------------------------------
+
+{
+  "class": "overlay_control",
+  "layer0.texture": "Theme - Otto/assets/specific/tomorrow/overlays/overlay.png"
+},
+
+// Quick Panel
+// ---------------------------------------------------------------------------
+
+//
+// Quick Panel Defaults
+//
+
+{
+  "class": "quick_panel",
+  "layer0.tint": [42, 43, 45]
+},
+
+{
+  "class": "quick_panel_row",
+  "layer0.tint": [42, 43, 45, 0]
+},
+
+{
+  "class": "quick_panel_row",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.tint": [42, 43, 45, 0]
+},
+
+{
+  "class": "quick_panel",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.tint": [42, 43, 45, 0]
+},
+
+//
+// Quick Panel Mini
+//
+
+{
+  "class": "mini_quick_panel",
+  "layer0.tint": [42, 43, 45]
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "layer0.tint": [42, 43, 45, 0]
+},
+
+//
+// Quick Panel Labels
+//
+
+{
+  "class": "quick_panel_label",
+  "fg": [155, 155, 155, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "parents": [{"class": "overlay_control"}],
+  "fg": [155, 155, 155, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "fg": [95, 95, 95, 255]
+},
