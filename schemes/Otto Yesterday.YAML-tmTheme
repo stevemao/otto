@@ -22,7 +22,7 @@ settings:
   scope: ace.jump
   settings:
     foreground: '#ffffff'
-    background: '#2497e3'
+    background: '#846fec'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
