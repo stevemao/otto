@@ -98,12 +98,12 @@ settings:
 - name: entity.name.method.js
   scope: entity.name.method.js
   settings:
-    foreground: '#d8dee9'
+    foreground: '#6699cc'
 
 - name: meta.method.js
   scope: meta.class-method.js entity.name.function.js, variable.function.constructor
   settings:
-    foreground: '#d8dee9'
+    foreground: '#6699cc'
 
 - name: Attributes
   scope: entity.other.attribute-name
