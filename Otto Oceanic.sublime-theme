@@ -3747,50 +3747,6 @@
     "layer3.opacity": 1.0
   },
   
-  //
-  // Label
-  //
-  
-  // Light Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [80, 80, 80, 255],
-    "shadow_color": [255, 255, 255, 50],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Medium Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-    "fg": [255, 255, 255, 255],
-    "shadow_color": [0, 0, 0, 100],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Medium Dark Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-    "fg": [255, 255, 255, 230],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Dark Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-    "fg": [255, 255, 255, 230],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0]
-  },
-  
   // Tab Buttons
   // ---------------------------------------------------------------------------
   
@@ -4012,6 +3968,12 @@
     "layer1.tint": [45, 60, 68]
   },
   
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_separator_hide"],
+    "layer0.texture": "Theme - Otto/assets/specific/oceanic/tabs/tab_without_separator.png"
+  },
+  
   //
   // Tab Labels
   //
@@ -4025,6 +3987,46 @@
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["hover"]}],
     "fg": [178, 183, 186, 255]
+  },
+  
+  // Light Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": [80, 80, 80, 255],
+    "shadow_color": [255, 255, 255, 50],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Medium Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+    "fg": [255, 255, 255, 255],
+    "shadow_color": [0, 0, 0, 100],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Medium Dark Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
+    "fg": [255, 255, 255, 230],
+    "shadow_color": [0, 0, 0, 255],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Dark Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
+    "fg": [255, 255, 255, 230],
+    "shadow_color": [0, 0, 0, 255],
+    "shadow_offset": [0, 0]
   },
   
   // Tabs Blue Accent
