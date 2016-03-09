@@ -65,6 +65,8 @@
   //=include "global/commons/scrollbars.json"
   //=include "specific/yesterday/scrollbars.json"
   //=include "global/accents/**/scrollbars.json"
+  //=include "global/variants/light/scrollbars.json"
+  //=include "global/options/scrollbars.json"
   //
   // >> Sidebar
   // ===========================================================================

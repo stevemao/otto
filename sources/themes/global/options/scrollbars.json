@@ -1,0 +1,8 @@
+// Scrollbars Options
+// ===========================================================================
+
+{
+  "class": "puck_control",
+  "settings": ["theme_otto_scrollbars_monochrome"],
+  "layer0.opacity": 0.32
+},

@@ -65,6 +65,8 @@
   //=include "global/commons/scrollbars.json"
   //=include "specific/tomorrow/scrollbars.json"
   //=include "global/accents/**/scrollbars.json"
+  //=include "global/variants/dark/scrollbars.json"
+  //=include "global/options/scrollbars.json"
   //
   // >> Sidebar
   // ===========================================================================
