@@ -13,10 +13,9 @@ settings:
     caret: '<%= base05 %>'
     foreground: '<%= base06 %>'
     invisibles: '<%= base03 %>'
-    selection: '<%= base02 %>'
-    selectionBorder: '<%= base02 %>'
-    selectionForeground: '<%= base04 %>'
-    lineHighlight: '<%= base02 %>55'
+    selection: '<%= base02 %>60'
+    selectionBorder: '<%= base02 %>60'
+    lineHighlight: '<%= base02 %>30'
     gutter: '<%= base01 %>'
 
 - name: AceJump

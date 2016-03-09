@@ -13,10 +13,9 @@ settings:
     caret: '#969896'
     foreground: '#4d4d4c'
     invisibles: '#8e908c'
-    selection: '#e1e1e1'
-    selectionBorder: '#e1e1e1'
-    selectionForeground: '#555555'
-    lineHighlight: '#e1e1e155'
+    selection: '#e1e1e160'
+    selectionBorder: '#e1e1e160'
+    lineHighlight: '#e1e1e130'
     gutter: '#ffffff'
 
 - name: AceJump
