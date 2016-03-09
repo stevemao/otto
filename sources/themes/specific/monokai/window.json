@@ -4,4 +4,9 @@
 {
   "class": "sheet_container_control",
   "layer0.tint": [46, 47, 41]
+},
+
+{
+  "class": "dialog",
+  "layer0.tint": [54, 55, 49]
 }

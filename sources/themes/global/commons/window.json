@@ -3,3 +3,8 @@
   "class": "sheet_container_control",
   "layer0.opacity": 1.0
 },
+
+{
+  "class": "dialog",
+  "layer0.opacity": 1.0
+},

@@ -4653,12 +4653,22 @@
     "layer0.opacity": 1.0
   },
   
+  {
+    "class": "dialog",
+    "layer0.opacity": 1.0
+  },
+  
   // Window Theme Specific Styles
   // ===========================================================================
   
   {
     "class": "sheet_container_control",
     "layer0.tint": [247, 247, 247]
+  },
+  
+  {
+    "class": "dialog",
+    "layer0.tint": [238, 238, 238]
   }
   
 ]
