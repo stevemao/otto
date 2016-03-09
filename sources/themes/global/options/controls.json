@@ -38,8 +38,121 @@
   "content_margin": [24, 8]
 },
 
+// Find & Replace Font Options
+// ---------------------------------------------------------------------------
+
+//
+// Font Size 12
+//
+
 {
-  "class": "status_button",
-  "settings": ["theme_otto_find_and_replace_small"],
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_12"],
+  "font.size": 12
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_12"],
+  "font.size": 12
+},
+
+//
+// Font Size 13
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_13"],
+  "font.size": 13
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_13"],
+  "font.size": 13
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_13"],
+  "min_size": [80, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_13"],
+  "min_size": [80, 0]
+},
+
+//
+// Font Size 14
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_14"],
+  "font.size": 14
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_14"],
+  "font.size": 14
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_14"],
+  "min_size": [84, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_14"],
+  "min_size": [84, 0]
+},
+
+//
+// Font Size 15
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_15"],
+  "font.size": 15
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_15"],
+  "font.size": 15
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_15"],
   "min_size": [88, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_15"],
+  "min_size": [88, 0]
+},
+
+//
+// UI Font Face Custom
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
 },

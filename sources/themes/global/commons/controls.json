@@ -15,7 +15,7 @@
 {
   "class": "label_control",
   "font.bold" : true,
-  "font.size" : 11
+  "font.size": 11
 },
 
 // Buttons
@@ -249,7 +249,7 @@
 {
   "class": "label_control",
   "parents": [{"class": "panel_control"}],
-  "font.bold" : true,
+  "font.bold": true,
   "font.size": 11
 },
 
