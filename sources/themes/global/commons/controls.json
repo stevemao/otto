@@ -9,6 +9,20 @@
   "content_margin": [-2, 2, -2, 2]
 },
 
+// Progress Bar
+// ===========================================================================
+
+{
+  "class": "progress_bar_control",
+  "layer0.opacity": 1.0
+},
+
+{
+  "class": "progress_gauge_control",
+  "layer0.opacity": 1.0,
+  "content_margin": [0, 6]
+},
+
 // Labels
 // ===========================================================================
 
