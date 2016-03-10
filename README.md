@@ -24,6 +24,37 @@ Please read the [Known Issues](#known-issues) section before reporting a new one
 
 ***
 
+## Table of Contents
+
+<!-- MarkdownTOC depth=4 autolink=true bracket=round -->
+
+- [Themes](#themes)
+  - [Otto Yesterday](#otto-yesterday)
+  - [Otto Tomorrow](#otto-tomorrow)
+  - [Otto Oceanic](#otto-oceanic)
+  - [Otto Monokai](#otto-monokai)
+- [Installation](#installation)
+  - [Package Control](#package-control)
+  - [Manual](#manual)
+- [Activation](#activation)
+- [Customization](#customization)
+  - [Accent Colors](#accent-colors)
+  - [Tabs](#tabs)
+  - [Widgets](#widgets)
+  - [Statusbar](#statusbar)
+  - [Sidebar](#sidebar)
+  - [Even More](#even-more)
+- [Recommended Settings](#recommended-settings)
+- [HiDPI Support](#hidpi-support)
+- [References](#references)
+- [Contributing](#contributing)
+- [Design & Extras](#design--extras)
+- [Known Issues](#known-issues)
+
+<!-- /MarkdownTOC -->
+
+***
+
 ## Themes
 
 ### Otto Yesterday
@@ -239,11 +270,11 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 
 ***
 
-## HiDPI Support 👀
+## HiDPI Support
 
 These themes include @1x, @2x, @3x image assets. Sublime Text supports HiDPI in **Mac OS** (works like a charm), but have some issues in **Windows** & **Linux**. Here the dirty fix:
 
-* download psd from [Design](#design),
+* download psd from [Design](#design--extras),
 * use [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) to extract the themes,
 * manually change all @1x assets into needed versions.
 
@@ -290,9 +321,9 @@ If you'd like to add some rules and styles to the template of the color schemes,
 
 ***
 
-## Design && Extras
+## Design & Extras
 
-Also, you can download all assets in psd format and some extras: [Otto](https://github.com/oivva/otto-goodies)
+Also, you can download all assets in psd format and some extras: [Otto Goodies](https://github.com/oivva/otto-goodies)
 
 ***
 
