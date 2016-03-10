@@ -1,3 +1,25 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/oivva/otto/compare/v1.0.3...v1.1.0) (2016-03-10)
+
+
+### Bug Fixes
+
+* enable syntax highlighting in the text selection ([5f9dfbb](https://github.com/oivva/otto/commit/5f9dfbb)), closes [#18](https://github.com/oivva/otto/issues/18)
+* highlighting of the javascript methods ([dca7640](https://github.com/oivva/otto/commit/dca7640)), closes [#21](https://github.com/oivva/otto/issues/21)
+* improve HiDPI support ([e06a1e5](https://github.com/oivva/otto/commit/e06a1e5))
+* improve styling of the tabs ([f6d1d9d](https://github.com/oivva/otto/commit/f6d1d9d)), closes [#20](https://github.com/oivva/otto/issues/20)
+* text selection readability ([ee20dcb](https://github.com/oivva/otto/commit/ee20dcb))
+
+### Features
+
+* add dialog styles ([aba7cbe](https://github.com/oivva/otto/commit/aba7cbe))
+* add font settings ([7ba56b7](https://github.com/oivva/otto/commit/7ba56b7)), closes [#19](https://github.com/oivva/otto/issues/19)
+* add global size options ([740553e](https://github.com/oivva/otto/commit/740553e))
+* add progress bar styles ([c310b16](https://github.com/oivva/otto/commit/c310b16))
+* add scrollbar options ([8d4bf5a](https://github.com/oivva/otto/commit/8d4bf5a)), closes [#22](https://github.com/oivva/otto/issues/22)
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/oivva/otto/compare/v1.0.2...v1.0.3) (2016-03-03)
 
