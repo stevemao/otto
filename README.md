@@ -26,24 +26,12 @@ Please read the [Known Issues](#known-issues) section before reporting a new one
 
 ## Table of Contents
 
-<!-- MarkdownTOC depth=4 autolink=true bracket=round -->
+<!-- MarkdownTOC depth=2 autolink=true bracket=round -->
 
 - [Themes](#themes)
-  - [Otto Yesterday](#otto-yesterday)
-  - [Otto Tomorrow](#otto-tomorrow)
-  - [Otto Oceanic](#otto-oceanic)
-  - [Otto Monokai](#otto-monokai)
 - [Installation](#installation)
-  - [Package Control](#package-control)
-  - [Manual](#manual)
 - [Activation](#activation)
 - [Customization](#customization)
-  - [Accent Colors](#accent-colors)
-  - [Tabs](#tabs)
-  - [Widgets](#widgets)
-  - [Statusbar](#statusbar)
-  - [Sidebar](#sidebar)
-  - [Even More](#even-more)
 - [Recommended Settings](#recommended-settings)
 - [HiDPI Support](#hidpi-support)
 - [References](#references)
