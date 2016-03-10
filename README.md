@@ -130,7 +130,50 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ## Customization
 
-### Accent Colors
+NOTE: Some of the options may not work properly due to these well-known bugs & suggestions
+
+- [Increasing font size of file tabs cuts off the font](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009)
+- [Sidebar improvements](https://forum.sublimetext.com/t/sugestion-ui-sidebar-improvements/18028)
+- [Quick panel font size](https://forum.sublimetext.com/t/quick-panel-font-size/4046)
+- [Change font in quick panel](https://forum.sublimetext.com/t/change-font-in-quick-panel/7855)
+
+_You can vote for these issues._
+
+### Global Options
+
+#### Sizes
+
+```js
+// By Default
+// -----------------
+
+"theme_otto_global_ui_medium": true,
+
+// Available
+// -----------------
+
+"theme_otto_global_ui_small": true,
+"theme_otto_global_ui_large": true,
+```
+
+#### Font
+
+```js
+// By Default
+// -----------------
+
+"theme_otto_global_font_size_11": true,
+
+// Available
+// -----------------
+
+"theme_otto_global_font_size_12": true,
+"theme_otto_global_font_size_13": true,
+"theme_otto_global_font_size_14": true,
+"theme_otto_global_font_size_15": true,
+```
+
+#### Accent Colors
 
 ![Accents](https://raw.githubusercontent.com/oivva/otto-goodies/master/docs/accents.gif)
 
@@ -162,6 +205,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_tab_label_bold": false,
 "theme_otto_tab_selected_label_bold": false,
 "theme_otto_mouse_wheel_switches_tabs": false,
+"theme_otto_tab_font_size_11": true,
 
 // Available
 // -----------------
@@ -177,6 +221,28 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_tab_label_bold": true,
 "theme_otto_tab_selected_label_bold": true,
 "theme_otto_mouse_wheel_switches_tabs": true,
+"theme_otto_tab_separator_hide": true,
+
+"theme_otto_tab_font_size_12": true,
+"theme_otto_tab_font_size_13": true,
+"theme_otto_tab_font_size_14": true,
+"theme_otto_tab_font_size_15": true,
+```
+
+### Scrollbars
+
+```js
+// By Default
+// -----------------
+
+"theme_otto_scrollbars_monochrome": false,
+"theme_otto_scrollbars_wide": false,
+
+// Available
+// -----------------
+
+"theme_otto_scrollbars_monochrome": true,
+"theme_otto_scrollbars_wide": true,
 ```
 
 ### Widgets
@@ -187,12 +253,18 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 "theme_otto_find_and_replace_close_hide": false,
 "theme_otto_find_and_replace_small": false,
+"theme_otto_find_and_replace_font_size_11": true,
 
 // Available
 // -----------------
 
 "theme_otto_find_and_replace_close_hide": true,
 "theme_otto_find_and_replace_small": true,
+
+"theme_otto_find_and_replace_font_size_12": true,
+"theme_otto_find_and_replace_font_size_13": true,
+"theme_otto_find_and_replace_font_size_14": true,
+"theme_otto_find_and_replace_font_size_15": true,
 ```
 
 ### Statusbar
@@ -202,12 +274,18 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // -----------------
 
 "theme_otto_status_bar_medium": true,
+"theme_otto_status_bar_font_size_11": true,
 
 // Available
 // -----------------
 
 "theme_otto_status_bar_small": true,
 "theme_otto_status_bar_large": true,
+
+"theme_otto_status_bar_font_size_12": true,
+"theme_otto_status_bar_font_size_13": true,
+"theme_otto_status_bar_font_size_14": true,
+"theme_otto_status_bar_font_size_15": true,
 ```
 
 ### Sidebar
@@ -219,6 +297,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 "theme_otto_sidebar_medium": true,
 "theme_otto_sidebar_folder_arrow": false,
 "theme_otto_sidebar_hide_file_icons": false,
+"theme_otto_sidebar_font_size_11": true,
 
 // Available
 // -----------------
@@ -228,6 +307,11 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 "theme_otto_sidebar_folder_arrow": true,
 "theme_otto_sidebar_hide_file_icons": true,
+
+"theme_otto_sidebar_font_size_12": true,
+"theme_otto_sidebar_font_size_13": true,
+"theme_otto_sidebar_font_size_14": true,
+"theme_otto_sidebar_font_size_15": true,
 ```
 
 ### Even More
@@ -249,8 +333,8 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 "caret_style": "blink",
 "fade_fold_buttons": false,
 "indent_guide_options": ["draw_normal", "draw_active"],
-"line_padding_bottom": 1,
-"line_padding_top": 1,
+"line_padding_bottom": 2,
+"line_padding_top": 2,
 "overlay_scroll_bars": "enabled",
 "show_encoding": true,
 "show_line_endings": true,
