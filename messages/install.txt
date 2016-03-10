@@ -33,8 +33,50 @@ Activation
 "color_scheme": "Packages/Theme - Otto/schemes/Otto Monokai.tmTheme",
 
 
-Accent Colors
+Global Options
 =====================================================================================
+
+NOTE: Some of the options may not work properly due to these well-known bugs & suggestions
+
+- [Increaseing font size of file tabs cuts off the font](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009)
+- [Sidebar improvements](https://forum.sublimetext.com/t/sugestion-ui-sidebar-improvements/18028)
+- [Quick panel font size](https://forum.sublimetext.com/t/quick-panel-font-size/4046)
+- [Change font in quick panel](https://forum.sublimetext.com/t/change-font-in-quick-panel/7855)
+
+You can vote for these issues.
+
+Sizes
+-------------------------------------------------------------------------------------
+
+// By Default
+// -----------------
+
+"theme_otto_global_ui_medium": true,
+
+// Available
+// -----------------
+
+"theme_otto_global_ui_small": true,
+"theme_otto_global_ui_large": true,
+
+Font
+-------------------------------------------------------------------------------------
+
+// By Default
+// -----------------
+
+"theme_otto_global_font_size_11": true,
+
+// Available
+// -----------------
+
+"theme_otto_global_font_size_12": true,
+"theme_otto_global_font_size_13": true,
+"theme_otto_global_font_size_14": true,
+"theme_otto_global_font_size_15": true,
+
+Accent Colors
+-------------------------------------------------------------------------------------
 
 // By Default
 // -----------------
@@ -61,6 +103,7 @@ Tabs Options
 "theme_otto_tab_label_bold": false,
 "theme_otto_tab_selected_label_bold": false,
 "theme_otto_mouse_wheel_switches_tabs": false,
+"theme_otto_tab_font_size_11": true,
 
 // Available
 // -----------------
@@ -76,6 +119,28 @@ Tabs Options
 "theme_otto_tab_label_bold": true,
 "theme_otto_tab_selected_label_bold": true,
 "theme_otto_mouse_wheel_switches_tabs": true,
+"theme_otto_tab_separator_hide": true,
+
+"theme_otto_tab_font_size_12": true,
+"theme_otto_tab_font_size_13": true,
+"theme_otto_tab_font_size_14": true,
+"theme_otto_tab_font_size_15": true,
+
+
+Scrollbars Options
+=====================================================================================
+
+// By Default
+// -----------------
+
+"theme_otto_scrollbars_monochrome": false,
+"theme_otto_scrollbars_wide": false,
+
+// Available
+// -----------------
+
+"theme_otto_scrollbars_monochrome": true,
+"theme_otto_scrollbars_wide": true,
 
 
 Widget Options
@@ -86,12 +151,18 @@ Widget Options
 
 "theme_otto_find_and_replace_close_hide": false,
 "theme_otto_find_and_replace_small": false,
+"theme_otto_find_and_replace_font_size_11": true,
 
 // Available
 // -----------------
 
 "theme_otto_find_and_replace_close_hide": true,
 "theme_otto_find_and_replace_small": true,
+
+"theme_otto_find_and_replace_font_size_12": true,
+"theme_otto_find_and_replace_font_size_13": true,
+"theme_otto_find_and_replace_font_size_14": true,
+"theme_otto_find_and_replace_font_size_15": true,
 
 
 Status Bar Options
@@ -101,12 +172,18 @@ Status Bar Options
 // -----------------
 
 "theme_otto_status_bar_medium": true,
+"theme_otto_status_bar_font_size_11": true,
 
 // Available
 // -----------------
 
 "theme_otto_status_bar_small": true,
 "theme_otto_status_bar_large": true,
+
+"theme_otto_status_bar_font_size_12": true,
+"theme_otto_status_bar_font_size_13": true,
+"theme_otto_status_bar_font_size_14": true,
+"theme_otto_status_bar_font_size_15": true,
 
 
 Sidebar Options
@@ -118,6 +195,7 @@ Sidebar Options
 "theme_otto_sidebar_medium": true,
 "theme_otto_sidebar_folder_arrow": false,
 "theme_otto_sidebar_hide_file_icons": false,
+"theme_otto_sidebar_font_size_11": true,
 
 // Available
 // -----------------
@@ -127,6 +205,11 @@ Sidebar Options
 
 "theme_otto_sidebar_folder_arrow": true,
 "theme_otto_sidebar_hide_file_icons": true,
+
+"theme_otto_sidebar_font_size_12": true,
+"theme_otto_sidebar_font_size_13": true,
+"theme_otto_sidebar_font_size_14": true,
+"theme_otto_sidebar_font_size_15": true,
 
 Recommended Settings
 =====================================================================================
@@ -139,8 +222,8 @@ Recommended Settings
 "caret_style": "blink",
 "fade_fold_buttons": false,
 "indent_guide_options": ["draw_normal", "draw_active"],
-"line_padding_bottom": 1,
-"line_padding_top": 1,
+"line_padding_bottom": 2,
+"line_padding_top": 2,
 "overlay_scroll_bars": "enabled",
 "show_encoding": true,
 "show_line_endings": true,
@@ -161,5 +244,5 @@ I've put a lot of time and effort into making Otto awesome. If you love it, you 
   \__,_|    \___|  \___/  |_|   |_|    \___|  \___|   ( )  | |
                                                       |/  /_/
 
-https://pledgie.com/campaigns/31119
+https://www.patreon.com/oivva
 
