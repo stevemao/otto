@@ -1,0 +1,12 @@
+// Window Theme Specific Styles
+// ===========================================================================
+
+{
+  "class": "sheet_container_control",
+  "layer0.tint": [35, 36, 38]
+},
+
+{
+  "class": "dialog",
+  "layer0.tint": [42, 43, 45]
+}

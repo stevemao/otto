@@ -1,0 +1,91 @@
+// Tooltips Options
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_tab_selected_filled"],
+  "layer1.opacity": 0.15
+},
+
+// Tooltips Font Options
+// ---------------------------------------------------------------------------
+
+//
+// Font Size 12
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_font_size_12"],
+  "font.size": 12
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_font_size_12"],
+  "font.size": 12
+},
+
+//
+// Font Size 13
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_font_size_13"],
+  "font.size": 13
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_font_size_13"],
+  "font.size": 13
+},
+
+//
+// Font Size 14
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_font_size_14"],
+  "font.size": 14
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_font_size_14"],
+  "font.size": 14
+},
+
+//
+// Font Size 15
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_font_size_15"],
+  "font.size": 15
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_font_size_15"],
+  "font.size": 15
+},
+
+//
+// UI Font Face Custom
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
+},

@@ -1,0 +1,14 @@
+// Autocomplete Purple Accent
+// ===========================================================================
+
+{
+  "class": "auto_complete_label",
+  "settings": ["theme_otto_accent_purple"],
+  "match_fg": [175, 60, 241]
+},
+
+{
+  "class": "table_row",
+  "settings": ["theme_otto_accent_purple"],
+  "layer0.tint": [175, 60, 241]
+},

@@ -1,0 +1,53 @@
+// Controls Theme Specific Styles
+// ===========================================================================
+
+// Panel
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_control",
+  "layer0.tint": [45, 60, 68]
+},
+
+// Progress Bar
+// ---------------------------------------------------------------------------
+
+{
+  "class": "progress_bar_control",
+  "layer0.tint": [34, 50, 58]
+},
+
+// Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "label_control",
+  "color": [178, 183, 186]
+},
+
+// Buttons
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "layer0.tint": [34, 50, 58]
+},
+
+{
+  "class": "icon_button_control",
+  "layer0.tint": [45, 60, 68]
+},
+
+// Fields
+// ---------------------------------------------------------------------------
+
+{
+  "class": "text_line_control",
+  "layer0.texture": "Theme - Otto/assets/specific/oceanic/fields/field.png"
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.texture": "Theme - Otto/assets/specific/oceanic/fields/field_overlay.png"
+},

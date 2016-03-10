@@ -13,17 +13,16 @@ settings:
     caret: '#c0c5ce'
     foreground: '#cdd3de'
     invisibles: '#65737e'
-    selection: '#4f5b66'
-    selectionBorder: '#4f5b66'
-    selectionForeground: '#a7adba'
-    lineHighlight: '#4f5b6655'
+    selection: '#ffffff15'
+    selectionBorder: '#ffffff15'
+    lineHighlight: '#ffffff10'
     gutter: '#1b2b34'
 
 - name: AceJump
   scope: ace.jump
   settings:
     foreground: '#ffffff'
-    background: '#2497e3'
+    background: '#846fec'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
@@ -98,12 +97,12 @@ settings:
 - name: entity.name.method.js
   scope: entity.name.method.js
   settings:
-    foreground: '#d8dee9'
+    foreground: '#6699cc'
 
 - name: meta.method.js
   scope: meta.class-method.js entity.name.function.js, variable.function.constructor
   settings:
-    foreground: '#d8dee9'
+    foreground: '#6699cc'
 
 - name: Attributes
   scope: entity.other.attribute-name

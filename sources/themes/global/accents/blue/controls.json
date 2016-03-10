@@ -1,0 +1,123 @@
+// Controls Blue Accent
+// ===========================================================================
+
+// Progress Bar
+// ---------------------------------------------------------------------------
+
+{
+  "class": "progress_gauge_control",
+  "layer0.tint": [36, 151, 227]
+},
+
+// Buttons
+// ---------------------------------------------------------------------------
+
+//
+// Hovered
+//
+
+{
+  "class": "button_control",
+  "attributes": ["hover"],
+  "layer0.tint": [36, 151, 227]
+},
+
+{
+  "class": "label_control",
+  "parents": [{"class": "button_control", "attributes": ["hover"]}],
+  "color": [255, 255, 255]
+},
+
+//
+// Icons
+//
+
+// Regex Search Button Selected
+
+{
+  "class": "icon_regex",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_regex_on.png"
+},
+
+// Case Sensitive Search Button
+
+{
+  "class": "icon_case",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_case_on.png"
+},
+
+// Match Whole Word Search Button
+
+{
+  "class": "icon_whole_word",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_word_on.png"
+},
+
+// Search Wrap Button
+
+{
+  "class": "icon_wrap",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_wrap_on.png"
+},
+
+// Show Search Context Button
+
+{
+  "class": "icon_context",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_context_on.png"
+},
+
+// Use Search Buffer
+
+{
+  "class": "icon_use_buffer",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_buffer_on.png"
+},
+
+// Reverse Search Direction Button
+
+{
+  "class": "icon_reverse",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_reverse_on.png"
+},
+
+// Search In Selection Button
+
+{
+  "class": "icon_in_selection",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_selection_on.png"
+},
+
+// Preserve Case Button
+
+{
+  "class": "icon_preserve_case",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_preserve_on.png"
+},
+
+// Highlight Results Button
+
+{
+  "class": "icon_highlight",
+  "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+  "layer0.opacity": 1.0,
+  "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_highlight_on.png"
+},

@@ -1,0 +1,42 @@
+// Overlays Blue Accent
+// ===========================================================================
+
+// Quick Panel Rows
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_row",
+  "attributes": ["selected"],
+  "layer0.tint": [36, 151, 227],
+  "layer1.opacity": 0.0
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "attributes": ["selected"],
+  "layer0.tint": [36, 151, 227]
+},
+
+// Quick Panel Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_label",
+  "match_fg": [36, 151, 227, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "parents": [{"class": "overlay_control"}],
+  "match_fg": [36, 151, 227, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "match_fg": [36, 151, 227, 255]
+},
+
+{
+  "class": "quick_panel_score_label",
+  "fg": [36, 151, 227, 255]
+},

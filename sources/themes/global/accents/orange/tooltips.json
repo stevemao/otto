@@ -1,0 +1,8 @@
+// Tooltips Orange Accent
+// ===========================================================================
+
+{
+  "class": "tool_tip_control",
+  "settings": ["theme_otto_accent_orange"],
+  "layer0.tint": [241, 103, 60]
+},

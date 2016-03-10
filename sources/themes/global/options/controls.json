@@ -1,0 +1,183 @@
+// Controls Options
+// ===========================================================================
+
+// Hide Find & Replace Panel Close Button
+// ---------------------------------------------------------------------------
+
+{
+  "class": "panel_close_button",
+  "settings": ["theme_otto_find_and_replace_close_hide"],
+  "content_margin": 0
+},
+
+// Small Find & Replace
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_ui_small"],
+  "content_margin": [10, 11]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_global_ui_small"],
+  "content_margin": [10, 10]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_global_ui_small"],
+  "content_margin": [10, 6]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_global_ui_small"],
+  "content_margin": [24, 8]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 11]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 10]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [10, 6]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_find_and_replace_small"],
+  "content_margin": [24, 8]
+},
+
+// Find & Replace Font Options
+// ---------------------------------------------------------------------------
+
+//
+// Font Size 12
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_12"],
+  "font.size": 12
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_12"],
+  "font.size": 12
+},
+
+//
+// Font Size 13
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_13"],
+  "font.size": 13
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_13"],
+  "font.size": 13
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_13"],
+  "min_size": [80, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_13"],
+  "min_size": [80, 0]
+},
+
+//
+// Font Size 14
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_14"],
+  "font.size": 14
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_14"],
+  "font.size": 14
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_14"],
+  "min_size": [84, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_14"],
+  "min_size": [84, 0]
+},
+
+//
+// Font Size 15
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_15"],
+  "font.size": 15
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_15"],
+  "font.size": 15
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_font_size_15"],
+  "min_size": [88, 0]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_font_size_15"],
+  "min_size": [88, 0]
+},
+
+//
+// UI Font Face Custom
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_custom_ui_font_face"],
+  "font.face": "Sans-Serif"
+},

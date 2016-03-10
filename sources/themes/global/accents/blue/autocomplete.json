@@ -1,0 +1,12 @@
+// Autocomplete Blue Accent
+// ===========================================================================
+
+{
+  "class": "auto_complete_label",
+  "match_fg": [36, 151, 227]
+},
+
+{
+  "class": "table_row",
+  "layer0.tint": [36, 151, 227]
+},

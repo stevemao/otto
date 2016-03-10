@@ -1,0 +1,48 @@
+// Overlays Green Accent
+// ===========================================================================
+
+// Quick Panel Rows
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_row",
+  "settings": ["theme_otto_accent_green"],
+  "attributes": ["selected"],
+  "layer0.tint": [46, 188, 103],
+  "layer1.opacity": 0.0
+},
+
+{
+  "class": "mini_quick_panel_row",
+  "settings": ["theme_otto_accent_green"],
+  "attributes": ["selected"],
+  "layer0.tint": [46, 188, 103]
+},
+
+// Quick Panel Labels
+// ---------------------------------------------------------------------------
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_green"],
+  "match_fg": [46, 188, 103, 255]
+},
+
+{
+  "class": "quick_panel_label",
+  "settings": ["theme_otto_accent_green"],
+  "parents": [{"class": "overlay_control"}],
+  "match_fg": [46, 188, 103, 255]
+},
+
+{
+  "class": "quick_panel_path_label",
+  "settings": ["theme_otto_accent_green"],
+  "match_fg": [46, 188, 103, 255]
+},
+
+{
+  "class": "quick_panel_score_label",
+  "settings": ["theme_otto_accent_green"],
+  "fg": [46, 188, 103, 255]
+},

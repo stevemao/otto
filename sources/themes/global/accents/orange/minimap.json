@@ -1,0 +1,8 @@
+// Minimap Orange Accent
+// ===========================================================================
+
+{
+  "class": "minimap_control",
+  "settings": ["theme_otto_accent_orange"],
+  "viewport_color": [241, 103, 60, 75]
+},

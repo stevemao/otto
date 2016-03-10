@@ -1,0 +1,88 @@
+// Tabs Theme Specific Styles
+// ===========================================================================
+
+// Tabset
+// ---------------------------------------------------------------------------
+
+//
+// Tabset Defaults
+//
+
+{
+  "class": "tabset_control",
+  "layer0.tint": [35, 36, 38]
+},
+
+// Tab
+// ---------------------------------------------------------------------------
+
+//
+// Tab Defaults
+//
+
+{
+  "class": "tab_control",
+  "layer0.texture": "Theme - Otto/assets/specific/tomorrow/tabs/tab.png",
+  "layer1.tint": [42, 43, 45]
+},
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_tab_separator_hide"],
+  "layer0.texture": "Theme - Otto/assets/specific/tomorrow/tabs/tab_without_separator.png"
+},
+
+//
+// Tab Labels
+//
+
+{
+  "class": "tab_label",
+  "fg": [155, 155, 155, 255]
+},
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+  "fg": [155, 155, 155, 255]
+},
+
+// Light Color Scheme
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+  "fg": [80, 80, 80, 255],
+  "shadow_color": [255, 255, 255, 50],
+  "shadow_offset": [0, 0]
+},
+
+// Medium Color Scheme
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+  "fg": [255, 255, 255, 255],
+  "shadow_color": [0, 0, 0, 100],
+  "shadow_offset": [0, 0]
+},
+
+// Medium Dark Color Scheme
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
+  "fg": [255, 255, 255, 230],
+  "shadow_color": [0, 0, 0, 255],
+  "shadow_offset": [0, 0]
+},
+
+// Dark Color Scheme
+
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
+  "fg": [255, 255, 255, 230],
+  "shadow_color": [0, 0, 0, 255],
+  "shadow_offset": [0, 0]
+},

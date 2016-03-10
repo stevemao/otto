@@ -1,575 +1,175 @@
-// OTTO MONOKAI
+// > OTTO MONOKAI
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Your next theme for Sublime Text 3
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [
-  // > 1 Tabs
+  //
+  // >> Autocomplete
   // ===========================================================================
-  // Tabs behavior and settings
+  // Autocomplete settings and behavior
   // ===========================================================================
-  
-  // >> 1.1 Tabset
-  // ===========================================================================
-  
-  // >>> 1.1.1 Tabset Defaults
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "tabset_control",
-  
-    "layer0.tint": [46, 47, 41],
-    "layer0.inner_margin": [10, 0],
-    "layer0.opacity": 1.0,
-  
-    "content_margin": 0,
-    "tab_overlap": 1,
-    "tab_width": 180,
-    "tab_min_width": 120,
-    "tab_height": 44,
-  
-    "mouse_wheel_switch": false
-  },
-  
-  // >>> 1.1.2 Tabset Scrolling
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Left Scroll Button
   //
   
-  // Defaults
-  
-  {
-    "class": "scroll_tabs_left_button",
-    "content_margin": [8, 8],
-  
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_arrow_left.png",
-    "layer0.opacity": 0.5,
-    "layer0.inner_margin": 0
-  },
-  
-  // Hovered
-  
-  {
-    "class": "scroll_tabs_left_button",
-    "attributes": ["hover"],
-    "layer0.opacity": 0.75
-  },
-  
-  //
-  // Right Scroll Button
-  //
-  
-  // Defaults
-  
-  {
-    "class": "scroll_tabs_right_button",
-    "content_margin": [8, 8],
-  
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_arrow_right.png",
-    "layer0.opacity": 0.5,
-    "layer0.inner_margin": 0
-  },
-  
-  // Hovered
-  
-  {
-    "class": "scroll_tabs_right_button",
-    "attributes": ["hover"],
-    "layer0.opacity": 0.75
-  },
-  
-  // >>> 1.1.3 Tabset Overflow
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Overflow Button
-  //
-  
-  // Defaults
-  
-  {
-    "class": "show_tabs_dropdown_button",
-    "content_margin": [8, 8],
-  
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dropdown.png",
-    "layer0.opacity": 0.5,
-    "layer0.inner_margin": 0
-  },
-  
-  // Hovered
-  
-  {
-    "class": "show_tabs_dropdown_button",
-    "attributes": ["hover"],
-    "layer0.opacity": 0.75
-  },
-  
-  // >> 1.2 Tab
+  // Autocomplete Dropdown
   // ===========================================================================
   
-  // >>> 1.2.1 Tab Defaults
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
   {
-    "class": "tab_control",
-    "content_margin": [24, 4, 20, 4],
-    "max_margin_trim": 0,
-    "hit_test_level": 0.5,
-  
-    "layer0.texture": "Theme - Otto/assets/monokai/tabs/tab.png",
-    "layer0.inner_margin": [24, 4],
-    "layer0.opacity": 1.0,
-  
-    "layer1.tint": [54, 55, 49],
-    "layer1.inner_margin": [24, 4],
-    "layer1.opacity": 0,
-  
-    "layer2.texture": "Theme - Otto/assets/common/tabs/tab_selected.png",
-    "layer2.inner_margin": [24, 4],
-    "layer2.opacity": 0,
-    "tint_index": 2,
-  
-    "layer3.texture": "Theme - Otto/assets/common/tabs/tab_overlay.png",
-    "layer3.inner_margin": [24, 4],
-    "layer3.opacity": 0
+    "class": "popup_control",
+    "content_margin": [0, 0]
   },
   
-  //
-  // Label
-  //
+  // Autocomplete Sizes
+  // ===========================================================================
   
   {
-    "class": "tab_label",
-    "fade": false,
-    "fg": [185, 185, 183, 255],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0],
-    "font.bold" : false,
-    "font.size" : 11
-  },
-  
-  // File Preview
-  
-  {
-    "class": "tab_label",
-    "attributes": ["transient"],
-    "font.italic": true
-  },
-  
-  // >>> 1.2.2 Tab Hovered
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "tab_control",
-    "attributes": ["hover"],
-    "layer1.opacity": 1.0
-  },
-  
-  //
-  // Label
-  //
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-    "fg": [185, 185, 183, 255],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0]
-  },
-  
-  // >>> 1.2.3 Tab Selected
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "tab_control",
-    "attributes": ["selected"],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
-    "layer2.opacity": 1.0,
-    "layer3.opacity": 1.0
-  },
-  
-  //
-  // Label
-  //
-  
-  // Light Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [80, 80, 80, 255],
-    "shadow_color": [255, 255, 255, 50],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Medium Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-    "fg": [255, 255, 255, 255],
-    "shadow_color": [0, 0, 0, 100],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Medium Dark Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-    "fg": [255, 255, 255, 230],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Dark Color Scheme
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-    "fg": [255, 255, 255, 230],
-    "shadow_color": [0, 0, 0, 255],
-    "shadow_offset": [0, 0]
-  },
-  
-  // >>> 1.2.4 Tab Buttons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Close
-  //
-  
-  // Defaults
-  
-  {
-    "class": "tab_close_button",
-    "content_margin": [0, 0],
-  
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 0.5,
-    "layer0.inner_margin": [0, 0]
-  },
-  
-  // Hovered
-  
-  {
-    "class": "tab_close_button",
-    "attributes": ["hover"],
-    "layer0.opacity": 0.75
-  },
-  
-  // Size
-  
-  {
-    "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons"],
-    "content_margin": [8, 8]
-  },
-  
-  {
-    "class": "tab_control",
-    "settings": ["!show_tab_close_buttons"],
-    "content_margin": [24, 4, 24, 4]
-  },
-  
-  // Selected
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "layer0.texture": "Theme - Otto/assets/light/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-    "attributes": ["hover"],
+    "class": "auto_complete",
+    "row_padding": [5, 5],
     "layer0.opacity": 1.0
   },
   
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
-    "attributes": ["hover"],
-    "layer0.opacity": 0.9
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
-    "attributes": ["hover"],
-    "layer0.opacity": 0.9
-  },
-  
-  //
-  // Dirty
-  //
-  
-  // Defaults
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
-    "layer0.opacity": 0.5
-  },
-  
-  // Hovered
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-    "attributes": ["hover"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 0.75
-  },
-  
-  // Only (Close Button Hidden)
-  
-  {
-    "class": "tab_close_button",
-    "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
-    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-    "content_margin": [8, 8]
-  },
-  
-  {
-    "class": "tab_control",
-    "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
-    "attributes": ["dirty"],
-    "content_margin": [24, 4, 20, 4]
-  },
-  
-  // > 3 Scrollbars
-  // ===========================================================================
-  // Scrollbars settings and behavior
+  // Autocomplete Labels
   // ===========================================================================
   
-  // >> 3.1 Scrollbar
+  {
+    "class": "auto_complete_label",
+    "selected_fg": [255, 255, 255],
+    "selected_match_fg": [255, 255, 255]
+  },
+  
+  // Autocomplete Rows
   // ===========================================================================
   
-  // >>> 3.1.1 Scrollbar Corner
-  // ---------------------------------------------------------------------------
-  
   {
-    "class": "scroll_corner_control",
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0,
+    "class": "table_row",
+    "layer0.opacity": 0,
     "layer0.inner_margin": [1, 1]
   },
   
-  // >>> 3.1.2 Scrollbar Vertical
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
   {
-    "class": "scroll_bar_control",
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [0, 6],
-    "blur": false
-  },
-  
-  //
-  // Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [0, 10],
-    "content_margin": [8, 12],
-    "blur": false
-  },
-  
-  // >>> 3.1.3 Scrollbar Horizontal
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "scroll_bar_control",
-    "attributes": ["horizontal"],
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [6, 0],
-    "blur": false
-  },
-  
-  //
-  // Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "attributes": ["horizontal"],
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [10, 0],
-    "content_margin": [12, 8],
-    "blur": false
-  },
-  
-  // >> 3.2 Scrollbar Overlayed
-  // ===========================================================================
-  
-  // >>> 3.2.1 Toggle Scrollbar Overlay
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "scroll_area_control",
-    "settings": ["overlay_scroll_bars"],
-    "overlay": true
-  },
-  
-  {
-    "class": "scroll_area_control",
-    "settings": ["!overlay_scroll_bars"],
-    "overlay": false
-  },
-  
-  // >>> 3.2.2 Scrollbar Vertical Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "scroll_bar_control",
-    "settings": ["overlay_scroll_bars"],
-    "layer0.tint": [54, 55, 49],
-    "layer0.inner_margin": [0, 5],
-    "blur": false
-  },
-  
-  //
-  // Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars"],
-    "layer0.inner_margin": [0, 5],
-    "content_margin": [5, 20],
-    "blur": false
-  },
-  
-  // >>> 3.2.3 Scrollbar Horizontal Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Background
-  //
-  
-  {
-    "class": "scroll_bar_control",
-    "settings": ["overlay_scroll_bars"],
-    "attributes": ["horizontal"],
-    "layer0.tint": [54, 55, 49],
-    "layer0.inner_margin": [5, 0],
-    "blur": false
-  },
-  
-  //
-  // Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars"],
-    "attributes": ["horizontal"],
-    "layer0.inner_margin": [5, 0],
-    "content_margin": [20, 5],
-    "blur": false
-  },
-  
-  // > 4 Window
-  // ===========================================================================
-  // Styles for empty window
-  // ===========================================================================
-  
-  {
-    "class": "sheet_container_control",
-    "layer0.tint": [46, 47, 41],
+    "class": "table_row",
+    "attributes": ["selected"],
     "layer0.opacity": 1.0
   },
   
-  // > 5 Grid
+  // Autocomplete Theme Specific Styles
   // ===========================================================================
-  // Grid styles
+  
+  // Autocomplete Background
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "auto_complete",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Autocomplete Foreground
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "auto_complete_label",
+    "fg": [185, 185, 183]
+  },
+  
+  // Autocomplete Blue Accent
   // ===========================================================================
   
   {
-    "class": "grid_layout_control",
-    "border_size": 1,
-    "border_color": [54, 55, 49]
+    "class": "auto_complete_label",
+    "match_fg": [36, 151, 227]
   },
   
-  // > 8 Widgets
-  // ===========================================================================
-  // Widget, input, buttons settings and behavior
+  {
+    "class": "table_row",
+    "layer0.tint": [36, 151, 227]
+  },
+  
+    // Autocomplete Green Accent
   // ===========================================================================
   
-  // >> 8.1 Widget Panel
+  {
+    "class": "auto_complete_label",
+    "settings": ["theme_otto_accent_green"],
+    "match_fg": [46, 188, 103]
+  },
+  
+  {
+    "class": "table_row",
+    "settings": ["theme_otto_accent_green"],
+    "layer0.tint": [46, 188, 103]
+  },
+  
+    // Autocomplete Orange Accent
+  // ===========================================================================
+  
+  {
+    "class": "auto_complete_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60]
+  },
+  
+  {
+    "class": "table_row",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+    // Autocomplete Purple Accent
+  // ===========================================================================
+  
+  {
+    "class": "auto_complete_label",
+    "settings": ["theme_otto_accent_purple"],
+    "match_fg": [175, 60, 241]
+  },
+  
+  {
+    "class": "table_row",
+    "settings": ["theme_otto_accent_purple"],
+    "layer0.tint": [175, 60, 241]
+  },
+  
+  //
+  // >> Controls
+  // ===========================================================================
+  // Panel, fields, buttons settings and behavior
+  // ===========================================================================
+  //
+  
+  // Panel
   // ===========================================================================
   
   {
     "class": "panel_control",
-    "layer0.tint": [54, 55, 49],
     "layer0.inner_margin": [2, 2],
     "layer0.opacity": 1.0,
     "content_margin": [-2, 2, -2, 2]
   },
   
-  // >> 8.2 Widget Labels
+  // Progress Bar
+  // ===========================================================================
+  
+  {
+    "class": "progress_bar_control",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "progress_gauge_control",
+    "layer0.opacity": 1.0,
+    "content_margin": [0, 6]
+  },
+  
+  // Labels
   // ===========================================================================
   
   {
     "class": "label_control",
-    "color": [185, 185, 183],
     "font.bold" : true,
-    "font.size" : 11
+    "font.size": 11
   },
   
-  // >> 8.3 Widget Buttons
+  // Buttons
   // ===========================================================================
   
   // Defaults
@@ -581,22 +181,11 @@
   
   {
     "class": "button_control",
-    "content_margin": [12, 15],
+    "content_margin": [12, 16],
     "min_size": [70, 0],
   
-    "layer0.tint": [46, 47, 41],
     "layer0.opacity": 1,
-    "layer0.inner_margin": [10, 10],
-  },
-  
-  //
-  // Label
-  //
-  
-  {
-    "class": "label_control",
-    "parents": [{"class": "button_control", "attributes": ["hover"]}],
-    "color": [255, 255, 255]
+    "layer0.inner_margin": [10, 10]
   },
   
   // Groups
@@ -604,7 +193,6 @@
   
   {
     "class": "icon_button_control",
-    "layer0.tint": [54, 55, 49],
     "layer0.opacity": 1,
     "content_margin": [12, 15]
   },
@@ -614,7 +202,6 @@
   
   {
     "class": "panel_close_button",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -634,7 +221,6 @@
   
   {
     "class": "icon_regex",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_regex.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -651,7 +237,6 @@
   
   {
     "class": "icon_case",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_case.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -668,7 +253,6 @@
   
   {
     "class": "icon_whole_word",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_word.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -685,7 +269,6 @@
   
   {
     "class": "icon_wrap",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_wrap.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -702,7 +285,6 @@
   
   {
     "class": "icon_context",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_context.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -719,7 +301,6 @@
   
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_buffer.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -736,7 +317,6 @@
   
   {
     "class": "icon_reverse",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_reverse.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -753,7 +333,6 @@
   
   {
     "class": "icon_in_selection",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_selection.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -770,7 +349,6 @@
   
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_preserve.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -787,7 +365,6 @@
   
   {
     "class": "icon_highlight",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_highlight.png",
     "layer0.opacity": 0.5,
     "content_margin": [8, 8]
   },
@@ -798,7 +375,7 @@
     "layer0.opacity": 0.75
   },
   
-  // >> 8.4 Widget Fields
+  // Fields
   // ===========================================================================
   
   // Defaults
@@ -810,7 +387,6 @@
   
   {
     "class": "text_line_control",
-    "layer0.texture": "Theme - Otto/assets/monokai/fields/field.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [20, 5, 20, 5],
     "tint_index": 1,
@@ -824,8 +400,8 @@
   {
     "class": "label_control",
     "parents": [{"class": "panel_control"}],
-    "font.bold" : true,
-    "font.size": 12
+    "font.bold": true,
+    "font.size": 11
   },
   
   // Inside Overlay Control
@@ -834,7 +410,6 @@
   {
     "class": "text_line_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.texture": "Theme - Otto/assets/monokai/fields/field_overlay.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [24, 0, 24, 3],
     "layer0.draw_center": true,
@@ -851,7 +426,6 @@
   {
     "class": "dropdown_button_control",
     "content_margin": [8, 8],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dropdown.png",
     "layer0.opacity": 0.5,
     "layer0.inner_margin": [0, 0]
   },
@@ -866,91 +440,1983 @@
     "layer0.opacity": 0.75
   },
   
-  // > 9 Status Bar
-  // ===========================================================================
-  // Status bar settings and behavior
+  // Controls Dark Styles
   // ===========================================================================
   
-  // >> 9.1 Status Bar Labels
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Close
+  //
+  
+  {
+    "class": "panel_close_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  //
+  // Icons
+  //
+  
+  {
+    "class": "icon_regex",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_regex.png"
+  },
+  
+  {
+    "class": "icon_case",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_case.png"
+  },
+  
+  {
+    "class": "icon_whole_word",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_word.png"
+  },
+  
+  {
+    "class": "icon_wrap",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_wrap.png"
+  },
+  
+  {
+    "class": "icon_context",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_context.png"
+  },
+  
+  {
+    "class": "icon_use_buffer",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_buffer.png"
+  },
+  
+  {
+    "class": "icon_reverse",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_reverse.png"
+  },
+  
+  {
+    "class": "icon_in_selection",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_selection.png"
+  },
+  
+  {
+    "class": "icon_preserve_case",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_preserve.png"
+  },
+  
+  {
+    "class": "icon_highlight",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_highlight.png"
+  },
+  
+  // Fields
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Dropdown
+  //
+  
+  {
+    "class": "dropdown_button_control",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dropdown.png"
+  },
+  
+  // Controls Theme Specific Styles
   // ===========================================================================
+  
+  // Panel
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "panel_control",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Progress Bar
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "progress_bar_control",
+    "layer0.tint": [46, 47, 41]
+  },
+  
+  // Labels
+  // ---------------------------------------------------------------------------
   
   {
     "class": "label_control",
-    "parents": [{"class": "status_bar"}],
-    "font.bold": false
+    "color": [185, 185, 183]
   },
   
-  // >> 9.2 Status Bar Container
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "button_control",
+    "layer0.tint": [46, 47, 41]
+  },
+  
+  {
+    "class": "icon_button_control",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Fields
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "text_line_control",
+    "layer0.texture": "Theme - Otto/assets/specific/monokai/fields/field.png"
+  },
+  
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.texture": "Theme - Otto/assets/specific/monokai/fields/field_overlay.png"
+  },
+  
+  // Controls Blue Accent
   // ===========================================================================
   
+  // Progress Bar
+  // ---------------------------------------------------------------------------
+  
   {
-    "class": "status_bar",
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [2, 2],
-    "content_margin": [5, 5, 5, 5]
+    "class": "progress_gauge_control",
+    "layer0.tint": [36, 151, 227]
   },
   
-  {
-    "class": "status_container",
-    "content_margin": [5, 4, 5, 4]
-  },
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Hovered
+  //
   
   {
-    "class": "status_button",
-    "min_size": [96, 0]
-  },
-  
-  // >> 9.3 Status Bar Panel Switcher
-  // ===========================================================================
-  
-  {
-    "class": "panel_button_control",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_panel_switcher.png",
-    "layer0.opacity": 0.5,
-    "content_margin": [8, 8]
-  },
-  
-  {
-    "class": "panel_button_control",
+    "class": "button_control",
     "attributes": ["hover"],
-    "layer0.opacity": 0.75
+    "layer0.tint": [36, 151, 227]
   },
   
-  // > 10 Sidebar
+  {
+    "class": "label_control",
+    "parents": [{"class": "button_control", "attributes": ["hover"]}],
+    "color": [255, 255, 255]
+  },
+  
+  //
+  // Icons
+  //
+  
+  // Regex Search Button Selected
+  
+  {
+    "class": "icon_regex",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_regex_on.png"
+  },
+  
+  // Case Sensitive Search Button
+  
+  {
+    "class": "icon_case",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_case_on.png"
+  },
+  
+  // Match Whole Word Search Button
+  
+  {
+    "class": "icon_whole_word",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_word_on.png"
+  },
+  
+  // Search Wrap Button
+  
+  {
+    "class": "icon_wrap",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_wrap_on.png"
+  },
+  
+  // Show Search Context Button
+  
+  {
+    "class": "icon_context",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_context_on.png"
+  },
+  
+  // Use Search Buffer
+  
+  {
+    "class": "icon_use_buffer",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_buffer_on.png"
+  },
+  
+  // Reverse Search Direction Button
+  
+  {
+    "class": "icon_reverse",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_reverse_on.png"
+  },
+  
+  // Search In Selection Button
+  
+  {
+    "class": "icon_in_selection",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_selection_on.png"
+  },
+  
+  // Preserve Case Button
+  
+  {
+    "class": "icon_preserve_case",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_preserve_on.png"
+  },
+  
+  // Highlight Results Button
+  
+  {
+    "class": "icon_highlight",
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_highlight_on.png"
+  },
+  
+    // Controls Green Accent
+  // ===========================================================================
+  
+  // Progress Bar
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "progress_gauge_control",
+    "layer0.tint": [46, 188, 103]
+  },
+  
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Hovered
+  //
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_accent_green"],
+    "attributes": ["hover"],
+    "layer0.tint": [46, 188, 103]
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "button_control", "attributes": ["hover"]}],
+    "color": [255, 255, 255]
+  },
+  
+  //
+  // Icons
+  //
+  
+  // Regex Search Button Selected
+  
+  {
+    "class": "icon_regex",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_regex_on.png"
+  },
+  
+  // Case Sensitive Search Button
+  
+  {
+    "class": "icon_case",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_case_on.png"
+  },
+  
+  // Match Whole Word Search Button
+  
+  {
+    "class": "icon_whole_word",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_word_on.png"
+  },
+  
+  // Search Wrap Button
+  
+  {
+    "class": "icon_wrap",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_wrap_on.png"
+  },
+  
+  // Show Search Context Button
+  
+  {
+    "class": "icon_context",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_context_on.png"
+  },
+  
+  // Use Search Buffer
+  
+  {
+    "class": "icon_use_buffer",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_buffer_on.png"
+  },
+  
+  // Reverse Search Direction Button
+  
+  {
+    "class": "icon_reverse",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_reverse_on.png"
+  },
+  
+  // Search In Selection Button
+  
+  {
+    "class": "icon_in_selection",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_selection_on.png"
+  },
+  
+  // Preserve Case Button
+  
+  {
+    "class": "icon_preserve_case",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_preserve_on.png"
+  },
+  
+  // Highlight Results Button
+  
+  {
+    "class": "icon_highlight",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_highlight_on.png"
+  },
+  
+    // Controls Orange Accent
+  // ===========================================================================
+  
+  // Progress Bar
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "progress_gauge_control",
+    "layer0.tint": [241, 103, 60]
+  },
+  
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Hovered
+  //
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["hover"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "button_control", "attributes": ["hover"]}],
+    "color": [255, 255, 255]
+  },
+  
+  //
+  // Icons
+  //
+  
+  // Regex Search Button Selected
+  
+  {
+    "class": "icon_regex",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_regex_on.png"
+  },
+  
+  // Case Sensitive Search Button
+  
+  {
+    "class": "icon_case",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_case_on.png"
+  },
+  
+  // Match Whole Word Search Button
+  
+  {
+    "class": "icon_whole_word",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_word_on.png"
+  },
+  
+  // Search Wrap Button
+  
+  {
+    "class": "icon_wrap",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_wrap_on.png"
+  },
+  
+  // Show Search Context Button
+  
+  {
+    "class": "icon_context",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_context_on.png"
+  },
+  
+  // Use Search Buffer
+  
+  {
+    "class": "icon_use_buffer",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_buffer_on.png"
+  },
+  
+  // Reverse Search Direction Button
+  
+  {
+    "class": "icon_reverse",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_reverse_on.png"
+  },
+  
+  // Search In Selection Button
+  
+  {
+    "class": "icon_in_selection",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_selection_on.png"
+  },
+  
+  // Preserve Case Button
+  
+  {
+    "class": "icon_preserve_case",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_preserve_on.png"
+  },
+  
+  // Highlight Results Button
+  
+  {
+    "class": "icon_highlight",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_highlight_on.png"
+  },
+  
+    // Controls Purple Accent
+  // ===========================================================================
+  
+  // Progress Bar
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "progress_gauge_control",
+    "layer0.tint": [175, 60, 241]
+  },
+  
+  // Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Hovered
+  //
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_accent_purple"],
+    "attributes": ["hover"],
+    "layer0.tint": [175, 60, 241]
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "button_control", "attributes": ["hover"]}],
+    "color": [255, 255, 255]
+  },
+  
+  //
+  // Icons
+  //
+  
+  // Regex Search Button Selected
+  
+  {
+    "class": "icon_regex",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_regex_on.png"
+  },
+  
+  // Case Sensitive Search Button
+  
+  {
+    "class": "icon_case",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_case_on.png"
+  },
+  
+  // Match Whole Word Search Button
+  
+  {
+    "class": "icon_whole_word",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_word_on.png"
+  },
+  
+  // Search Wrap Button
+  
+  {
+    "class": "icon_wrap",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_wrap_on.png"
+  },
+  
+  // Show Search Context Button
+  
+  {
+    "class": "icon_context",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_context_on.png"
+  },
+  
+  // Use Search Buffer
+  
+  {
+    "class": "icon_use_buffer",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_buffer_on.png"
+  },
+  
+  // Reverse Search Direction Button
+  
+  {
+    "class": "icon_reverse",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_reverse_on.png"
+  },
+  
+  // Search In Selection Button
+  
+  {
+    "class": "icon_in_selection",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_selection_on.png"
+  },
+  
+  // Preserve Case Button
+  
+  {
+    "class": "icon_preserve_case",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_preserve_on.png"
+  },
+  
+  // Highlight Results Button
+  
+  {
+    "class": "icon_highlight",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "layer0.opacity": 1.0,
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_highlight_on.png"
+  },
+  
+  // Controls Options
+  // ===========================================================================
+  
+  // Hide Find & Replace Panel Close Button
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "panel_close_button",
+    "settings": ["theme_otto_find_and_replace_close_hide"],
+    "content_margin": 0
+  },
+  
+  // Small Find & Replace
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 11]
+  },
+  
+  {
+    "class": "icon_button_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "text_line_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 6]
+  },
+  
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [24, 8]
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_find_and_replace_small"],
+    "content_margin": [10, 11]
+  },
+  
+  {
+    "class": "icon_button_control",
+    "settings": ["theme_otto_find_and_replace_small"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "text_line_control",
+    "settings": ["theme_otto_find_and_replace_small"],
+    "content_margin": [10, 6]
+  },
+  
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "settings": ["theme_otto_find_and_replace_small"],
+    "content_margin": [24, 8]
+  },
+  
+  // Find & Replace Font Options
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Font Size 12
+  //
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_find_and_replace_font_size_12"],
+    "font.size": 12
+  },
+  
+  //
+  // Font Size 13
+  //
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_find_and_replace_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_global_font_size_13"],
+    "min_size": [80, 0]
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_find_and_replace_font_size_13"],
+    "min_size": [80, 0]
+  },
+  
+  //
+  // Font Size 14
+  //
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_find_and_replace_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_global_font_size_14"],
+    "min_size": [84, 0]
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_find_and_replace_font_size_14"],
+    "min_size": [84, 0]
+  },
+  
+  //
+  // Font Size 15
+  //
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_find_and_replace_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_global_font_size_15"],
+    "min_size": [88, 0]
+  },
+  
+  {
+    "class": "button_control",
+    "settings": ["theme_otto_find_and_replace_font_size_15"],
+    "min_size": [88, 0]
+  },
+  
+  //
+  // UI Font Face Custom
+  //
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "label_control",
+    "settings": ["theme_otto_find_and_replace_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  //
+  // >> Folding
+  // ===========================================================================
+  // Folding settings and behavior
+  // ===========================================================================
+  //
+  
+  // Fold Defaults
+  // ===========================================================================
+  
+  {
+    "class": "fold_button_control",
+    "content_margin": [9, 7, 8, 6],
+  
+    "layer0.texture": "Theme - Otto/assets/global/commons/buttons/button_fold.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+  
+    "layer1.texture": "Theme - Otto/assets/global/commons/buttons/button_fold_hovered.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": 0
+  },
+  
+  // Fold Hovered
+  // ===========================================================================
+  
+  {
+    "class": "fold_button_control",
+    "attributes": ["hover"],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  
+  // Fold Expanded
+  // ===========================================================================
+  
+  {
+    "class": "fold_button_control",
+    "attributes": ["expanded"],
+    "layer0.texture": "Theme - Otto/assets/global/commons/buttons/button_fold_expanded.png",
+    "layer1.texture": "Theme - Otto/assets/global/commons/buttons/button_fold_expanded_hovered.png"
+  },
+  
+  //
+  // >> Grid
+  // ===========================================================================
+  // Grid styles
+  // ===========================================================================
+  //
+  
+  // Grid Border Size
+  // ===========================================================================
+  
+  {
+    "class": "grid_layout_control",
+    "border_size": 1
+  },
+  
+  // Grid Theme Specific Styles
+  // ===========================================================================
+  
+  // Grid Border Color
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "grid_layout_control",
+    "border_color": [54, 55, 49]
+  },
+  
+  //
+  // >> Minimap
+  // ===========================================================================
+  // Minimap settings and behavior
+  // ===========================================================================
+  //
+  
+  // Minimap Always Visible
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["always_show_minimap_viewport"],
+    "viewport_opacity": 0.4
+  },
+  
+  // Minimap Visible On Hover
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" }
+  },
+  
+  {
+    "class": "minimap_control",
+    "attributes": ["hover"],
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_opacity": { "target": 0.4, "speed": 20.0, "interpolation": "smoothstep" }
+  },
+  
+  // Minimap Blue Accent
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "viewport_color": [36, 151, 227, 75]
+  },
+  
+    // Minimap Green Accent
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["theme_otto_accent_green"],
+    "viewport_color": [46, 188, 103, 75]
+  },
+  
+    // Minimap Orange Accent
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["theme_otto_accent_orange"],
+    "viewport_color": [241, 103, 60, 75]
+  },
+  
+    // Minimap Purple Accent
+  // ===========================================================================
+  
+  {
+    "class": "minimap_control",
+    "settings": ["theme_otto_accent_purple"],
+    "viewport_color": [175, 60, 241, 75]
+  },
+  
+  //
+  // >> Overlays
+  // ===========================================================================
+  // Overlays settings and behavior
+  // ===========================================================================
+  //
+  
+  // Overlay Control
+  // ===========================================================================
+  
+  {
+    "class": "overlay_control",
+    "layer0.inner_margin": [24, 34, 24, 34],
+    "layer0.opacity": 1.0,
+    "layer1.texture": "Theme - Otto/assets/global/commons/overlays/quick_panel.png",
+    "layer1.inner_margin": [15, 25, 15, 25],
+    "layer1.opacity": 1.0,
+    "content_margin": [13, 20, 13, 24]
+  },
+  
+  // Quick Panel
+  // ===========================================================================
+  
+  // Quick Panel Defaults
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel",
+    "row_padding": [24, 12],
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "quick_panel_row",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "quick_panel_row",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "quick_panel",
+    "parents": [{"class": "overlay_control"}],
+    "row_padding": [24, 12],
+    "layer0.opacity": 1.0
+  },
+  
+  // Quick Panel Mini
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "mini_quick_panel",
+    "row_padding": [24, 12],
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "layer0.inner_margin": [2, 2, 2, 2],
+    "layer0.opacity": 1.0
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "selected_fg": [255, 255, 255, 255],
+    "selected_match_fg": [255, 255, 255, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "parents": [{"class": "overlay_control"}],
+    "selected_fg": [255, 255, 255, 255],
+    "selected_match_fg": [255, 255, 255, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "selected_fg": [255, 255, 255, 255],
+    "selected_match_fg": [255, 255, 255, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [255, 255, 255, 255]
+  },
+  
+  // Overlays Theme Specific Styles
+  // ===========================================================================
+  
+  // Overlay Control
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "overlay_control",
+    "layer0.texture": "Theme - Otto/assets/specific/monokai/overlays/overlay.png"
+  },
+  
+  // Quick Panel
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Quick Panel Defaults
+  //
+  
+  {
+    "class": "quick_panel",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  {
+    "class": "quick_panel_row",
+    "layer0.tint": [54, 55, 49, 0]
+  },
+  
+  {
+    "class": "quick_panel_row",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.tint": [54, 55, 49, 0]
+  },
+  
+  {
+    "class": "quick_panel",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.tint": [54, 55, 49, 0]
+  },
+  
+  //
+  // Quick Panel Mini
+  //
+  
+  {
+    "class": "mini_quick_panel",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "layer0.tint": [54, 55, 49, 0]
+  },
+  
+  //
+  // Quick Panel Labels
+  //
+  
+  {
+    "class": "quick_panel_label",
+    "fg": [185, 185, 183, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "parents": [{"class": "overlay_control"}],
+    "fg": [185, 185, 183, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "fg": [124, 125, 121, 255]
+  },
+  
+  // Overlays Blue Accent
+  // ===========================================================================
+  
+  // Quick Panel Rows
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.tint": [36, 151, 227],
+    "layer1.opacity": 0.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.tint": [36, 151, 227]
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "match_fg": [36, 151, 227, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "parents": [{"class": "overlay_control"}],
+    "match_fg": [36, 151, 227, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [36, 151, 227, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "fg": [36, 151, 227, 255]
+  },
+  
+    // Overlays Green Accent
+  // ===========================================================================
+  
+  // Quick Panel Rows
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_row",
+    "settings": ["theme_otto_accent_green"],
+    "attributes": ["selected"],
+    "layer0.tint": [46, 188, 103],
+    "layer1.opacity": 0.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "settings": ["theme_otto_accent_green"],
+    "attributes": ["selected"],
+    "layer0.tint": [46, 188, 103]
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_green"],
+    "match_fg": [46, 188, 103, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "overlay_control"}],
+    "match_fg": [46, 188, 103, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "settings": ["theme_otto_accent_green"],
+    "match_fg": [46, 188, 103, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "settings": ["theme_otto_accent_green"],
+    "fg": [46, 188, 103, 255]
+  },
+  
+    // Overlays Orange Accent
+  // ===========================================================================
+  
+  // Quick Panel Rows
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_row",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["selected"],
+    "layer0.tint": [241, 103, 60],
+    "layer1.opacity": 0.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["selected"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "overlay_control"}],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "settings": ["theme_otto_accent_orange"],
+    "match_fg": [241, 103, 60, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "settings": ["theme_otto_accent_orange"],
+    "fg": [241, 103, 60, 255]
+  },
+  
+    // Overlays Purple Accent
+  // ===========================================================================
+  
+  // Quick Panel Rows
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_row",
+    "settings": ["theme_otto_accent_purple"],
+    "attributes": ["selected"],
+    "layer0.tint": [175, 60, 241],
+    "layer1.opacity": 0.0
+  },
+  
+  {
+    "class": "mini_quick_panel_row",
+    "settings": ["theme_otto_accent_purple"],
+    "attributes": ["selected"],
+    "layer0.tint": [175, 60, 241]
+  },
+  
+  // Quick Panel Labels
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_purple"],
+    "match_fg": [175, 60, 241, 255]
+  },
+  
+  {
+    "class": "quick_panel_label",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "overlay_control"}],
+    "match_fg": [175, 60, 241, 255]
+  },
+  
+  {
+    "class": "quick_panel_path_label",
+    "settings": ["theme_otto_accent_purple"],
+    "match_fg": [175, 60, 241, 255]
+  },
+  
+  {
+    "class": "quick_panel_score_label",
+    "settings": ["theme_otto_accent_purple"],
+    "fg": [175, 60, 241, 255]
+  },
+  
+  
+  //
+  // >> Scrollbars
+  // ===========================================================================
+  // Scrollbars settings and behavior
+  // ===========================================================================
+  //
+  
+  // Scrollbar
+  // ===========================================================================
+  
+  // Scrollbar Corner
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "scroll_corner_control",
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [1, 1]
+  },
+  
+  // Scrollbar Vertical
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "scroll_bar_control",
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0, 6],
+    "blur": false
+  },
+  
+  //
+  // Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [0, 10],
+    "content_margin": [8, 12],
+    "blur": false
+  },
+  
+  // Scrollbar Horizontal
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "scroll_bar_control",
+    "attributes": ["horizontal"],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [6, 0],
+    "blur": false
+  },
+  
+  //
+  // Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [10, 0],
+    "content_margin": [12, 8],
+    "blur": false
+  },
+  
+  // Scrollbar Overlayed
+  // ===========================================================================
+  
+  // Toggle Scrollbar Overlay
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "scroll_area_control",
+    "settings": ["overlay_scroll_bars"],
+    "overlay": true
+  },
+  
+  {
+    "class": "scroll_area_control",
+    "settings": ["!overlay_scroll_bars"],
+    "overlay": false
+  },
+  
+  // Scrollbar Vertical Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.inner_margin": [0, 5],
+    "blur": false
+  },
+  
+  //
+  // Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.inner_margin": [0, 5],
+    "content_margin": [5, 20],
+    "blur": false
+  },
+  
+  // Scrollbar Horizontal Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.inner_margin": [5, 0],
+    "blur": false
+  },
+  
+  //
+  // Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.inner_margin": [5, 0],
+    "content_margin": [20, 5],
+    "blur": false
+  },
+  
+  // Scrollbars Theme Specific Styles
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Scrollbar Corner
+  //
+  
+  {
+    "class": "scroll_corner_control",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  //
+  // Scrollbar Vertical
+  //
+  
+  // Background
+  
+  {
+    "class": "scroll_bar_control",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  //
+  // Scrollbar Horizontal
+  //
+  
+  // Background
+  
+  {
+    "class": "scroll_bar_control",
+    "attributes": ["horizontal"],
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Scrollbar Vertical Overlayed
+  //
+  
+  // Background
+  
+  {
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  //
+  // Scrollbar Horizontal Overlayed
+  //
+  
+  // Background
+  
+  {
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Scrollbars Blue Accent
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal_wide.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_vertical_overlay_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/scrollbars/puck_horizontal_overlay_wide.png"
+  },
+  
+    // Scrollbars Green Accent
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_green"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_green"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal_wide.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_vertical_overlay_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_green"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/scrollbars/puck_horizontal_overlay_wide.png"
+  },
+  
+    // Scrollbars Orange Accent
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_vertical.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_vertical_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_horizontal.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_horizontal_wide.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_vertical_overlay_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_orange"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/scrollbars/puck_horizontal_overlay_wide.png"
+  },
+  
+    // Scrollbars Purple Accent
+  // ===========================================================================
+  
+  // Scrollbar
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_vertical.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_vertical_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_accent_purple"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_horizontal.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_wide", "theme_otto_accent_purple"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_horizontal_wide.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_vertical_overlay_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_accent_purple"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_wide", "theme_otto_accent_purple"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/scrollbars/puck_horizontal_overlay_wide.png"
+  },
+  
+  // Scrollbars Dark Styles
+  // ===========================================================================
+  
+  // Scrollbar Default
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_monochrome"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_vertical.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_monochrome", "theme_otto_scrollbars_wide"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_vertical_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "settings": ["theme_otto_scrollbars_monochrome"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_horizontal.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "settings": ["theme_otto_scrollbars_monochrome", "theme_otto_scrollbars_wide"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_horizontal_wide.png"
+  },
+  
+  // Scrollbar Overlayed
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Vertical Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_monochrome"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_vertical_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_monochrome", "theme_otto_scrollbars_wide"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_vertical_overlay_wide.png"
+  },
+  
+  //
+  // Horizontal Scrollbar Puck
+  //
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_monochrome"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_horizontal_overlay.png"
+  },
+  
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "theme_otto_scrollbars_monochrome", "theme_otto_scrollbars_wide"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/scrollbars/puck_horizontal_overlay_wide.png"
+  },
+  
+  // Scrollbars Options
+  // ===========================================================================
+  
+  {
+    "class": "puck_control",
+    "settings": ["theme_otto_scrollbars_monochrome"],
+    "layer0.opacity": 0.32
+  },
+  
+  //
+  // >> Sidebar
   // ===========================================================================
   // Sidebar panel settings and behavior
   // ===========================================================================
-  
-  // >> 10.1 Sidebar Container
+  //
+  // Sidebar Container
   // ===========================================================================
   
   {
     "class": "sidebar_container",
-    "layer0.tint": [54, 55, 49],
     "layer0.draw_center": false,
     "layer0.inner_margin": [0, 0, 1, 0],
     "layer0.opacity": 1,
     "content_margin": [0, 0, 1, 0]
   },
   
-  // >> 10.2 Sidebar Tree
+  // Sidebar Tree
   // ===========================================================================
   
-  // >>> 10.2.1 Sidebar Tree Defaults
+  // Sidebar Tree Defaults
   // ---------------------------------------------------------------------------
   
   {
     "class": "sidebar_tree",
-    "row_padding": [16, 7, 16, 6],
-    "indent": 8,
+    "row_padding": [8, 7, 8, 6],
+    "indent": 10,
     "indent_offset": 0,
     "indent_top_level": true,
-    "layer0.tint": [46, 47, 41],
     "layer0.opacity": 1.0
   },
   
-  // >>> 10.2.2 Sidebar Tree Row
+  // Sidebar Tree Row
   // ---------------------------------------------------------------------------
   
   //
@@ -959,10 +2425,9 @@
   
   {
     "class": "tree_row",
-    "layer0.tint": [54, 55, 49],
-    "layer0.inner_margin": [16, 8, 0, 0],
+    "layer0.inner_margin": [8, 7, 0, 0],
     "layer0.opacity": 0,
-    "layer1.inner_margin": [16, 8, 0, 0],
+    "layer1.inner_margin": [8, 7, 0, 0],
     "layer1.opacity": 0
   },
   
@@ -987,20 +2452,19 @@
     "layer1.opacity": 1.0
   },
   
-  // >> 10.3 Sidebar Labels
+  // Sidebar Labels
   // ===========================================================================
   
-  // >>> 10.3.1 Sidebar Heading
+  // Sidebar Heading
   // ---------------------------------------------------------------------------
   
   {
     "class": "sidebar_heading",
-    "color": [185, 185, 183],
-    "font.size": 12,
+    "font.size": 11,
     "font.bold": true
   },
   
-  // >>> 10.3.2 Sidebar Entry
+  // Sidebar Entry
   // ---------------------------------------------------------------------------
   
   //
@@ -1009,7 +2473,7 @@
   
   {
     "class": "sidebar_label",
-    "color": [185, 185, 183]
+    "font.size": 11
   },
   
   {
@@ -1029,10 +2493,10 @@
     "font.italic": true
   },
   
-  // >> 10.4 Sidebar Icons
+  // Sidebar Icons
   // ===========================================================================
   
-  // >>> 10.4.1 Sidebar Button Close
+  // Sidebar Button Close
   // ---------------------------------------------------------------------------
   
   //
@@ -1041,9 +2505,7 @@
   
   {
     "class": "close_button",
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
     "layer0.opacity": 0.5,
-    "layer1.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
     "layer1.opacity": 0,
     "content_margin": [8, 8]
   },
@@ -1086,7 +2548,7 @@
     "layer1.opacity": 0
   },
   
-  // >>> 10.4.2 Sidebar Folders
+  // Sidebar Folders
   // ---------------------------------------------------------------------------
   
   //
@@ -1136,29 +2598,13 @@
   {
     "class": "icon_folder",
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow.png",
-    "layer0.opacity": 0.5
-  },
-  
-  {
-    "class": "icon_folder",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow_expanded.png"
-  },
-  
-  {
-    "class": "icon_folder_dup",
-    "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow.png",
     "layer0.opacity": 0.5
   },
   
   {
     "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
     "settings": ["theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/dark/sidebar/folder_arrow_expanded.png"
+    "layer0.opacity": 0.5
   },
   
   {
@@ -1175,7 +2621,7 @@
     "layer0.opacity": 0.75
   },
   
-  // >>> 10.4.3 Sidebar Files
+  // Sidebar Files
   // ---------------------------------------------------------------------------
   
   //
@@ -1208,255 +2654,2006 @@
     "layer0.opacity": 1.0
   },
   
-  // > 11 Overlays
-  // ===========================================================================
-  // Overlays settings and behavior
+  // Sidebar Dark Styles
   // ===========================================================================
   
-  // >> 11.1 Overlay Control
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Button Close
+  //
+  
+  {
+    "class": "close_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+    "layer1.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Arrows
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/sidebar/folder_arrow.png"
+  },
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/sidebar/folder_arrow_expanded.png"
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/sidebar/folder_arrow.png"
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/sidebar/folder_arrow_expanded.png"
+  },
+  
+  
+  // Sidebar Theme Specific Styles
+  // ===========================================================================
+  
+  // Sidebar Container
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "sidebar_container",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Sidebar Tree
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Tree Defaults
+  //
+  
+  {
+    "class": "sidebar_tree",
+    "layer0.tint": [46, 47, 41]
+  },
+  
+  //
+  // Sidebar Tree Row
+  //
+  
+  {
+    "class": "tree_row",
+    "layer0.tint": [54, 55, 49]
+  },
+  
+  // Sidebar Labels
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Heading
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "color": [185, 185, 183]
+  },
+  
+  //
+  // Sidebar Entry
+  //
+  
+  {
+    "class": "sidebar_label",
+    "color": [185, 185, 183]
+  },
+  
+  // Sidebar Blue Accent
+  // ===========================================================================
+  
+  // Sidebar Tree Row
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "tree_row",
+    "layer1.texture": "Theme - Otto/assets/global/accents/blue/sidebar/sidebar_row_selected.png"
+  },
+  
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Close
+  //
+  
+  {
+    "class": "close_button",
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "attributes": ["dirty"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_close_selected.png",
+    "layer1.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_selected.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Defaults
+  
+  {
+    "class": "icon_folder",
+    "settings": ["!theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder.png"
+  },
+  
+  // Opened
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["!theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_expanded.png"
+  },
+  
+  // Symlink
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_dup.png"
+  },
+  
+  // Symlink Opened
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "settings": ["!theme_otto_sidebar_folder_arrow"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/sidebar/folder_dup_expanded.png"
+  },
+  
+  // Loading
+  
+  {
+    "class": "icon_folder_loading",
+    "layer0.texture":
+    {
+      "keyframes":
+      [
+        "Theme - Otto/assets/global/accents/blue/sidebar/spinner3.png",
+        "Theme - Otto/assets/global/accents/blue/sidebar/spinner2.png",
+        "Theme - Otto/assets/global/accents/blue/sidebar/spinner1.png",
+        "Theme - Otto/assets/global/accents/blue/sidebar/spinner.png"
+      ],
+      "loop": true,
+      "frame_time": 0.125
+    }
+  },
+  
+  
+    // Sidebar Green Accent
+  // ===========================================================================
+  
+  // Sidebar Tree Row
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_accent_green"],
+    "layer1.texture": "Theme - Otto/assets/global/accents/green/sidebar/sidebar_row_selected.png"
+  },
+  
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Close
+  //
+  
+  {
+    "class": "close_button",
+    "settings": ["theme_otto_accent_green"],
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "attributes": ["dirty"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_close_selected.png",
+    "layer1.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_selected.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Defaults
+  
+  {
+    "class": "icon_folder",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/sidebar/folder.png"
+  },
+  
+  // Opened
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/sidebar/folder_expanded.png"
+  },
+  
+  // Symlink
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/sidebar/folder_dup.png"
+  },
+  
+  // Symlink Opened
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/sidebar/folder_dup_expanded.png"
+  },
+  
+  // Loading
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_accent_green"],
+    "layer0.texture":
+    {
+      "keyframes":
+      [
+        "Theme - Otto/assets/global/accents/green/sidebar/spinner3.png",
+        "Theme - Otto/assets/global/accents/green/sidebar/spinner2.png",
+        "Theme - Otto/assets/global/accents/green/sidebar/spinner1.png",
+        "Theme - Otto/assets/global/accents/green/sidebar/spinner.png"
+      ],
+      "loop": true,
+      "frame_time": 0.125
+    }
+  },
+  
+    // Sidebar Orange Accent
+  // ===========================================================================
+  
+  // Sidebar Tree Row
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_accent_orange"],
+    "layer1.texture": "Theme - Otto/assets/global/accents/orange/sidebar/sidebar_row_selected.png"
+  },
+  
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Close
+  //
+  
+  {
+    "class": "close_button",
+    "settings": ["theme_otto_accent_orange"],
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "attributes": ["dirty"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_dirty_close_selected.png",
+    "layer1.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_dirty_selected.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Defaults
+  
+  {
+    "class": "icon_folder",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/sidebar/folder.png"
+  },
+  
+  // Opened
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/sidebar/folder_expanded.png"
+  },
+  
+  // Symlink
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/sidebar/folder_dup.png"
+  },
+  
+  // Symlink Opened
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/sidebar/folder_dup_expanded.png"
+  },
+  
+  // Loading
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.texture":
+    {
+      "keyframes":
+      [
+        "Theme - Otto/assets/global/accents/orange/sidebar/spinner3.png",
+        "Theme - Otto/assets/global/accents/orange/sidebar/spinner2.png",
+        "Theme - Otto/assets/global/accents/orange/sidebar/spinner1.png",
+        "Theme - Otto/assets/global/accents/orange/sidebar/spinner.png"
+      ],
+      "loop": true,
+      "frame_time": 0.125
+    }
+  },
+  
+    // Sidebar Purple Accent
+  // ===========================================================================
+  
+  // Sidebar Tree Row
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_accent_purple"],
+    "layer1.texture": "Theme - Otto/assets/global/accents/purple/sidebar/sidebar_row_selected.png"
+  },
+  
+  // Sidebar Icons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Sidebar Close
+  //
+  
+  {
+    "class": "close_button",
+    "settings": ["theme_otto_accent_purple"],
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "attributes": ["dirty"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_close_selected.png",
+    "layer1.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_selected.png"
+  },
+  
+  //
+  // Sidebar Folders
+  //
+  
+  // Defaults
+  
+  {
+    "class": "icon_folder",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder.png"
+  },
+  
+  // Opened
+  
+  {
+    "class": "icon_folder",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_expanded.png"
+  },
+  
+  // Symlink
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_dup.png"
+  },
+  
+  // Symlink Opened
+  
+  {
+    "class": "icon_folder_dup",
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/sidebar/folder_dup_expanded.png"
+  },
+  
+  // Loading
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_accent_purple"],
+    "layer0.texture":
+    {
+      "keyframes":
+      [
+        "Theme - Otto/assets/global/accents/purple/sidebar/spinner3.png",
+        "Theme - Otto/assets/global/accents/purple/sidebar/spinner2.png",
+        "Theme - Otto/assets/global/accents/purple/sidebar/spinner1.png",
+        "Theme - Otto/assets/global/accents/purple/sidebar/spinner.png"
+      ],
+      "loop": true,
+      "frame_time": 0.125
+    }
+  },
+  
+  // Sidebar Options
+  // ===========================================================================
+  
+  // Sidebar Sizes
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "sidebar_tree",
+    "settings": ["theme_otto_global_ui_small"],
+    "row_padding": [8, 5, 8, 4]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_global_ui_small"],
+    "layer0.inner_margin": [8, 5, 0, 0],
+    "layer1.inner_margin": [8, 5, 0, 0]
+  },
+  
+  {
+    "class": "sidebar_tree",
+    "settings": ["theme_otto_sidebar_small"],
+    "row_padding": [8, 5, 8, 4]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_sidebar_small"],
+    "layer0.inner_margin": [8, 5, 0, 0],
+    "layer1.inner_margin": [8, 5, 0, 0]
+  },
+  
+  {
+    "class": "sidebar_tree",
+    "settings": ["theme_otto_global_ui_large"],
+    "row_padding": [8, 9, 8, 8]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_global_ui_large"],
+    "layer0.inner_margin": [8, 9, 0, 0],
+    "layer1.inner_margin": [8, 9, 0, 0]
+  },
+  
+  {
+    "class": "sidebar_tree",
+    "settings": ["theme_otto_sidebar_large"],
+    "row_padding": [8, 9, 8, 8]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_sidebar_large"],
+    "layer0.inner_margin": [8, 9, 0, 0],
+    "layer1.inner_margin": [8, 9, 0, 0]
+  },
+  
+  // Sidebar Hide File Icons
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_sidebar_hide_file_icons"],
+    "layer0.opacity": 0
+  },
+  
+  // Sidebar Font Options
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Font Size 12
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_global_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_global_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_global_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_global_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_sidebar_font_size_12"],
+    "content_margin": [9, 9]
+  },
+  
+  //
+  // Font Size 13
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_global_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_global_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_global_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_global_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_sidebar_font_size_13"],
+    "content_margin": [10, 10]
+  },
+  
+  //
+  // Font Size 14
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_global_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_global_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_global_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_global_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_sidebar_font_size_14"],
+    "content_margin": [11, 11]
+  },
+  
+  //
+  // Font Size 15
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_global_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_global_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_global_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_global_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_dup",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_folder_loading",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  {
+    "class": "icon_file_type",
+    "settings": ["theme_otto_sidebar_font_size_15"],
+    "content_margin": [11, 11]
+  },
+  
+  //
+  // UI Font Face Custom
+  //
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "sidebar_heading",
+    "settings": ["theme_otto_sidebar_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "sidebar_label",
+    "settings": ["theme_otto_sidebar_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  //
+  // >> Status Bar
+  // ===========================================================================
+  // Status bar settings and behavior
+  // ===========================================================================
+  //
+  
+  // Status Bar Labels
   // ===========================================================================
   
   {
-    "class": "overlay_control",
-    "layer0.texture": "Theme - Otto/assets/monokai/overlays/overlay.png",
-    "layer0.inner_margin": [24, 34, 24, 34],
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "font.bold": false
+  },
+  
+  // Status Bar Container
+  // ===========================================================================
+  
+  {
+    "class": "status_bar",
     "layer0.opacity": 1.0,
-    "layer1.texture": "Theme - Otto/assets/common/overlays/quick_panel.png",
-    "layer1.inner_margin": [15, 25, 15, 25],
-    "layer1.opacity": 1.0,
-    "content_margin": [13, 20, 13, 24]
+    "layer0.inner_margin": [2, 2],
+    "content_margin": [5, 5, 5, 5]
   },
   
-  // >> 11.2 Quick Panel
+  {
+    "class": "status_container",
+    "content_margin": [5, 4, 5, 4]
+  },
+  
+  {
+    "class": "status_button",
+    "min_size": [96, 0]
+  },
+  
+  // Status Bar Panel Switcher
   // ===========================================================================
   
-  // >>> 11.2.1 Quick Panel Defaults
+  {
+    "class": "panel_button_control",
+    "layer0.opacity": 0.5,
+    "content_margin": [8, 8]
+  },
+  
+  {
+    "class": "panel_button_control",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
+  },
+  
+  // Status Bar Dark Styles
+  // ===========================================================================
+  
+  // Status Bar Panel Switcher
   // ---------------------------------------------------------------------------
   
   {
-    "class": "quick_panel",
-    "row_padding": [24, 12],
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0
+    "class": "panel_button_control",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_panel_switcher.png"
   },
   
-  {
-    "class": "quick_panel_row",
-    "layer0.tint": [54, 55, 49, 0],
-    "layer0.opacity": 1.0
-  },
+  // Status Bar Theme Specific Styles
+  // ===========================================================================
   
-  {
-    "class": "quick_panel_row",
-    "parents": [{"class": "overlay_control"}],
-    "layer0.tint": [54, 55, 49, 0],
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "quick_panel",
-    "parents": [{"class": "overlay_control"}],
-    "row_padding": [24, 12],
-    "layer0.tint": [54, 55, 49, 0],
-    "layer0.opacity": 1.0
-  },
-  
-  // >>> 11.2.2 Quick Panel Mini
+  // Status Bar Container
   // ---------------------------------------------------------------------------
   
   {
-    "class": "mini_quick_panel",
-    "row_padding": [24, 12],
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0
+    "class": "status_bar",
+    "layer0.tint": [54, 55, 49]
   },
   
-  {
-    "class": "mini_quick_panel_row",
-    "layer0.tint": [54, 55, 49, 0],
-    "layer0.inner_margin": [2, 2, 2, 2],
-    "layer0.opacity": 1.0
-  },
+  // Status Bar Options
+  // ===========================================================================
   
-  // >>> 11.2.3 Quick Panel Labels
+  // Status Bar Small
   // ---------------------------------------------------------------------------
   
   {
-    "class": "quick_panel_label",
-    "fg": [185, 185, 183, 255],
-    "selected_fg": [255, 255, 255, 255],
-    "selected_match_fg": [255, 255, 255, 255]
+    "class": "status_container",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [5, 1, 5, 1]
   },
   
   {
-    "class": "quick_panel_label",
-    "parents": [{"class": "overlay_control"}],
-    "fg": [185, 185, 183, 255],
-    "selected_fg": [255, 255, 255, 255],
-    "selected_match_fg": [255, 255, 255, 255]
+    "class": "status_container",
+    "settings": ["theme_otto_status_bar_small"],
+    "content_margin": [5, 1, 5, 1]
   },
   
   {
-    "class": "quick_panel_path_label",
-    "fg": [124, 125, 121, 255],
-    "selected_fg": [255, 255, 255, 255],
-    "selected_match_fg": [255, 255, 255, 255]
+    "class": "status_button",
+    "settings": ["theme_otto_global_ui_small"],
+    "min_size": [92, 0]
   },
   
   {
-    "class": "quick_panel_score_label",
-    "selected_fg": [255, 255, 255, 255]
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_small"],
+    "min_size": [92, 0]
   },
   
-  // > 12 Autocomplete
+  // Status Bar Large
+  // ---------------------------------------------------------------------------
+  
+  {
+    "class": "status_container",
+    "settings": ["theme_otto_global_ui_large"],
+    "content_margin": [5, 7, 5, 7]
+  },
+  
+  {
+    "class": "status_container",
+    "settings": ["theme_otto_status_bar_large"],
+    "content_margin": [5, 7, 5, 7]
+  },
+  
+  // Status Bar Font Options
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Font Size 12
+  //
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_status_bar_font_size_12"],
+    "font.size": 12
+  },
+  
+  //
+  // Font Size 13
+  //
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_status_bar_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_13"],
+    "min_size": [106, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_13"],
+    "min_size": [106, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_13"],
+    "min_size": [106, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_13", "theme_otto_find_and_replace_small"],
+    "min_size": [102, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_13", "theme_otto_find_and_replace_small"],
+    "min_size": [102, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_13", "theme_otto_find_and_replace_small"],
+    "min_size": [102, 0]
+  },
+  
+  //
+  // Font Size 14
+  //
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_status_bar_font_size_14"],
+    "font.size": 14
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_14"],
+    "min_size": [110, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_14"],
+    "min_size": [110, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_14"],
+    "min_size": [110, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_14", "theme_otto_find_and_replace_small"],
+    "min_size": [106, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_14", "theme_otto_find_and_replace_small"],
+    "min_size": [106, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_14", "theme_otto_find_and_replace_small"],
+    "min_size": [106, 0]
+  },
+  
+  //
+  // Font Size 15
+  //
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_status_bar_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_15"],
+    "min_size": [114, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_15"],
+    "min_size": [114, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_15"],
+    "min_size": [114, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_font_size_15", "theme_otto_find_and_replace_small"],
+    "min_size": [110, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_find_and_replace_font_size_15", "theme_otto_find_and_replace_small"],
+    "min_size": [110, 0]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_status_bar_font_size_15", "theme_otto_find_and_replace_small"],
+    "min_size": [110, 0]
+  },
+  
+  //
+  // UI Font Face Custom
+  //
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "settings": ["theme_otto_status_bar_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  //
+  // >> Tabs
   // ===========================================================================
-  // Autocomplete settings and behavior
+  // Tabs behavior and settings
+  // ===========================================================================
+  //
+  
+  // Tabset
   // ===========================================================================
   
-  // Autocomplete Dropdown
-  // ===========================================================================
+  // Tabset Defaults
+  // ---------------------------------------------------------------------------
   
   {
-    "class": "popup_control",
-    "content_margin": [0, 0]
+    "class": "tabset_control",
+  
+    "layer0.inner_margin": [10, 0],
+    "layer0.opacity": 1.0,
+  
+    "content_margin": 0,
+    "tab_overlap": 1,
+    "tab_width": 180,
+    "tab_min_width": 120,
+    "tab_height": 44,
+  
+    "mouse_wheel_switch": false
   },
   
-  // Autocomplete Sizes
-  // ===========================================================================
+  // Tabset Scrolling
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Left Scroll Button
+  //
+  
+  // Defaults
   
   {
-    "class": "auto_complete",
-    "row_padding": [5, 5],
-    "layer0.tint": [54, 55, 49],
-    "layer0.opacity": 1.0
+    "class": "scroll_tabs_left_button",
+    "content_margin": [8, 8],
+  
+    "layer0.opacity": 0.5,
+    "layer0.inner_margin": 0
   },
   
-  // Autocomplete Labels
-  // ===========================================================================
+  // Hovered
   
   {
-    "class": "auto_complete_label",
-    "fg": [185, 185, 183],
-    "selected_fg": [255, 255, 255],
-    "selected_match_fg": [255, 255, 255]
+    "class": "scroll_tabs_left_button",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
   },
   
-  // Autocomplete Rows
-  // ===========================================================================
+  //
+  // Right Scroll Button
+  //
+  
+  // Defaults
   
   {
-    "class": "table_row",
-    "layer0.opacity": 0,
-    "layer0.inner_margin": [1, 1]
+    "class": "scroll_tabs_right_button",
+    "content_margin": [8, 8],
+  
+    "layer0.opacity": 0.5,
+    "layer0.inner_margin": 0
   },
   
+  // Hovered
+  
   {
-    "class": "table_row",
+    "class": "scroll_tabs_right_button",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
+  },
+  
+  // Tabset Overflow
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Overflow Button
+  //
+  
+  // Defaults
+  
+  {
+    "class": "show_tabs_dropdown_button",
+    "content_margin": [8, 8],
+  
+    "layer0.opacity": 0.5,
+    "layer0.inner_margin": 0
+  },
+  
+  // Hovered
+  
+  {
+    "class": "show_tabs_dropdown_button",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
+  },
+  
+  // Tab
+  // ===========================================================================
+  
+  // Tab Defaults
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "tab_control",
+    "content_margin": [24, 4, 20, 4],
+    "max_margin_trim": 0,
+    "hit_test_level": 0.5,
+  
+    "layer0.inner_margin": [24, 4],
+    "layer0.opacity": 1.0,
+  
+    "layer1.inner_margin": [24, 4],
+    "layer1.opacity": 0,
+  
+    "layer2.texture": "Theme - Otto/assets/global/commons/tabs/tab_selected.png",
+    "layer2.inner_margin": [24, 4],
+    "layer2.opacity": 0,
+    "tint_index": 2,
+  
+    "layer3.texture": "Theme - Otto/assets/global/commons/tabs/tab_overlay.png",
+    "layer3.inner_margin": [24, 4],
+    "layer3.opacity": 0
+  },
+  
+  //
+  // Label
+  //
+  
+  {
+    "class": "tab_label",
+    "fade": false,
+    "shadow_offset": [0, 0],
+    "font.bold" : false,
+    "font.size" : 11
+  },
+  
+  // File Preview
+  
+  {
+    "class": "tab_label",
+    "attributes": ["transient"],
+    "font.italic": true
+  },
+  
+  // Tab Hovered
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "tab_control",
+    "attributes": ["hover"],
+    "layer1.opacity": 1.0
+  },
+  
+  //
+  // Label
+  //
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Tab Selected
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Background
+  //
+  
+  {
+    "class": "tab_control",
     "attributes": ["selected"],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1.0,
+    "layer3.opacity": 1.0
+  },
+  
+  // Tab Buttons
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Close
+  //
+  
+  // Defaults
+  
+  {
+    "class": "tab_close_button",
+    "content_margin": [0, 0],
+  
+    "layer0.opacity": 0.5,
+    "layer0.inner_margin": [0, 0]
+  },
+  
+  // Hovered
+  
+  {
+    "class": "tab_close_button",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
+  },
+  
+  // Size
+  
+  {
+    "class": "tab_close_button",
+    "settings": ["show_tab_close_buttons"],
+    "content_margin": [8, 8]
+  },
+  
+  {
+    "class": "tab_control",
+    "settings": ["!show_tab_close_buttons"],
+    "content_margin": [24, 4, 24, 4]
+  },
+  
+  // Selected
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+    "attributes": ["hover"],
     "layer0.opacity": 1.0
   },
   
-  // > 2 Folding
-  // ===========================================================================
-  // Folding settings and behavior
-  // ===========================================================================
-  
-  // >> 2.1 Fold Defaults
-  // ===========================================================================
-  
   {
-    "class": "fold_button_control",
-    "content_margin": [9, 7, 8, 6],
-  
-    "layer0.texture": "Theme - Otto/assets/common/buttons/button_fold.png",
-    "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
-  
-    "layer1.texture": "Theme - Otto/assets/common/buttons/button_fold_hovered.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": 0
-  },
-  
-  // >> 2.2 Fold Hovered
-  // ===========================================================================
-  
-  {
-    "class": "fold_button_control",
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
     "attributes": ["hover"],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1
-  },
-  
-  // >> 2.3 Fold Expanded
-  // ===========================================================================
-  
-  {
-    "class": "fold_button_control",
-    "attributes": ["expanded"],
-    "layer0.texture": "Theme - Otto/assets/common/buttons/button_fold_expanded.png",
-    "layer1.texture": "Theme - Otto/assets/common/buttons/button_fold_expanded_hovered.png"
-  },
-  
-  // > 6 Minimap
-  // ===========================================================================
-  // Minimap settings and behavior
-  // ===========================================================================
-  
-  // >> 6.1 Minimap Always Visible
-  // ===========================================================================
-  
-  {
-    "class": "minimap_control",
-    "settings": ["always_show_minimap_viewport"],
-    "viewport_opacity": 0.4
-  },
-  
-  // >> 6.2 Minimap Visible On Hover
-  // ===========================================================================
-  
-  {
-    "class": "minimap_control",
-    "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" }
+    "layer0.opacity": 0.9
   },
   
   {
-    "class": "minimap_control",
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
     "attributes": ["hover"],
-    "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.4, "speed": 20.0, "interpolation": "smoothstep" }
+    "layer0.opacity": 0.9
   },
   
-  // > 7 Tooltips
-  // ===========================================================================
-  // Tooltip settings and behavior
-  // ===========================================================================
+  //
+  // Dirty
+  //
   
-  // >> 7.1 Tooltips Background
-  // ===========================================================================
+  // Defaults
   
   {
-    "class": "tool_tip_control",
-    "layer0.opacity": 1.0,
-    "layer1.tint": [0, 0, 0],
-    "layer1.opacity": 0,
-    "content_margin": [10, 5]
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "layer0.opacity": 0.5
   },
   
-  // >> 7.2 Tooltips Text
-  // ===========================================================================
+  // Hovered
   
   {
-    "class": "tool_tip_label_control",
-    "color": [255, 255, 255]
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "attributes": ["hover"],
+    "layer0.opacity": 0.75
   },
   
-  // > 13 Options
-  // ===========================================================================
-  // Override options
+  // Only (Close Button Hidden)
+  
+  {
+    "class": "tab_close_button",
+    "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "content_margin": [8, 8]
+  },
+  
+  {
+    "class": "tab_control",
+    "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+    "attributes": ["dirty"],
+    "content_margin": [24, 4, 20, 4]
+  },
+  
+  // Tabs Dark Styles
   // ===========================================================================
   
-  // >> 13.1 Tabs Options
+  // Tabset
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Tabset Scrolling
+  //
+  
+  {
+    "class": "scroll_tabs_left_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_arrow_left.png"
+  },
+  
+  {
+    "class": "scroll_tabs_right_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_arrow_right.png"
+  },
+  
+  //
+  // Tabset Overflow
+  //
+  
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dropdown.png"
+  },
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Tab Labels
+  //
+  
+  {
+    "class": "tab_label",
+    "shadow_color": [0, 0, 0, 80]
+  },
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+    "shadow_color": [0, 0, 0, 80]
+  },
+  
+  //
+  // Tab Buttons
+  //
+  
+  {
+    "class": "tab_close_button",
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "layer0.texture": "Theme - Otto/assets/global/variants/light/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  
+  // Tabs Theme Specific Styles
+  // ===========================================================================
+  
+  // Tabset
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Tabset Defaults
+  //
+  
+  {
+    "class": "tabset_control",
+    "layer0.tint": [46, 47, 41]
+  },
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Tab Defaults
+  //
+  
+  {
+    "class": "tab_control",
+    "layer0.texture": "Theme - Otto/assets/specific/monokai/tabs/tab.png",
+    "layer1.tint": [54, 55, 49]
+  },
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_separator_hide"],
+    "layer0.texture": "Theme - Otto/assets/specific/monokai/tabs/tab_without_separator.png"
+  },
+  
+  //
+  // Tab Labels
+  //
+  
+  {
+    "class": "tab_label",
+    "fg": [185, 185, 183, 255]
+  },
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+    "fg": [185, 185, 183, 255]
+  },
+  
+  // Light Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": [80, 80, 80, 255],
+    "shadow_color": [255, 255, 255, 50],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Medium Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+    "fg": [255, 255, 255, 255],
+    "shadow_color": [0, 0, 0, 100],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Medium Dark Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium_dark"]}],
+    "fg": [255, 255, 255, 230],
+    "shadow_color": [0, 0, 0, 255],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Dark Color Scheme
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "file_dark"]}],
+    "fg": [255, 255, 255, 230],
+    "shadow_color": [0, 0, 0, 255],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Tabs Blue Accent
+  // ===========================================================================
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Underlined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_underlined"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/blue/tabs/tab_selected_underlined.png"
+  },
+  
+  //
+  // Prelined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_prelined"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/blue/tabs/tab_selected_prelined.png"
+  },
+  
+  //
+  // Filled
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_filled"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/blue/tabs/tab_selected_filled.png"
+  },
+  
+  // Label
+  
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled"],
+    "fg": [255, 255, 255, 255],
+    "shadow_color": [0, 0, 0, 100],
+    "shadow_offset": [0, 0]
+  },
+  
+  // Close
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled"],
+    "attributes": ["hover"],
+    "layer0.opacity": 1.0
+  },
+  
+  // Dirty
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/blue/buttons/button_dirty_close_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "settings": ["theme_otto_tab_selected_filled"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "attributes": ["hover"],
+    "settings": ["theme_otto_tab_selected_filled"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+    "layer0.opacity": 1.0
+  },
+  
+    // Tabs Green Accent
+  // ===========================================================================
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Underlined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_green"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_underlined.png"
+  },
+  
+  //
+  // Prelined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_green"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_prelined.png"
+  },
+  
+  //
+  // Filled
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/green/tabs/tab_selected_filled.png"
+  },
+  
+  // Close
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+    "attributes": ["hover"],
+    "layer0.opacity": 1.0
+  },
+  
+  // Dirty
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "settings": ["theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "settings": ["theme_otto_accent_green"],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/green/buttons/button_dirty_close_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "attributes": ["hover"],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+    "layer0.opacity": 1.0
+  },
+  
+    // Tabs Orange Accent
+  // ===========================================================================
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Underlined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/orange/tabs/tab_selected_underlined.png"
+  },
+  
+  //
+  // Prelined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/orange/tabs/tab_selected_prelined.png"
+  },
+  
+  //
+  // Filled
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/orange/tabs/tab_selected_filled.png"
+  },
+  
+  // Close
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "attributes": ["hover"],
+    "layer0.opacity": 1.0
+  },
+  
+  // Dirty
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_dirty_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "settings": ["theme_otto_accent_orange"],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/orange/buttons/button_dirty_close_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "attributes": ["hover"],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+    "layer0.opacity": 1.0
+  },
+  
+    // Tabs Purple Accent
+  // ===========================================================================
+  
+  // Tab
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Underlined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_purple"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/purple/tabs/tab_selected_underlined.png"
+  },
+  
+  //
+  // Prelined
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_purple"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/purple/tabs/tab_selected_prelined.png"
+  },
+  
+  //
+  // Filled
+  //
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
+    "layer3.texture": "Theme - Otto/assets/global/accents/purple/tabs/tab_selected_filled.png"
+  },
+  
+  // Close
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png"
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
+    "attributes": ["hover"],
+    "layer0.opacity": 1.0
+  },
+  
+  // Dirty
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_selected.png",
+    "settings": ["theme_otto_accent_purple"],
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "settings": ["theme_otto_accent_purple"],
+    "attributes": ["hover"],
+    "layer0.texture": "Theme - Otto/assets/global/accents/purple/buttons/button_dirty_close_selected.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_dirty.png",
+    "layer0.opacity": 1.0
+  },
+  
+  {
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+    "attributes": ["hover"],
+    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
+    "layer0.texture": "Theme - Otto/assets/global/variants/dark/buttons/button_close.png",
+    "layer0.opacity": 1.0
+  },
+  
+  // Tabs Options
   // ===========================================================================
   
   // Tabset Options
@@ -1478,11 +4675,35 @@
   
   {
     "class": "tabset_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "tab_height": 34
+  },
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [14, 4, 10, 4]
+  },
+  
+  {
+    "class": "tabset_control",
     "settings": ["theme_otto_tab_small"],
     "tab_height": 34
   },
   
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_tab_small"],
+    "content_margin": [14, 4, 10, 4]
+  },
+  
   // Large
+  
+  {
+    "class": "tabset_control",
+    "settings": ["theme_otto_global_ui_large"],
+    "tab_height": 54
+  },
   
   {
     "class": "tabset_control",
@@ -1522,7 +4743,151 @@
     "font.bold": true
   },
   
-  // >> 13.2 Tooltips Options
+  // Tab Font Options
+  // ---------------------------------------------------------------------------
+  
+  //
+  // Font Size 12
+  //
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 11
+  },
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_tab_font_size_12"],
+    "font.size": 12
+  },
+  
+  //
+  // Font Size 13
+  //
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 11
+  },
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_tab_font_size_13"],
+    "font.size": 13
+  },
+  
+  //
+  // Font Size 14
+  //
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 11
+  },
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_tab_font_size_14"],
+    "font.size": 14
+  },
+  
+  //
+  // Font Size 15
+  //
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 11
+  },
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_tab_font_size_15"],
+    "font.size": 15
+  },
+  
+  //
+  // UI Font Face Custom
+  //
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "tab_label",
+    "settings": ["theme_otto_tab_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  //
+  // >> Tooltips
+  // ===========================================================================
+  // Tooltip settings and behavior
+  // ===========================================================================
+  //
+  
+  // Tooltips Background
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "layer0.opacity": 1.0,
+    "layer1.tint": [0, 0, 0],
+    "layer1.opacity": 0,
+    "content_margin": [10, 5]
+  },
+  
+  // Tooltips Text
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_label_control",
+    "color": [255, 255, 255]
+  },
+  
+  // Tooltips Blue Accent
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "layer0.tint": [36, 151, 227]
+  },
+  
+    // Tooltips Green Accent
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "settings": ["theme_otto_accent_green"],
+    "layer0.tint": [46, 188, 103]
+  },
+  
+    // Tooltips Orange Accent
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "settings": ["theme_otto_accent_orange"],
+    "layer0.tint": [241, 103, 60]
+  },
+  
+    // Tooltips Purple Accent
+  // ===========================================================================
+  
+  {
+    "class": "tool_tip_control",
+    "settings": ["theme_otto_accent_purple"],
+    "layer0.tint": [175, 60, 241]
+  },
+  
+  // Tooltips Options
   // ===========================================================================
   
   {
@@ -1531,1816 +4896,117 @@
     "layer1.opacity": 0.15
   },
   
-  // >> 13.3 Widgets Options
-  // ===========================================================================
-  
-  // Hide Find & Replace Panel Close Button
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "panel_close_button",
-    "settings": ["theme_otto_find_and_replace_close_hide"],
-    "content_margin": 0
-  },
-  
-  // Small Find & Replace
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "button_control",
-    "settings": ["theme_otto_find_and_replace_small"],
-    "content_margin": [8, 8]
-  },
-  
-  {
-    "class": "icon_button_control",
-    "settings": ["theme_otto_find_and_replace_small"],
-    "content_margin": [8, 8]
-  },
-  
-  {
-    "class": "text_line_control",
-    "settings": ["theme_otto_find_and_replace_small"],
-    "content_margin": [10, 6]
-  },
-  
-  {
-    "class": "text_line_control",
-    "parents": [{"class": "overlay_control"}],
-    "settings": ["theme_otto_find_and_replace_small"],
-    "content_margin": [24, 8]
-  },
-  
-  {
-    "class": "status_button",
-    "settings": ["theme_otto_find_and_replace_small"],
-    "min_size": [88, 0]
-  },
-  
-  // >> 13.4 Status Bar Options
-  // ===========================================================================
-  
-  // Small
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "status_container",
-    "settings": ["theme_otto_status_bar_small"],
-    "content_margin": [5, 1, 5, 1]
-  },
-  
-  // Large
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "status_container",
-    "settings": ["theme_otto_status_bar_large"],
-    "content_margin": [5, 7, 5, 7]
-  },
-  
-  // >> 13.5 Sidebar Options
-  // ===========================================================================
-  
-  // Sidebar Sizes
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "sidebar_tree",
-    "settings": ["theme_otto_sidebar_small"],
-    "row_padding": [16, 5, 16, 4]
-  },
-  
-  {
-    "class": "sidebar_tree",
-    "settings": ["theme_otto_sidebar_large"],
-    "row_padding": [16, 9, 16, 8]
-  },
-  
-  // Sidebar Hide File Icons
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "icon_file_type",
-    "settings": ["theme_otto_sidebar_hide_file_icons"],
-    "content_margin": [0, 0]
-  },
-  
-  // > 14 Accent Blue
-  // ===========================================================================
-  // Accent color settings
-  // ===========================================================================
-  
-  // >> 14.1 Tabs Accent Blue
-  // ===========================================================================
-  
-  // Tab Accent
+  // Tooltips Font Options
   // ---------------------------------------------------------------------------
   
   //
-  // Underlined
+  // Font Size 12
   //
   
   {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_underlined"],
-    "layer3.texture": "Theme - Otto/assets/accent/blue/tabs/tab_selected_underlined.png"
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_global_font_size_12"],
+    "font.size": 12
+  },
+  
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_tooltips_font_size_12"],
+    "font.size": 12
   },
   
   //
-  // Prelined
+  // Font Size 13
   //
   
   {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_prelined"],
-    "layer3.texture": "Theme - Otto/assets/accent/blue/tabs/tab_selected_prelined.png"
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_global_font_size_13"],
+    "font.size": 13
+  },
+  
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_tooltips_font_size_13"],
+    "font.size": 13
   },
   
   //
-  // Filled
+  // Font Size 14
   //
   
   {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_filled"],
-    "layer3.texture": "Theme - Otto/assets/accent/blue/tabs/tab_selected_filled.png"
-  },
-  
-  // Label
-  
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled"],
-    "fg": [255, 255, 255, 255],
-    "shadow_color": [0, 0, 0, 100],
-    "shadow_offset": [0, 0]
-  },
-  
-  // Close
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_global_font_size_14"],
+    "font.size": 14
   },
   
   {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled"],
-    "attributes": ["hover"],
-    "layer0.opacity": 1.0
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_tooltips_font_size_14"],
+    "font.size": 14
   },
   
-  // Dirty
+  //
+  // Font Size 15
+  //
   
   {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_dirty_selected.png",
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_global_font_size_15"],
+    "font.size": 15
+  },
+  
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_tooltips_font_size_15"],
+    "font.size": 15
+  },
+  
+  //
+  // UI Font Face Custom
+  //
+  
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_global_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["theme_otto_tooltips_custom_ui_font_face"],
+    "font.face": "Sans-Serif"
+  },
+  
+  //
+  // >> Window
+  // ===========================================================================
+  // Styles for empty window
+  // ===========================================================================
+  //
+  
+  {
+    "class": "sheet_container_control",
     "layer0.opacity": 1.0
   },
   
   {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "attributes": ["hover"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_dirty_close_selected.png",
+    "class": "dialog",
     "layer0.opacity": 1.0
   },
   
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "settings": ["theme_otto_tab_selected_filled"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "attributes": ["hover"],
-    "settings": ["theme_otto_tab_selected_filled"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 1.0
-  },
-  
-  // >> 14.2 Scrollbars Accent Blue
-  // ===========================================================================
-  
-  // Scrollbar
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_vertical.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_horizontal.png"
-  },
-  
-  // Scrollbar Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_vertical_overlay.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/scrollbars/puck_horizontal_overlay.png"
-  },
-  
-  // >> 14.3 Minimap Accent Blue
+  // Window Theme Specific Styles
   // ===========================================================================
   
   {
-    "class": "minimap_control",
-    "viewport_color": [36, 151, 227, 75]
+    "class": "sheet_container_control",
+    "layer0.tint": [46, 47, 41]
   },
   
-  // >> 14.4 Tooltips Accent Blue
-  // ===========================================================================
-  
-  {
-    "class": "tool_tip_control",
-    "layer0.tint": [36, 151, 227]
-  },
-  
-  // >> 14.5 Widgets Accent Blue
-  // ===========================================================================
-  
-  // Buttons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Hovered
-  //
-  
-  {
-    "class": "button_control",
-    "attributes": ["hover"],
-    "layer0.tint": [36, 151, 227]
-  },
-  
-  //
-  // Icons
-  //
-  
-  // Regex Search Button Selected
-  
-  {
-    "class": "icon_regex",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_regex_on.png"
-  },
-  
-  // Case Sensitive Search Button
-  
-  {
-    "class": "icon_case",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_case_on.png"
-  },
-  
-  // Match Whole Word Search Button
-  
-  {
-    "class": "icon_whole_word",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_word_on.png"
-  },
-  
-  // Search Wrap Button
-  
-  {
-    "class": "icon_wrap",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_wrap_on.png"
-  },
-  
-  // Show Search Context Button
-  
-  {
-    "class": "icon_context",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_context_on.png"
-  },
-  
-  // Use Search Buffer
-  
-  {
-    "class": "icon_use_buffer",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_buffer_on.png"
-  },
-  
-  // Reverse Search Direction Button
-  
-  {
-    "class": "icon_reverse",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_reverse_on.png"
-  },
-  
-  // Search In Selection Button
-  
-  {
-    "class": "icon_in_selection",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_selection_on.png"
-  },
-  
-  // Preserve Case Button
-  
-  {
-    "class": "icon_preserve_case",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_preserve_on.png"
-  },
-  
-  // Highlight Results Button
-  
-  {
-    "class": "icon_highlight",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_highlight_on.png"
-  },
-  
-  // >> 14.6 Sidebar Accent Blue
-  // ===========================================================================
-  
-  // Sidebar Tree Row
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "tree_row",
-    "layer1.texture": "Theme - Otto/assets/accent/blue/sidebar/sidebar_row_selected.png"
-  },
-  
-  // Sidebar Icons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Sidebar Close
-  //
-  
-  {
-    "class": "close_button",
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "attributes": ["dirty"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/buttons/button_dirty_close_selected.png",
-    "layer1.texture": "Theme - Otto/assets/accent/blue/buttons/button_dirty_selected.png"
-  },
-  
-  //
-  // Sidebar Folders
-  //
-  
-  // Defaults
-  
-  {
-    "class": "icon_folder",
-    "settings": ["!theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/sidebar/folder.png"
-  },
-  
-  // Opened
-  
-  {
-    "class": "icon_folder",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "settings": ["!theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/sidebar/folder_expanded.png"
-  },
-  
-  // Symlink
-  
-  {
-    "class": "icon_folder_dup",
-    "settings": ["!theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/sidebar/folder_dup.png"
-  },
-  
-  // Symlink Opened
-  
-  {
-    "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "settings": ["!theme_otto_sidebar_folder_arrow"],
-    "layer0.texture": "Theme - Otto/assets/accent/blue/sidebar/folder_dup_expanded.png"
-  },
-  
-  // Loading
-  
-  {
-    "class": "icon_folder_loading",
-    "layer0.texture":
-    {
-      "keyframes":
-      [
-        "Theme - Otto/assets/accent/blue/sidebar/spinner3.png",
-        "Theme - Otto/assets/accent/blue/sidebar/spinner2.png",
-        "Theme - Otto/assets/accent/blue/sidebar/spinner1.png",
-        "Theme - Otto/assets/accent/blue/sidebar/spinner.png"
-      ],
-      "loop": true,
-      "frame_time": 0.125
-    }
-  },
-  
-  // >> 14.7 Overlays Accent Blue
-  // ===========================================================================
-  
-  // Quick Panel Rows
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_row",
-    "attributes": ["selected"],
-    "layer0.tint": [36, 151, 227],
-    "layer1.opacity": 0.0
-  },
-  
-  {
-    "class": "mini_quick_panel_row",
-    "attributes": ["selected"],
-    "layer0.tint": [36, 151, 227]
-  },
-  
-  // Quick Panel Labels
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_label",
-    "match_fg": [36, 151, 227, 255]
-  },
-  
-  {
-    "class": "quick_panel_label",
-    "parents": [{"class": "overlay_control"}],
-    "match_fg": [36, 151, 227, 255]
-  },
-  
-  {
-    "class": "quick_panel_path_label",
-    "match_fg": [36, 151, 227, 255]
-  },
-  
-  {
-    "class": "quick_panel_score_label",
-    "fg": [36, 151, 227, 255]
-  },
-  
-  // >> 14.8 Autocomplete Accent Blue
-  // ===========================================================================
-  
-  {
-    "class": "auto_complete_label",
-    "match_fg": [36, 151, 227]
-  },
-  
-  {
-    "class": "table_row",
-    "layer0.tint": [36, 151, 227]
-  },
-  
-  // > 15 Accent Green
-  // ===========================================================================
-  // Accent color settings
-  // ===========================================================================
-  
-  // >> 15.1 Tabs Accent Green
-  // ===========================================================================
-  
-  // Tab Accent
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Underlined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_green"],
-    "layer3.texture": "Theme - Otto/assets/accent/green/tabs/tab_selected_underlined.png"
-  },
-  
-  //
-  // Prelined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_green"],
-    "layer3.texture": "Theme - Otto/assets/accent/green/tabs/tab_selected_prelined.png"
-  },
-  
-  //
-  // Filled
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
-    "layer3.texture": "Theme - Otto/assets/accent/green/tabs/tab_selected_filled.png"
-  },
-  
-  // Close
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
-    "attributes": ["hover"],
-    "layer0.opacity": 1.0
-  },
-  
-  // Dirty
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "settings": ["theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_dirty_selected.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "settings": ["theme_otto_accent_green"],
-    "attributes": ["hover"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_dirty_close_selected.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "attributes": ["hover"],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 1.0
-  },
-  
-  
-  // >> 15.2 Scrollbars Accent Green
-  // ===========================================================================
-  
-  // Scrollbar
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/scrollbars/puck_vertical.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_green"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/scrollbars/puck_horizontal.png"
-  },
-  
-  // Scrollbar Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/scrollbars/puck_vertical_overlay.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_green"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/scrollbars/puck_horizontal_overlay.png"
-  },
-  
-  // >> 15.3 Minimap Accent Green
-  // ===========================================================================
-  
-  {
-    "class": "minimap_control",
-    "settings": ["theme_otto_accent_green"],
-    "viewport_color": [46, 188, 103, 75]
-  },
-  
-  // >> 15.4 Tooltips Accent Green
-  // ===========================================================================
-  
-  {
-    "class": "tool_tip_control",
-    "settings": ["theme_otto_accent_green"],
-    "layer0.tint": [46, 188, 103]
-  },
-  
-  // >> 15.5 Widgets Accent Green
-  // ===========================================================================
-  
-  // Buttons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Hovered
-  //
-  
-  {
-    "class": "button_control",
-    "settings": ["theme_otto_accent_green"],
-    "attributes": ["hover"],
-    "layer0.tint": [46, 188, 103]
-  },
-  
-  //
-  // Icons
-  //
-  
-  // Regex Search Button Selected
-  
-  {
-    "class": "icon_regex",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_regex_on.png"
-  },
-  
-  // Case Sensitive Search Button
-  
-  {
-    "class": "icon_case",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_case_on.png"
-  },
-  
-  // Match Whole Word Search Button
-  
-  {
-    "class": "icon_whole_word",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_word_on.png"
-  },
-  
-  // Search Wrap Button
-  
-  {
-    "class": "icon_wrap",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_wrap_on.png"
-  },
-  
-  // Show Search Context Button
-  
-  {
-    "class": "icon_context",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_context_on.png"
-  },
-  
-  // Use Search Buffer
-  
-  {
-    "class": "icon_use_buffer",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_buffer_on.png"
-  },
-  
-  // Reverse Search Direction Button
-  
-  {
-    "class": "icon_reverse",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_reverse_on.png"
-  },
-  
-  // Search In Selection Button
-  
-  {
-    "class": "icon_in_selection",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_selection_on.png"
-  },
-  
-  // Preserve Case Button
-  
-  {
-    "class": "icon_preserve_case",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_preserve_on.png"
-  },
-  
-  // Highlight Results Button
-  
-  {
-    "class": "icon_highlight",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_highlight_on.png"
-  },
-  
-  // >> 15.6 Sidebar Accent Green
-  // ===========================================================================
-  
-  // Sidebar Tree Row
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "tree_row",
-    "settings": ["theme_otto_accent_green"],
-    "layer1.texture": "Theme - Otto/assets/accent/green/sidebar/sidebar_row_selected.png"
-  },
-  
-  // Sidebar Icons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Sidebar Close
-  //
-  
-  {
-    "class": "close_button",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "attributes": ["dirty"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/buttons/button_dirty_close_selected.png",
-    "layer1.texture": "Theme - Otto/assets/accent/green/buttons/button_dirty_selected.png"
-  },
-  
-  //
-  // Sidebar Folders
-  //
-  
-  // Defaults
-  
-  {
-    "class": "icon_folder",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/sidebar/folder.png"
-  },
-  
-  // Opened
-  
-  {
-    "class": "icon_folder",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/sidebar/folder_expanded.png"
-  },
-  
-  // Symlink
-  
-  {
-    "class": "icon_folder_dup",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/sidebar/folder_dup.png"
-  },
-  
-  // Symlink Opened
-  
-  {
-    "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_green"],
-    "layer0.texture": "Theme - Otto/assets/accent/green/sidebar/folder_dup_expanded.png"
-  },
-  
-  // Loading
-  
-  {
-    "class": "icon_folder_loading",
-    "settings": ["theme_otto_accent_green"],
-    "layer0.texture":
-    {
-      "keyframes":
-      [
-        "Theme - Otto/assets/accent/green/sidebar/spinner3.png",
-        "Theme - Otto/assets/accent/green/sidebar/spinner2.png",
-        "Theme - Otto/assets/accent/green/sidebar/spinner1.png",
-        "Theme - Otto/assets/accent/green/sidebar/spinner.png"
-      ],
-      "loop": true,
-      "frame_time": 0.125
-    }
-  },
-  
-  // >> 15.7 Overlays Accent Green
-  // ===========================================================================
-  
-  // Quick Panel Rows
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_row",
-    "settings": ["theme_otto_accent_green"],
-    "attributes": ["selected"],
-    "layer0.tint": [46, 188, 103],
-    "layer1.opacity": 0.0
-  },
-  
-  {
-    "class": "mini_quick_panel_row",
-    "settings": ["theme_otto_accent_green"],
-    "attributes": ["selected"],
-    "layer0.tint": [46, 188, 103]
-  },
-  
-  // Quick Panel Labels
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_green"],
-    "match_fg": [46, 188, 103, 255]
-  },
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_green"],
-    "parents": [{"class": "overlay_control"}],
-    "match_fg": [46, 188, 103, 255]
-  },
-  
-  {
-    "class": "quick_panel_path_label",
-    "settings": ["theme_otto_accent_green"],
-    "match_fg": [46, 188, 103, 255]
-  },
-  
-  {
-    "class": "quick_panel_score_label",
-    "settings": ["theme_otto_accent_green"],
-    "fg": [46, 188, 103, 255]
-  },
-  
-  // >> 15.8 Autocomplete Accent Green
-  // ===========================================================================
-  
-  {
-    "class": "auto_complete_label",
-    "settings": ["theme_otto_accent_green"],
-    "match_fg": [46, 188, 103]
-  },
-  
-  {
-    "class": "table_row",
-    "settings": ["theme_otto_accent_green"],
-    "layer0.tint": [46, 188, 103]
-  },
-  
-  // > 16 Accent Orange
-  // ===========================================================================
-  // Accent color settings
-  // ===========================================================================
-  
-  // >> 16.1 Tabs Accent Orange
-  // ===========================================================================
-  
-  // Tab Accent
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Underlined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_orange"],
-    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_underlined.png"
-  },
-  
-  //
-  // Prelined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_orange"],
-    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_prelined.png"
-  },
-  
-  //
-  // Filled
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
-    "layer3.texture": "Theme - Otto/assets/accent/orange/tabs/tab_selected_filled.png"
-  },
-  
-  // Close
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
-    "attributes": ["hover"],
-    "layer0.opacity": 1.0
-  },
-  
-  // Dirty
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "settings": ["theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_selected.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "settings": ["theme_otto_accent_orange"],
-    "attributes": ["hover"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_close_selected.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "attributes": ["hover"],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 1.0
-  },
-  
-  
-  // >> 16.2 Scrollbars Accent Orange
-  // ===========================================================================
-  
-  // Scrollbar
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_vertical.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_orange"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_horizontal.png"
-  },
-  
-  // Scrollbar Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_vertical_overlay.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_orange"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/scrollbars/puck_horizontal_overlay.png"
-  },
-  
-  // >> 16.3 Minimap Accent Orange
-  // ===========================================================================
-  
-  {
-    "class": "minimap_control",
-    "settings": ["theme_otto_accent_orange"],
-    "viewport_color": [241, 103, 60, 75]
-  },
-  
-  // >> 16.4 Tooltips Accent Orange
-  // ===========================================================================
-  
-  {
-    "class": "tool_tip_control",
-    "settings": ["theme_otto_accent_orange"],
-    "layer0.tint": [241, 103, 60]
-  },
-  
-  // >> 16.5 Widgets Accent Orange
-  // ===========================================================================
-  
-  // Buttons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Hovered
-  //
-  
-  {
-    "class": "button_control",
-    "settings": ["theme_otto_accent_orange"],
-    "attributes": ["hover"],
-    "layer0.tint": [241, 103, 60]
-  },
-  
-  //
-  // Icons
-  //
-  
-  // Regex Search Button Selected
-  
-  {
-    "class": "icon_regex",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_regex_on.png"
-  },
-  
-  // Case Sensitive Search Button
-  
-  {
-    "class": "icon_case",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_case_on.png"
-  },
-  
-  // Match Whole Word Search Button
-  
   {
-    "class": "icon_whole_word",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_word_on.png"
-  },
-  
-  // Search Wrap Button
-  
-  {
-    "class": "icon_wrap",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_wrap_on.png"
-  },
-  
-  // Show Search Context Button
-  
-  {
-    "class": "icon_context",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_context_on.png"
-  },
-  
-  // Use Search Buffer
-  
-  {
-    "class": "icon_use_buffer",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_buffer_on.png"
-  },
-  
-  // Reverse Search Direction Button
-  
-  {
-    "class": "icon_reverse",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_reverse_on.png"
-  },
-  
-  // Search In Selection Button
-  
-  {
-    "class": "icon_in_selection",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_selection_on.png"
-  },
-  
-  // Preserve Case Button
-  
-  {
-    "class": "icon_preserve_case",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_preserve_on.png"
-  },
-  
-  // Highlight Results Button
-  
-  {
-    "class": "icon_highlight",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_highlight_on.png"
-  },
-  
-  // >> 16.6 Sidebar Accent Orange
-  // ===========================================================================
-  
-  // Sidebar Tree Row
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "tree_row",
-    "settings": ["theme_otto_accent_orange"],
-    "layer1.texture": "Theme - Otto/assets/accent/orange/sidebar/sidebar_row_selected.png"
-  },
-  
-  // Sidebar Icons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Sidebar Close
-  //
-  
-  {
-    "class": "close_button",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "attributes": ["dirty"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_close_selected.png",
-    "layer1.texture": "Theme - Otto/assets/accent/orange/buttons/button_dirty_selected.png"
-  },
-  
-  //
-  // Sidebar Folders
-  //
-  
-  // Defaults
-  
-  {
-    "class": "icon_folder",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder.png"
-  },
-  
-  // Opened
-  
-  {
-    "class": "icon_folder",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_expanded.png"
-  },
-  
-  // Symlink
-  
-  {
-    "class": "icon_folder_dup",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_dup.png"
-  },
-  
-  // Symlink Opened
-  
-  {
-    "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_orange"],
-    "layer0.texture": "Theme - Otto/assets/accent/orange/sidebar/folder_dup_expanded.png"
-  },
-  
-  // Loading
-  
-  {
-    "class": "icon_folder_loading",
-    "settings": ["theme_otto_accent_orange"],
-    "layer0.texture":
-    {
-      "keyframes":
-      [
-        "Theme - Otto/assets/accent/orange/sidebar/spinner3.png",
-        "Theme - Otto/assets/accent/orange/sidebar/spinner2.png",
-        "Theme - Otto/assets/accent/orange/sidebar/spinner1.png",
-        "Theme - Otto/assets/accent/orange/sidebar/spinner.png"
-      ],
-      "loop": true,
-      "frame_time": 0.125
-    }
-  },
-  
-  // >> 16.7 Overlays Accent Orange
-  // ===========================================================================
-  
-  // Quick Panel Rows
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_row",
-    "settings": ["theme_otto_accent_orange"],
-    "attributes": ["selected"],
-    "layer0.tint": [241, 103, 60],
-    "layer1.opacity": 0.0
-  },
-  
-  {
-    "class": "mini_quick_panel_row",
-    "settings": ["theme_otto_accent_orange"],
-    "attributes": ["selected"],
-    "layer0.tint": [241, 103, 60]
-  },
-  
-  // Quick Panel Labels
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_orange"],
-    "match_fg": [241, 103, 60, 255]
-  },
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_orange"],
-    "parents": [{"class": "overlay_control"}],
-    "match_fg": [241, 103, 60, 255]
-  },
-  
-  {
-    "class": "quick_panel_path_label",
-    "settings": ["theme_otto_accent_orange"],
-    "match_fg": [241, 103, 60, 255]
-  },
-  
-  {
-    "class": "quick_panel_score_label",
-    "settings": ["theme_otto_accent_orange"],
-    "fg": [241, 103, 60, 255]
-  },
-  
-  // >> 16.8 Autocomplete Accent Orange
-  // ===========================================================================
-  
-  {
-    "class": "auto_complete_label",
-    "settings": ["theme_otto_accent_orange"],
-    "match_fg": [241, 103, 60]
-  },
-  
-  {
-    "class": "table_row",
-    "settings": ["theme_otto_accent_orange"],
-    "layer0.tint": [241, 103, 60]
-  },
-  
-  // > 17 Accent Purple
-  // ===========================================================================
-  // Accent color settings
-  // ===========================================================================
-  
-  // >> 17.1 Tabs Accent Purple
-  // ===========================================================================
-  
-  // Tab Accent
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Underlined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_underlined", "theme_otto_accent_purple"],
-    "layer3.texture": "Theme - Otto/assets/accent/purple/tabs/tab_selected_underlined.png"
-  },
-  
-  //
-  // Prelined
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_prelined", "theme_otto_accent_purple"],
-    "layer3.texture": "Theme - Otto/assets/accent/purple/tabs/tab_selected_prelined.png"
-  },
-  
-  //
-  // Filled
-  //
-  
-  {
-    "class": "tab_control",
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
-    "layer3.texture": "Theme - Otto/assets/accent/purple/tabs/tab_selected_filled.png"
-  },
-  
-  // Close
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png"
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
-    "attributes": ["hover"],
-    "layer0.opacity": 1.0
-  },
-  
-  // Dirty
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_selected.png",
-    "settings": ["theme_otto_accent_purple"],
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
-    "settings": ["theme_otto_accent_purple"],
-    "attributes": ["hover"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_close_selected.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_dirty.png",
-    "layer0.opacity": 1.0
-  },
-  
-  {
-    "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-    "attributes": ["hover"],
-    "settings": ["theme_otto_tab_selected_filled", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/dark/buttons/button_close.png",
-    "layer0.opacity": 1.0
-  },
-  
-  
-  // >> 17.2 Scrollbars Accent Purple
-  // ===========================================================================
-  
-  // Scrollbar
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/scrollbars/puck_vertical.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["theme_otto_accent_purple"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/scrollbars/puck_horizontal.png"
-  },
-  
-  // Scrollbar Overlayed
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Vertical Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/scrollbars/puck_vertical_overlay.png"
-  },
-  
-  //
-  // Horizontal Scrollbar Puck
-  //
-  
-  {
-    "class": "puck_control",
-    "settings": ["overlay_scroll_bars", "theme_otto_accent_purple"],
-    "attributes": ["horizontal"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/scrollbars/puck_horizontal_overlay.png"
-  },
-  
-  // >> 17.3 Minimap Accent Purple
-  // ===========================================================================
-  
-  {
-    "class": "minimap_control",
-    "settings": ["theme_otto_accent_purple"],
-    "viewport_color": [175, 60, 241, 75]
-  },
-  
-  // >> 17.4 Tooltips Accent Purple
-  // ===========================================================================
-  
-  {
-    "class": "tool_tip_control",
-    "settings": ["theme_otto_accent_purple"],
-    "layer0.tint": [175, 60, 241]
-  },
-  
-  // >> 17.5 Widgets Accent Purple
-  // ===========================================================================
-  
-  // Buttons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Hovered
-  //
-  
-  {
-    "class": "button_control",
-    "settings": ["theme_otto_accent_purple"],
-    "attributes": ["hover"],
-    "layer0.tint": [175, 60, 241]
-  },
-  
-  //
-  // Icons
-  //
-  
-  // Regex Search Button Selected
-  
-  {
-    "class": "icon_regex",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_regex_on.png"
-  },
-  
-  // Case Sensitive Search Button
-  
-  {
-    "class": "icon_case",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_case_on.png"
-  },
-  
-  // Match Whole Word Search Button
-  
-  {
-    "class": "icon_whole_word",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_word_on.png"
-  },
-  
-  // Search Wrap Button
-  
-  {
-    "class": "icon_wrap",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_wrap_on.png"
-  },
-  
-  // Show Search Context Button
-  
-  {
-    "class": "icon_context",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_context_on.png"
-  },
-  
-  // Use Search Buffer
-  
-  {
-    "class": "icon_use_buffer",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_buffer_on.png"
-  },
-  
-  // Reverse Search Direction Button
-  
-  {
-    "class": "icon_reverse",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_reverse_on.png"
-  },
-  
-  // Search In Selection Button
-  
-  {
-    "class": "icon_in_selection",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_selection_on.png"
-  },
-  
-  // Preserve Case Button
-  
-  {
-    "class": "icon_preserve_case",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_preserve_on.png"
-  },
-  
-  // Highlight Results Button
-  
-  {
-    "class": "icon_highlight",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1.0,
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_highlight_on.png"
-  },
-  
-  // >> 17.6 Sidebar Accent Purple
-  // ===========================================================================
-  
-  // Sidebar Tree Row
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "tree_row",
-    "settings": ["theme_otto_accent_purple"],
-    "layer1.texture": "Theme - Otto/assets/accent/purple/sidebar/sidebar_row_selected.png"
-  },
-  
-  // Sidebar Icons
-  // ---------------------------------------------------------------------------
-  
-  //
-  // Sidebar Close
-  //
-  
-  {
-    "class": "close_button",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "attributes": ["dirty"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_close_selected.png",
-    "layer1.texture": "Theme - Otto/assets/accent/purple/buttons/button_dirty_selected.png"
-  },
-  
-  //
-  // Sidebar Folders
-  //
-  
-  // Defaults
-  
-  {
-    "class": "icon_folder",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/sidebar/folder.png"
-  },
-  
-  // Opened
-  
-  {
-    "class": "icon_folder",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/sidebar/folder_expanded.png"
-  },
-  
-  // Symlink
-  
-  {
-    "class": "icon_folder_dup",
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/sidebar/folder_dup.png"
-  },
-  
-  // Symlink Opened
-  
-  {
-    "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "settings": ["!theme_otto_sidebar_folder_arrow", "theme_otto_accent_purple"],
-    "layer0.texture": "Theme - Otto/assets/accent/purple/sidebar/folder_dup_expanded.png"
-  },
-  
-  // Loading
-  
-  {
-    "class": "icon_folder_loading",
-    "settings": ["theme_otto_accent_purple"],
-    "layer0.texture":
-    {
-      "keyframes":
-      [
-        "Theme - Otto/assets/accent/purple/sidebar/spinner3.png",
-        "Theme - Otto/assets/accent/purple/sidebar/spinner2.png",
-        "Theme - Otto/assets/accent/purple/sidebar/spinner1.png",
-        "Theme - Otto/assets/accent/purple/sidebar/spinner.png"
-      ],
-      "loop": true,
-      "frame_time": 0.125
-    }
-  },
-  
-  // >> 17.7 Overlays Accent Purple
-  // ===========================================================================
-  
-  // Quick Panel Rows
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_row",
-    "settings": ["theme_otto_accent_purple"],
-    "attributes": ["selected"],
-    "layer0.tint": [175, 60, 241],
-    "layer1.opacity": 0.0
-  },
-  
-  {
-    "class": "mini_quick_panel_row",
-    "settings": ["theme_otto_accent_purple"],
-    "attributes": ["selected"],
-    "layer0.tint": [175, 60, 241]
-  },
-  
-  // Quick Panel Labels
-  // ---------------------------------------------------------------------------
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_purple"],
-    "match_fg": [175, 60, 241, 255]
-  },
-  
-  {
-    "class": "quick_panel_label",
-    "settings": ["theme_otto_accent_purple"],
-    "parents": [{"class": "overlay_control"}],
-    "match_fg": [175, 60, 241, 255]
-  },
-  
-  {
-    "class": "quick_panel_path_label",
-    "settings": ["theme_otto_accent_purple"],
-    "match_fg": [175, 60, 241, 255]
-  },
-  
-  {
-    "class": "quick_panel_score_label",
-    "settings": ["theme_otto_accent_purple"],
-    "fg": [175, 60, 241, 255]
-  },
-  
-  // >> 17.8 Autocomplete Accent Purple
-  // ===========================================================================
-  
-  {
-    "class": "auto_complete_label",
-    "settings": ["theme_otto_accent_purple"],
-    "match_fg": [175, 60, 241]
-  },
-  
-  {
-    "class": "table_row",
-    "settings": ["theme_otto_accent_purple"],
-    "layer0.tint": [175, 60, 241]
-  },
+    "class": "dialog",
+    "layer0.tint": [54, 55, 49]
+  }
   
 ]

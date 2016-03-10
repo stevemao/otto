@@ -13,10 +13,9 @@ settings:
     caret: '<%= base05 %>'
     foreground: '<%= base06 %>'
     invisibles: '<%= base03 %>'
-    selection: '<%= base02 %>'
-    selectionBorder: '<%= base02 %>'
-    selectionForeground: '<%= base04 %>'
-    lineHighlight: '<%= base02 %>55'
+    selection: '<%= base02 %>15'
+    selectionBorder: '<%= base02 %>15'
+    lineHighlight: '<%= base02 %>10'
     gutter: '<%= base01 %>'
 
 - name: AceJump
@@ -98,12 +97,12 @@ settings:
 - name: entity.name.method.js
   scope: entity.name.method.js
   settings:
-    foreground: '<%= base07 %>'
+    foreground: '<%= base0D %>'
 
 - name: meta.method.js
   scope: meta.class-method.js entity.name.function.js, variable.function.constructor
   settings:
-    foreground: '<%= base07 %>'
+    foreground: '<%= base0D %>'
 
 - name: Attributes
   scope: entity.other.attribute-name
