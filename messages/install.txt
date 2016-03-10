@@ -38,7 +38,7 @@ Global Options
 
 NOTE: Some of the options may not work properly due to these well-known bugs & suggestions
 
-- [Increaseing font size of file tabs cuts off the font](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009)
+- [Increasing font size of file tabs cuts off the font](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009)
 - [Sidebar improvements](https://forum.sublimetext.com/t/sugestion-ui-sidebar-improvements/18028)
 - [Quick panel font size](https://forum.sublimetext.com/t/quick-panel-font-size/4046)
 - [Change font in quick panel](https://forum.sublimetext.com/t/change-font-in-quick-panel/7855)
