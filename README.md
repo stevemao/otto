@@ -130,7 +130,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 ## Customization
 
-NOTE: Some of the options may not work properly due to these well-known bugs & suggestions
+**NOTE**: Some of the options may not work properly due to these well-known bugs & suggestions
 
 - [Increasing font size of file tabs cuts off the font](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009)
 - [Sidebar improvements](https://forum.sublimetext.com/t/sugestion-ui-sidebar-improvements/18028)
@@ -373,7 +373,7 @@ Color schemes are based on:
 
 ## Contributing
 
-**Note:** I have no plans to add new themes, only the fixes and improvements to the existing ones. In such cases you're free to fork.
+**NOTE:** I have no plans to add new themes, only the fixes and improvements to the existing ones. In such cases you're free to fork.
 
 These themes use a custom Gulp builder. If you want to edit them you must install it first:
 
