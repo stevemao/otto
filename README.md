@@ -256,6 +256,8 @@ You can customize themes via [PackageResourceViewer](https://github.com/skuroda/
 "show_line_endings": true,
 ```
 
+The font used for the code is [**Fira Code**](https://github.com/tonsky/FiraCode).
+
 ***
 
 ## HiDPI Support
