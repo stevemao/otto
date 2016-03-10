@@ -20,6 +20,18 @@
 
 {
   "class": "tabset_control",
+  "settings": ["theme_otto_global_ui_small"],
+  "tab_height": 34
+},
+
+{
+  "class": "tab_control",
+  "settings": ["theme_otto_global_ui_small"],
+  "content_margin": [14, 4, 10, 4]
+},
+
+{
+  "class": "tabset_control",
   "settings": ["theme_otto_tab_small"],
   "tab_height": 34
 },
@@ -31,6 +43,12 @@
 },
 
 // Large
+
+{
+  "class": "tabset_control",
+  "settings": ["theme_otto_global_ui_large"],
+  "tab_height": 54
+},
 
 {
   "class": "tabset_control",

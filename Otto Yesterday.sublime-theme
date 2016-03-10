@@ -1121,6 +1121,31 @@
   
   {
     "class": "button_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 11]
+  },
+  
+  {
+    "class": "icon_button_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 10]
+  },
+  
+  {
+    "class": "text_line_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [10, 6]
+  },
+  
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [24, 8]
+  },
+  
+  {
+    "class": "button_control",
     "settings": ["theme_otto_find_and_replace_small"],
     "content_margin": [10, 11]
   },
@@ -3078,6 +3103,19 @@
   
   {
     "class": "sidebar_tree",
+    "settings": ["theme_otto_global_ui_small"],
+    "row_padding": [8, 5, 8, 4]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_global_ui_small"],
+    "layer0.inner_margin": [8, 5, 0, 0],
+    "layer1.inner_margin": [8, 5, 0, 0]
+  },
+  
+  {
+    "class": "sidebar_tree",
     "settings": ["theme_otto_sidebar_small"],
     "row_padding": [8, 5, 8, 4]
   },
@@ -3091,13 +3129,26 @@
   
   {
     "class": "sidebar_tree",
+    "settings": ["theme_otto_global_ui_large"],
+    "row_padding": [8, 9, 8, 8]
+  },
+  
+  {
+    "class": "tree_row",
+    "settings": ["theme_otto_global_ui_large"],
+    "layer0.inner_margin": [8, 9, 0, 0],
+    "layer1.inner_margin": [8, 9, 0, 0]
+  },
+  
+  {
+    "class": "sidebar_tree",
     "settings": ["theme_otto_sidebar_large"],
     "row_padding": [8, 9, 8, 8]
   },
   
   {
     "class": "tree_row",
-    "settings": ["theme_otto_sidebar_small"],
+    "settings": ["theme_otto_sidebar_large"],
     "layer0.inner_margin": [8, 9, 0, 0],
     "layer1.inner_margin": [8, 9, 0, 0]
   },
@@ -3527,8 +3578,20 @@
   
   {
     "class": "status_container",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [5, 1, 5, 1]
+  },
+  
+  {
+    "class": "status_container",
     "settings": ["theme_otto_status_bar_small"],
     "content_margin": [5, 1, 5, 1]
+  },
+  
+  {
+    "class": "status_button",
+    "settings": ["theme_otto_global_ui_small"],
+    "min_size": [92, 0]
   },
   
   {
@@ -3539,6 +3602,12 @@
   
   // Status Bar Large
   // ---------------------------------------------------------------------------
+  
+  {
+    "class": "status_container",
+    "settings": ["theme_otto_global_ui_large"],
+    "content_margin": [5, 7, 5, 7]
+  },
   
   {
     "class": "status_container",
@@ -4601,6 +4670,18 @@
   
   {
     "class": "tabset_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "tab_height": 34
+  },
+  
+  {
+    "class": "tab_control",
+    "settings": ["theme_otto_global_ui_small"],
+    "content_margin": [14, 4, 10, 4]
+  },
+  
+  {
+    "class": "tabset_control",
     "settings": ["theme_otto_tab_small"],
     "tab_height": 34
   },
@@ -4612,6 +4693,12 @@
   },
   
   // Large
+  
+  {
+    "class": "tabset_control",
+    "settings": ["theme_otto_global_ui_large"],
+    "tab_height": 54
+  },
   
   {
     "class": "tabset_control",

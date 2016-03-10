@@ -6,6 +6,19 @@
 
 {
   "class": "sidebar_tree",
+  "settings": ["theme_otto_global_ui_small"],
+  "row_padding": [8, 5, 8, 4]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_global_ui_small"],
+  "layer0.inner_margin": [8, 5, 0, 0],
+  "layer1.inner_margin": [8, 5, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
   "settings": ["theme_otto_sidebar_small"],
   "row_padding": [8, 5, 8, 4]
 },
@@ -19,13 +32,26 @@
 
 {
   "class": "sidebar_tree",
+  "settings": ["theme_otto_global_ui_large"],
+  "row_padding": [8, 9, 8, 8]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_global_ui_large"],
+  "layer0.inner_margin": [8, 9, 0, 0],
+  "layer1.inner_margin": [8, 9, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
   "settings": ["theme_otto_sidebar_large"],
   "row_padding": [8, 9, 8, 8]
 },
 
 {
   "class": "tree_row",
-  "settings": ["theme_otto_sidebar_small"],
+  "settings": ["theme_otto_sidebar_large"],
   "layer0.inner_margin": [8, 9, 0, 0],
   "layer1.inner_margin": [8, 9, 0, 0]
 },
