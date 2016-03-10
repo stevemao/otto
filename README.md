@@ -3,6 +3,9 @@
 </p>
 
 <p align="center">
+    <a href="https://www.patreon.com/oivva" target="_blank">
+       <img src="https://raw.githubusercontent.com/oivva/otto-goodies/master/media/donate.png" alt="Click here to lend your support to: Otto and make a donation at patreon.com !"> 
+    </a>
 </p>
 
 <p align="center">
