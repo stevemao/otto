@@ -24,11 +24,11 @@
           <key>invisibles</key>
           <string><%= base03 %></string>
           <key>lineHighlight</key>
-          <string><%= base02 %>55</string>
+          <string><%= base02 %>10</string>
           <key>selection</key>
-          <string><%= base02 %></string>
+          <string><%= base02 %>15</string>
           <key>selectionBorder</key>
-          <string><%= base02 %></string>
+          <string><%= base02 %>15</string>
           <key>selectionForeground</key>
           <string><%= base04 %></string>
         </dict>
