@@ -9,35 +9,29 @@ colorSpaceName: sRGB
 semanticClass: <%= semanticClass %>
 settings:
 - settings:
-    background: '<%= base00 %>'
-    caret: '<%= base05 %>'
-    foreground: '<%= base06 %>'
-    invisibles: '<%= base03 %>'
-    selection: '<%= base02 %>15'
-    selectionBorder: '<%= base02 %>15'
-    lineHighlight: '<%= base02 %>10'
-    gutter: '<%= base01 %>'
-
-- name: AceJump
-  scope: ace.jump
-  settings:
-    foreground: '<%= base13 %>'
-    background: '<%= base14 %>'
+    background: '<%= scheme.background %>'
+    caret: '<%= scheme.caret %>'
+    foreground: '<%= scheme.foreground %>'
+    gutter: '<%= scheme.gutter %>'
+    invisibles: '<%= scheme.invisibles %>'
+    lineHighlight: '<%= scheme.highlight %>10'
+    selection: '<%= scheme.highlight %>15'
+    selectionBorder: '<%= scheme.highlight %>15'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
   settings:
-    foreground: '<%= base03 %>'
+    foreground: '<%= scheme.invisibles %>'
 
 - name: Variable
   scope: variable
   settings:
-    foreground: '<%= base06 %>'
+    foreground: '<%= scheme.foreground %>'
 
 - name: Keyword, Storage
   scope: keyword, storage.type, storage.modifier
   settings:
-    foreground: '<%= base0E %>'
+    foreground: '<%= scheme.base.purple %>'
 
 - name: Operator, Misc
   scope: keyword.operator, constant.other.color, punctuation, meta.tag,
@@ -46,93 +40,93 @@ settings:
     punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
-    foreground: '<%= base0C %>'
+    foreground: '<%= scheme.base.cyan %>'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: '<%= base10 %>'
+    foreground: '<%= scheme.base.pink %>'
 
 - name: Function, Special Method, Block Level
   scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method,
     meta.block-level
   settings:
-    foreground: '<%= base0D %>'
+    foreground: '<%= scheme.base.blue %>'
 
 - name: Other Variable, String Link
   scope: support.other.variable, string.other.link
   settings:
-    foreground: '<%= base11 %>'
+    foreground: '<%= scheme.base.pink %>'
 
 - name: Number, Constant, Function Argument, Tag Attribute, Embedded
   scope: constant.numeric, constant.language, support.constant, constant.character,
     variable.parameter, keyword.other.unit
   settings:
-    foreground: '<%= base09 %>'
+    foreground: '<%= scheme.base.orange %>'
 
 - name: String, Symbols, Inherited Class, Markup Heading
   scope: string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading,
     markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
-    foreground: '<%= base0B %>'
+    foreground: '<%= scheme.base.green %>'
     fontStyle: normal
 
 - name: Class, Support
   scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php,
     meta.use.php, support.other.namespace.php, markup.changed.git_gutter
   settings:
-    foreground: '<%= base0A %>'
+    foreground: '<%= scheme.base.yellow %>'
 
 - name: Sub-methods
   scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
   settings:
-    foreground: '<%= base08 %>'
+    foreground: '<%= scheme.base.red %>'
 
 - name: Language methods
   scope: variable.language
   settings:
-    foreground: '<%= base08 %>'
+    foreground: '<%= scheme.base.red %>'
     fontStyle: italic
 
 - name: entity.name.method.js
   scope: entity.name.method.js
   settings:
-    foreground: '<%= base0D %>'
+    foreground: '<%= scheme.base.blue %>'
 
 - name: meta.method.js
   scope: meta.class-method.js entity.name.function.js, variable.function.constructor
   settings:
-    foreground: '<%= base0D %>'
+    foreground: '<%= scheme.base.blue %>'
 
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '<%= base12 %>'
+    foreground: '<%= scheme.base.violet %>'
 
 - name: Inserted
   scope: markup.inserted
   settings:
-    foreground: '<%= base0B %>'
+    foreground: '<%= scheme.base.green %>'
 
 - name: Deleted
   scope: markup.deleted
   settings:
-    foreground: '<%= base08 %>'
+    foreground: '<%= scheme.base.red %>'
 
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '<%= base12 %>'
+    foreground: '<%= scheme.base.violet %>'
 
 - name: Regular Expressions
   scope: string.regexp
   settings:
-    foreground: '<%= base0C %>'
+    foreground: '<%= scheme.base.cyan %>'
 
 - name: Escape Characters
   scope: constant.character.escape
   settings:
-    foreground: '<%= base0C %>'
+    foreground: '<%= scheme.base.cyan %>'
 
 - name: URL
   scope: '*url*, *link*, *uri*'
@@ -142,21 +136,27 @@ settings:
 - name: Search Results Nums
   scope: constant.numeric.line-number.find-in-files - match
   settings:
-    foreground: '<%= base0F %>'
+    foreground: '<%= scheme.base.brown %>'
 
 - name: Search Results Lines
   scope: entity.name.filename.find-in-files
   settings:
-    foreground: '<%= base0B %>'
+    foreground: '<%= scheme.base.green %>'
 
 - name: Decorators
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
-    foreground: '<%= base0D %>'
+    foreground: '<%= scheme.base.blue %>'
     fontStyle: italic
 
 - name: ES7 Bind Operator
   scope: source.js constant.other.object.key.js string.unquoted.label.js
   settings:
-    foreground: '<%= base08 %>'
+    foreground: '<%= scheme.base.red %>'
     fontStyle: italic
+
+- name: AceJump
+  scope: ace.jump
+  settings:
+    background: '<%= scheme.base.violet %>'
+    foreground: '<%= scheme.base.white %>'

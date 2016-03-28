@@ -12,17 +12,11 @@ settings:
     background: '#272822'
     caret: '#686965'
     foreground: '#f8f8f2'
+    gutter: '#272822'
     invisibles: '#75715e'
+    lineHighlight: '#ffffff10'
     selection: '#ffffff15'
     selectionBorder: '#ffffff15'
-    lineHighlight: '#ffffff10'
-    gutter: '#272822'
-
-- name: AceJump
-  scope: ace.jump
-  settings:
-    foreground: '#ffffff'
-    background: '#846fec'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
@@ -46,12 +40,12 @@ settings:
     punctuation.definition.tag.end.html, punctuation.section.embedded,
     keyword.other.template, keyword.other.substitution
   settings:
-    foreground: '#f9f8f5'
+    foreground: '#a1efe4'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: '#f92672'
+    foreground: '#f94989'
 
 - name: Function, Special Method, Block Level
   scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method,
@@ -62,7 +56,7 @@ settings:
 - name: Other Variable, String Link
   scope: support.other.variable, string.other.link
   settings:
-    foreground: '#f2777a'
+    foreground: '#f94989'
 
 - name: Number, Constant, Function Argument, Tag Attribute, Embedded
   scope: constant.numeric, constant.language, support.constant, constant.character,
@@ -74,14 +68,14 @@ settings:
   scope: string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading,
     markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
-    foreground: '#e6db74'
+    foreground: '#a6e22e'
     fontStyle: normal
 
 - name: Class, Support
   scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php,
     meta.use.php, support.other.namespace.php, markup.changed.git_gutter
   settings:
-    foreground: '#a6e22e'
+    foreground: '#e6db74'
 
 - name: Sub-methods
   scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
@@ -107,12 +101,12 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '#ae81ff'
+    foreground: '#8d62da'
 
 - name: Inserted
   scope: markup.inserted
   settings:
-    foreground: '#e6db74'
+    foreground: '#a6e22e'
 
 - name: Deleted
   scope: markup.deleted
@@ -122,17 +116,17 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#ae81ff'
+    foreground: '#8d62da'
 
 - name: Regular Expressions
   scope: string.regexp
   settings:
-    foreground: '#f9f8f5'
+    foreground: '#a1efe4'
 
 - name: Escape Characters
   scope: constant.character.escape
   settings:
-    foreground: '#f9f8f5'
+    foreground: '#a1efe4'
 
 - name: URL
   scope: '*url*, *link*, *uri*'
@@ -142,12 +136,12 @@ settings:
 - name: Search Results Nums
   scope: constant.numeric.line-number.find-in-files - match
   settings:
-    foreground: '#e69f66'
+    foreground: '#cc6633'
 
 - name: Search Results Lines
   scope: entity.name.filename.find-in-files
   settings:
-    foreground: '#e6db74'
+    foreground: '#a6e22e'
 
 - name: Decorators
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
@@ -160,3 +154,9 @@ settings:
   settings:
     foreground: '#f92672'
     fontStyle: italic
+
+- name: AceJump
+  scope: ace.jump
+  settings:
+    background: '#8d62da'
+    foreground: '#ffffff'

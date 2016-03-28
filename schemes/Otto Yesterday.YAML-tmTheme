@@ -12,17 +12,11 @@ settings:
     background: '#ffffff'
     caret: '#969896'
     foreground: '#4d4d4c'
+    gutter: '#ffffff'
     invisibles: '#8e908c'
+    lineHighlight: '#00000010'
     selection: '#00000015'
     selectionBorder: '#00000015'
-    lineHighlight: '#00000010'
-    gutter: '#ffffff'
-
-- name: AceJump
-  scope: ace.jump
-  settings:
-    foreground: '#ffffff'
-    background: '#846fec'
 
 - name: Comments
   scope: comment, punctuation.definition.comment
@@ -51,7 +45,7 @@ settings:
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: '#eb606b'
+    foreground: '#df5b66'
 
 - name: Function, Special Method, Block Level
   scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method,
@@ -62,7 +56,7 @@ settings:
 - name: Other Variable, String Link
   scope: support.other.variable, string.other.link
   settings:
-    foreground: '#f2777a'
+    foreground: '#df5b66'
 
 - name: Number, Constant, Function Argument, Tag Attribute, Embedded
   scope: constant.numeric, constant.language, support.constant, constant.character,
@@ -107,7 +101,7 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '#8959a8'
+    foreground: '#794b96'
 
 - name: Inserted
   scope: markup.inserted
@@ -122,7 +116,7 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#8959a8'
+    foreground: '#794b96'
 
 - name: Regular Expressions
   scope: string.regexp
@@ -160,3 +154,9 @@ settings:
   settings:
     foreground: '#c82829'
     fontStyle: italic
+
+- name: AceJump
+  scope: ace.jump
+  settings:
+    background: '#794b96'
+    foreground: '#ffffff'

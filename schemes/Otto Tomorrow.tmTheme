@@ -35,19 +35,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>AceJump</string>
-			<key>scope</key>
-			<string>ace.jump</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#846fec</string>
-				<key>foreground</key>
-				<string>#ffffff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Comments</string>
 			<key>scope</key>
 			<string>comment, punctuation.definition.comment</string>
@@ -98,7 +85,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eb606b</string>
+				<string>#d75a64</string>
 			</dict>
 		</dict>
 		<dict>
@@ -120,7 +107,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f2777a</string>
+				<string>#d75a64</string>
 			</dict>
 		</dict>
 		<dict>
@@ -212,7 +199,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b294bb</string>
+				<string>#9f74ab</string>
 			</dict>
 		</dict>
 		<dict>
@@ -245,7 +232,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b294bb</string>
+				<string>#9f74ab</string>
 			</dict>
 		</dict>
 		<dict>
@@ -327,6 +314,19 @@
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#cc6666</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AceJump</string>
+			<key>scope</key>
+			<string>ace.jump</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#9f74ab</string>
+				<key>foreground</key>
+				<string>#ffffff</string>
 			</dict>
 		</dict>
 	</array>
