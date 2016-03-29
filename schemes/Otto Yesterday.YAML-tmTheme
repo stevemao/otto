@@ -101,7 +101,7 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '#794b96'
+    foreground: '#8959a8'
 
 - name: Inserted
   scope: markup.inserted
@@ -116,7 +116,7 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '#794b96'
+    foreground: '#8959a8'
 
 - name: Regular Expressions
   scope: string.regexp

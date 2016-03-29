@@ -101,7 +101,7 @@ settings:
 - name: Attributes
   scope: entity.other.attribute-name
   settings:
-    foreground: '<%= scheme.base.violet %>'
+    foreground: '<%= scheme.base.purple %>'
 
 - name: Inserted
   scope: markup.inserted
@@ -116,7 +116,7 @@ settings:
 - name: Changed
   scope: markup.changed
   settings:
-    foreground: '<%= scheme.base.violet %>'
+    foreground: '<%= scheme.base.purple %>'
 
 - name: Regular Expressions
   scope: string.regexp
