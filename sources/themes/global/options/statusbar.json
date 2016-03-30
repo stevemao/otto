@@ -47,6 +47,24 @@
 // ---------------------------------------------------------------------------
 
 //
+// Font Size 10
+//
+
+{
+  "class": "label_control",
+  "parents": [{"class": "status_bar"}],
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "label_control",
+  "parents": [{"class": "status_bar"}],
+  "settings": ["theme_otto_status_bar_font_size_10"],
+  "font.size": 10
+},
+
+//
 // Font Size 12
 //
 

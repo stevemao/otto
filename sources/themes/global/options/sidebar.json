@@ -69,6 +69,82 @@
 // ---------------------------------------------------------------------------
 
 //
+// Font Size 10
+//
+
+{
+  "class": "sidebar_heading",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_label",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_heading",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_label",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "icon_folder",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_loading",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_file_type",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_loading",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_file_type",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+//
 // Font Size 12
 //
 

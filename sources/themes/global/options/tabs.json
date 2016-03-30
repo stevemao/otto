@@ -92,6 +92,22 @@
 // ---------------------------------------------------------------------------
 
 //
+// Font Size 10
+//
+
+{
+  "class": "tab_label",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "tab_label",
+  "settings": ["theme_otto_tab_font_size_10"],
+  "font.size": 10
+},
+
+//
 // Font Size 12
 //
 

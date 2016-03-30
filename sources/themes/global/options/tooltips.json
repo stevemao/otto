@@ -11,6 +11,22 @@
 // ---------------------------------------------------------------------------
 
 //
+// Font Size 10
+//
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "tool_tip_label_control",
+  "settings": ["theme_otto_tooltips_font_size_10"],
+  "font.size": 10
+},
+
+//
 // Font Size 12
 //
 

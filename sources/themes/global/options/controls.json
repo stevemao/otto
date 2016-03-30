@@ -67,6 +67,22 @@
 // ---------------------------------------------------------------------------
 
 //
+// Font Size 10
+//
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "label_control",
+  "settings": ["theme_otto_find_and_replace_font_size_10"],
+  "font.size": 10
+},
+
+//
 // Font Size 12
 //
 
