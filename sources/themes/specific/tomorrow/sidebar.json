@@ -50,3 +50,11 @@
   "class": "sidebar_label",
   "color": [155, 155, 155]
 },
+
+{
+  "class": "sidebar_label",
+  "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+  "color": [255, 255, 255, 230],
+  "shadow_color": [0, 0, 0, 255],
+  "shadow_offset": [0, 0]
+},

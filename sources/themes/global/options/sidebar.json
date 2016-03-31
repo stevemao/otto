@@ -6,6 +6,32 @@
 
 {
   "class": "sidebar_tree",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "row_padding": [8, 3, 8, 2]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "layer0.inner_margin": [8, 3, 0, 0],
+  "layer1.inner_margin": [8, 3, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
+  "settings": ["theme_otto_sidebar_tiny"],
+  "row_padding": [8, 3, 8, 2]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_sidebar_tiny"],
+  "layer0.inner_margin": [8, 3, 0, 0],
+  "layer1.inner_margin": [8, 3, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
   "settings": ["theme_otto_global_ui_small"],
   "row_padding": [8, 5, 8, 4]
 },
@@ -67,6 +93,82 @@
 
 // Sidebar Font Options
 // ---------------------------------------------------------------------------
+
+//
+// Font Size 10
+//
+
+{
+  "class": "sidebar_heading",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_label",
+  "settings": ["theme_otto_global_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_heading",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "sidebar_label",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "font.size": 10
+},
+
+{
+  "class": "icon_folder",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_loading",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_file_type",
+  "settings": ["theme_otto_global_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_dup",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_folder_loading",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
+
+{
+  "class": "icon_file_type",
+  "settings": ["theme_otto_sidebar_font_size_10"],
+  "content_margin": [7, 7]
+},
 
 //
 // Font Size 12
