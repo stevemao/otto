@@ -10,6 +10,59 @@
   "content_margin": 0
 },
 
+// Tiny Find & Replace
+// ---------------------------------------------------------------------------
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "content_margin": [8, 6]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "content_margin": [8, 5]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "content_margin": [10, 2]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_global_ui_tiny"],
+  "content_margin": [24, 8]
+},
+
+{
+  "class": "button_control",
+  "settings": ["theme_otto_find_and_replace_tiny"],
+  "content_margin": [8, 6]
+},
+
+{
+  "class": "icon_button_control",
+  "settings": ["theme_otto_find_and_replace_tiny"],
+  "content_margin": [8, 5]
+},
+
+{
+  "class": "text_line_control",
+  "settings": ["theme_otto_find_and_replace_tiny"],
+  "content_margin": [10, 2]
+},
+
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "settings": ["theme_otto_find_and_replace_tiny"],
+  "content_margin": [24, 8]
+},
+
 // Small Find & Replace
 // ---------------------------------------------------------------------------
 

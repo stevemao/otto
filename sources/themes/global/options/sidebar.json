@@ -6,6 +6,32 @@
 
 {
   "class": "sidebar_tree",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "row_padding": [8, 3, 8, 2]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "layer0.inner_margin": [8, 3, 0, 0],
+  "layer1.inner_margin": [8, 3, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
+  "settings": ["theme_otto_sidebar_tiny"],
+  "row_padding": [8, 3, 8, 2]
+},
+
+{
+  "class": "tree_row",
+  "settings": ["theme_otto_sidebar_tiny"],
+  "layer0.inner_margin": [8, 3, 0, 0],
+  "layer1.inner_margin": [8, 3, 0, 0]
+},
+
+{
+  "class": "sidebar_tree",
   "settings": ["theme_otto_global_ui_small"],
   "row_padding": [8, 5, 8, 4]
 },

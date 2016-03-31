@@ -1,6 +1,33 @@
 // Status Bar Options
 // ===========================================================================
 
+// Status Bar Tiny
+// ---------------------------------------------------------------------------
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "content_margin": [5, 0, 5, 0]
+},
+
+{
+  "class": "status_container",
+  "settings": ["theme_otto_status_bar_tiny"],
+  "content_margin": [5, 0, 5, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_global_ui_tiny"],
+  "min_size": [88, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_tiny"],
+  "min_size": [88, 0]
+},
+
 // Status Bar Small
 // ---------------------------------------------------------------------------
 
@@ -120,6 +147,24 @@
 
 {
   "class": "status_button",
+  "settings": ["theme_otto_global_font_size_13", "theme_otto_find_and_replace_tiny"],
+  "min_size": [102, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_font_size_13", "theme_otto_find_and_replace_tiny"],
+  "min_size": [102, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_status_bar_font_size_13", "theme_otto_find_and_replace_tiny"],
+  "min_size": [102, 0]
+},
+
+{
+  "class": "status_button",
   "settings": ["theme_otto_global_font_size_13", "theme_otto_find_and_replace_small"],
   "min_size": [102, 0]
 },
@@ -174,6 +219,24 @@
 
 {
   "class": "status_button",
+  "settings": ["theme_otto_global_font_size_14", "theme_otto_find_and_replace_tiny"],
+  "min_size": [106, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_font_size_14", "theme_otto_find_and_replace_tiny"],
+  "min_size": [106, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_status_bar_font_size_14", "theme_otto_find_and_replace_tiny"],
+  "min_size": [106, 0]
+},
+
+{
+  "class": "status_button",
   "settings": ["theme_otto_global_font_size_14", "theme_otto_find_and_replace_small"],
   "min_size": [106, 0]
 },
@@ -224,6 +287,24 @@
   "class": "status_button",
   "settings": ["theme_otto_status_bar_font_size_15"],
   "min_size": [114, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_global_font_size_15", "theme_otto_find_and_replace_tiny"],
+  "min_size": [110, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_find_and_replace_font_size_15", "theme_otto_find_and_replace_tiny"],
+  "min_size": [110, 0]
+},
+
+{
+  "class": "status_button",
+  "settings": ["theme_otto_status_bar_font_size_15", "theme_otto_find_and_replace_tiny"],
+  "min_size": [110, 0]
 },
 
 {
